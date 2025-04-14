@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslation } from '@/hooks/use-translation'
+import type { LocaleKey } from '@/components/i18n-provider'
 import {
   Select,
   SelectContent,
@@ -12,7 +13,7 @@ import {
 export function LanguageSwitcher() {
   const { locale, setLocale } = useTranslation()
   const handleLanguageChange = (value: string) => {
-    setLocale(value)
+    setLocale(value as LocaleKey)
 
     // In a real app, you would navigate to the localized route
     // This is a simplified version for the demo

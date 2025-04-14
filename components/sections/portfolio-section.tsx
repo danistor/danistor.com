@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useState, useRef, SetStateAction } from "react"
 import Link from "next/link"
 import { motion, useInView } from "framer-motion"
 import { ArrowRight } from "lucide-react"
@@ -11,9 +11,22 @@ import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { ProjectDialog } from "@/components/dialogs/project-dialog"
 import { useTranslation } from "@/hooks/use-translation"
 
+interface ProjectType {
+  id: string;
+  title: string;
+  category: string;
+  tags: string[];
+  image: string;
+  description: string;
+  challenge: string;
+  solution: string;
+  results: string[];
+  liveUrl: string;
+}
+
 export function PortfolioSection() {
   const { t } = useTranslation()
-  const [activeProject, setActiveProject] = useState(null)
+  const [activeProject, setActiveProject] = useState<ProjectType | null>(null)
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
 
@@ -186,7 +199,14 @@ export function PortfolioSection() {
   )
 }
 
-function ProjectCard({ project, index, isInView, onSelect }) {
+interface ProjectCardProps {
+  project: ProjectType;
+  index: number;
+  isInView: boolean;
+  onSelect: () => void;
+}
+
+function ProjectCard({ project, index, isInView, onSelect }: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -209,7 +229,7 @@ function ProjectCard({ project, index, isInView, onSelect }) {
           </h4>
           <p className="text-sm text-muted-foreground">{project.category}</p>
           <div className="flex flex-wrap gap-2 mt-2">
-            {project.tags.map((tag, i) => (
+            {project.tags.map((tag: string, i: number) => (
               <Badge key={i} variant="outline" className="text-xs bg-background">
                 {tag}
               </Badge>

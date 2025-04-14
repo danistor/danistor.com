@@ -1,4 +1,5 @@
 import type React from "react"
+import { Suspense } from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
@@ -10,11 +11,10 @@ import { SonnerProvider } from "@/components/ui/sonner-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Alex Weber | Full-Stack Developer & Designer",
+  title: "Dan Nistor | Full-Stack Developer & Designer",
   description:
     "Full-stack developer and designer based in Zurich, Switzerland, specializing in creating custom digital solutions for businesses.",
-  keywords: "full-stack developer, web designer, software engineer, zurich, switzerland, react, typescript, nextjs",
-    generator: 'v0.dev'
+  keywords: "full-stack developer, web designer, software engineer, zurich, switzerland, react, typescript, nextjs"
 }
 
 export default function RootLayout({
@@ -30,7 +30,9 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <I18nProvider locale={locale}>
             {children}
-            <Analytics />
+            <Suspense fallback={null}>
+              <Analytics />
+            </Suspense>
             <SonnerProvider />
           </I18nProvider>
         </ThemeProvider>
