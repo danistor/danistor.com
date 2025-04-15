@@ -2,6 +2,7 @@
 
 import { useState, useRef, SetStateAction } from "react"
 import Link from "next/link"
+import Image from 'next/image'
 import { motion, useInView } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -10,19 +11,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { ProjectDialog } from "@/components/dialogs/project-dialog"
 import { useTranslation } from "@/hooks/use-translation"
-
-interface ProjectType {
-  id: string;
-  title: string;
-  category: string;
-  tags: string[];
-  image: string;
-  description: string;
-  challenge: string;
-  solution: string;
-  results: string[];
-  liveUrl: string;
-}
+import { getTranslatedProjects } from "@/data/projects"
+import type { ProjectType } from "@/data/projects"
 
 export function PortfolioSection() {
   const { t } = useTranslation()
@@ -30,72 +20,7 @@ export function PortfolioSection() {
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
 
-  const projects = [
-    {
-      id: "ubs-banking",
-      title: t("portfolio.ubs.title"),
-      category: t("portfolio.ubs.category"),
-      tags: ["React", "Node.js", "AWS", "Fintech"],
-      image: "/placeholder.svg?height=600&width=800",
-      description: t("portfolio.ubs.description"),
-      challenge: t("portfolio.ubs.challenge"),
-      solution: t("portfolio.ubs.solution"),
-      results: [
-        t("portfolio.ubs.results.engagement"),
-        t("portfolio.ubs.results.costs"),
-        t("portfolio.ubs.results.performance"),
-      ],
-      liveUrl: "https://example.com",
-    },
-    {
-      id: "nestle-supply",
-      title: t("portfolio.nestle.title"),
-      category: t("portfolio.nestle.category"),
-      tags: ["Angular", "Python", "Docker", "AI"],
-      image: "/placeholder.svg?height=600&width=800",
-      description: t("portfolio.nestle.description"),
-      challenge: t("portfolio.nestle.challenge"),
-      solution: t("portfolio.nestle.solution"),
-      results: [
-        t("portfolio.nestle.results.inventory"),
-        t("portfolio.nestle.results.costs"),
-        t("portfolio.nestle.results.efficiency"),
-      ],
-      liveUrl: "https://example.com",
-    },
-    {
-      id: "swatch-ecommerce",
-      title: t("portfolio.swatch.title"),
-      category: t("portfolio.swatch.category"),
-      tags: ["Next.js", "GraphQL", "Stripe", "Shopify"],
-      image: "/placeholder.svg?height=600&width=800",
-      description: t("portfolio.swatch.description"),
-      challenge: t("portfolio.swatch.challenge"),
-      solution: t("portfolio.swatch.solution"),
-      results: [
-        t("portfolio.swatch.results.sales"),
-        t("portfolio.swatch.results.conversion"),
-        t("portfolio.swatch.results.global"),
-      ],
-      liveUrl: "https://example.com",
-    },
-    {
-      id: "zurich-tourism",
-      title: t("portfolio.zurich.title"),
-      category: t("portfolio.zurich.category"),
-      tags: ["React Native", "Firebase", "Google Maps API"],
-      image: "/placeholder.svg?height=600&width=800",
-      description: t("portfolio.zurich.description"),
-      challenge: t("portfolio.zurich.challenge"),
-      solution: t("portfolio.zurich.solution"),
-      results: [
-        t("portfolio.zurich.results.downloads"),
-        t("portfolio.zurich.results.engagement"),
-        t("portfolio.zurich.results.ratings"),
-      ],
-      liveUrl: "https://example.com",
-    },
-  ]
+  const projects: ProjectType[] = getTranslatedProjects(t)
 
   return (
     <section id="portfolio" ref={ref} className="py-16 md:py-24 bg-slate-50">
@@ -118,7 +43,7 @@ export function PortfolioSection() {
 
           <TabsContent value="all" className="mt-0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {projects.map((project, index) => (
+              {projects.map((project: ProjectType, index: number) => (
                 <ProjectCard
                   key={project.id}
                   project={project}
@@ -133,8 +58,8 @@ export function PortfolioSection() {
           <TabsContent value="web" className="mt-0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {projects
-                .filter((p) => p.tags.includes("React") || p.tags.includes("Angular") || p.tags.includes("Next.js"))
-                .map((project, index) => (
+                .filter((p: ProjectType) => p.tags.includes("React") || p.tags.includes("Angular") || p.tags.includes("Next.js"))
+                .map((project: ProjectType, index: number) => (
                   <ProjectCard
                     key={project.id}
                     project={project}
@@ -149,8 +74,8 @@ export function PortfolioSection() {
           <TabsContent value="mobile" className="mt-0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {projects
-                .filter((p) => p.tags.includes("React Native"))
-                .map((project, index) => (
+                .filter((p: ProjectType) => p.tags.includes("React Native"))
+                .map((project: ProjectType, index: number) => (
                   <ProjectCard
                     key={project.id}
                     project={project}
@@ -166,9 +91,9 @@ export function PortfolioSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {projects
                 .filter(
-                  (p) => p.tags.includes("Shopify") || p.tags.includes("Stripe") || p.category.includes("E-commerce"),
+                  (p: ProjectType) => p.tags.includes("Shopify") || p.tags.includes("Stripe") || p.category.includes("E-commerce"),
                 )
-                .map((project, index) => (
+                .map((project: ProjectType, index: number) => (
                   <ProjectCard
                     key={project.id}
                     project={project}
@@ -214,12 +139,18 @@ function ProjectCard({ project, index, isInView, onSelect }: ProjectCardProps) {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="group cursor-pointer"
       onClick={onSelect}
+      tabIndex={0}
+      onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onSelect()}
+      role="button"
+      aria-label={`View details for ${project.title}`}
     >
-      <div className="aspect-[16/9] bg-slate-100 overflow-hidden rounded-lg mb-4">
-        <img
-          src={project.image || "/placeholder.svg"}
+      <div className="aspect-[16/9] bg-slate-100 overflow-hidden rounded-lg mb-4 relative">
+        <Image
+          src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>
       <div className="flex justify-between items-start">
@@ -236,7 +167,7 @@ function ProjectCard({ project, index, isInView, onSelect }: ProjectCardProps) {
             ))}
           </div>
         </div>
-        <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-accent transition-colors transform group-hover:translate-x-1 transition-transform" />
+        <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-accent transition-colors transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
       </div>
     </motion.div>
   )

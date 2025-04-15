@@ -1,5 +1,6 @@
 'use client'
 
+import { usePathname, useRouter } from 'next/navigation'
 import { useTranslation } from '@/hooks/use-translation'
 import type { LocaleKey } from '@/components/i18n-provider'
 import {
@@ -11,13 +12,22 @@ import {
 } from '@/components/ui/select'
 
 export function LanguageSwitcher() {
-  const { locale, setLocale } = useTranslation()
-  const handleLanguageChange = (value: string) => {
-    setLocale(value as LocaleKey)
+  const { locale } = useTranslation()
+  const router = useRouter()
+  const pathname = usePathname()
 
-    // In a real app, you would navigate to the localized route
-    // This is a simplified version for the demo
-    // router.push(`/${value}${pathname}`)
+  const handleLanguageChange = (newLocale: string) => {
+    // 1. Get the path without the current locale
+    // Assumes locale is always the first segment
+    const currentLocale = pathname.split('/')[1]
+    const pathWithoutLocale = pathname.startsWith(`/${currentLocale}`)
+      ? pathname.substring(currentLocale.length + 1)
+      : pathname;
+
+    // 2. Navigate to the new locale path
+    // Ensure pathWithoutLocale starts with a leading slash if it's not empty
+    const newPath = `/${newLocale}${pathWithoutLocale.startsWith('/') ? pathWithoutLocale : ('/' + pathWithoutLocale)}`;
+    router.push(newPath)
   }
 
   return (

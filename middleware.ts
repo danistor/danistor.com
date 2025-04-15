@@ -1,0 +1,81 @@
+import { NextRequest, NextResponse } from 'next/server';
+import Negotiator from 'negotiator';
+import { match as matchLocale } from '@formatjs/intl-localematcher';
+
+// Your supported locales
+const locales: string[] = ['en', 'de', 'fr', 'it'];
+const defaultLocale = 'en';
+
+function getLocale(request: NextRequest): string {
+  // 1. Check cookies
+  const localeCookie = request.cookies.get('NEXT_LOCALE');
+  if (localeCookie && locales.includes(localeCookie.value)) {
+    return localeCookie.value;
+  }
+
+  // 2. Check Accept-Language header
+  const negotiatorHeaders: Record<string, string> = {};
+  request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
+  const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
+
+  try {
+    return matchLocale(languages, locales, defaultLocale);
+  } catch (e) {
+    // Handle potential errors during matching, fallback to default
+    console.warn("Error matching locale:", e);
+    return defaultLocale;
+  }
+}
+
+export function middleware(request: NextRequest) {
+  const pathname = request.nextUrl.pathname;
+
+  // Skip middleware for static assets, API routes, etc.
+  if (
+    pathname.startsWith('/api') ||
+    pathname.startsWith('/_next/static') ||
+    pathname.startsWith('/_next/image') ||
+    pathname.match(/\.(svg|png|jpg|jpeg|gif|ico|webp)$/)
+  ) {
+    return;
+  }
+
+  // Check if the pathname already has a supported locale prefix
+  const pathnameIsMissingLocale = locales.every(
+    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+  );
+
+  // Redirect if there is no locale
+  if (pathnameIsMissingLocale) {
+    const locale = getLocale(request);
+
+    // Redirect to the same path with the detected locale prefix
+    const newUrl = new URL(`/${locale}${pathname.startsWith('/') ? pathname : '/' + pathname}`, request.url);
+    const response = NextResponse.redirect(newUrl);
+
+    // Optionally set cookie for preference
+    response.cookies.set('NEXT_LOCALE', locale, { path: '/', maxAge: 60 * 60 * 24 * 30 }); // 30 days
+
+    return response;
+  }
+
+  // If locale is present, potentially set cookie if not already set
+  const currentLocale = pathname.split('/')[1];
+  if (locales.includes(currentLocale) && !request.cookies.has('NEXT_LOCALE')) {
+    const response = NextResponse.next(); // Continue processing
+    response.cookies.set('NEXT_LOCALE', currentLocale, { path: '/', maxAge: 60 * 60 * 24 * 30 });
+    return response;
+  }
+
+
+  // No redirect needed, continue
+  return undefined;
+}
+
+// Define paths for which the middleware should run
+export const config = {
+  matcher: [
+    // Skip internal paths
+    '/((?!api|_next/static|_next/image|favicon.ico|images).*)',
+  ],
+}; 

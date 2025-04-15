@@ -10,8 +10,17 @@ import { ContactSection } from "@/components/sections/contact-section"
 import { NewsletterSection } from "@/components/sections/newsletter-section"
 import { BlogSection } from "@/components/sections/blog-section"
 import { ClientsSection } from "@/components/sections/clients-section"
+import type { LocaleKey } from "@/components/i18n-provider";
 
-export default function Home() {
+// Define the supported locales explicitly for generateStaticParams
+export async function generateStaticParams() {
+  const locales: LocaleKey[] = ['en', 'de', 'fr', 'it'];
+  return locales.map((locale) => ({ locale }));
+}
+
+// Note: The locale param is available here if needed for fetching locale-specific page data
+export default function Home({ params }: { params: { locale: LocaleKey } }) {
+  // console.log("Rendering page for locale:", params.locale);
   return (
     <MainLayout>
       <HeroSection />
@@ -27,4 +36,4 @@ export default function Home() {
       <NewsletterSection />
     </MainLayout>
   )
-}
+} 
