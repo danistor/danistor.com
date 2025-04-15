@@ -1,11 +1,8 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import type { LocaleKey } from "@/components/i18n-provider";
 import { LocaleLayoutClientWrapper } from "@/components/layout/locale-layout-client-wrapper";
 import Script from "next/script";
-
-const inter = Inter({ subsets: ["latin"] });
 
 // Add your specific details here
 const authorName = "Dan Nistor";

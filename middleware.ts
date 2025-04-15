@@ -6,6 +6,10 @@ import { match as matchLocale } from '@formatjs/intl-localematcher';
 const locales: string[] = ['en', 'de', 'fr', 'it'];
 const defaultLocale = 'en';
 
+// Password protection config
+const isPasswordProtected = process.env.PASSWORD_PROTECTED === 'true';
+const sitePassword = process.env.SITE_PASSWORD || 'default-password';
+
 function getLocale(request: NextRequest): string {
   // 1. Check cookies
   const localeCookie = request.cookies.get('NEXT_LOCALE');
@@ -61,6 +65,23 @@ export function middleware(request: NextRequest) {
     return;
   }
 
+  // Password protection check
+  if (isPasswordProtected) {
+    // Skip auth check for the login page itself - check both /login and /[locale]/login patterns
+    if (pathname === '/login' || locales.some(locale => pathname === `/${locale}/login`)) {
+      return NextResponse.next();
+    }
+
+    // Check if user is authenticated
+    const authCookie = request.cookies.get('auth_token');
+    if (!authCookie || authCookie.value !== sitePassword) {
+      // Redirect unauthenticated users to login page
+      const locale = getLocale(request);
+      const loginUrl = new URL(`/${locale}/login`, request.url);
+      return NextResponse.redirect(loginUrl);
+    }
+  }
+
   // Check if the pathname already has a supported locale prefix
   const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
@@ -87,7 +108,6 @@ export function middleware(request: NextRequest) {
     response.cookies.set('NEXT_LOCALE', currentLocale, { path: '/', maxAge: 60 * 60 * 24 * 30 });
     return response;
   }
-
 
   // No redirect needed, continue
   return undefined;
