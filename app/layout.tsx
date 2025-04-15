@@ -5,7 +5,6 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Add your specific details here
 const authorName = "Dan Nistor";
 const authorUrl = "https://danistor.com";
 const siteUrl = "https://danistor.com";
@@ -43,18 +42,18 @@ export const metadata: Metadata = {
     // creatorId: 'yourTwitterId',
     // images: ['/twitter-image.png'], // Must be an absolute URL or start with /
   },
-  // robots: { // Example robots config
-  //   index: true,
-  //   follow: true,
-  //   googleBot: {
-  //     index: true,
-  //     follow: true,
-  //     noimageindex: true,
-  //     'max-video-preview': -1,
-  //     'max-image-preview': 'large',
-  //     'max-snippet': -1,
-  //   },
-  // },
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   // icons: { // Example icons config
   //   icon: '/favicon.ico',
   //   shortcut: '/favicon-16x16.png',
@@ -77,5 +76,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-import './globals.css'
