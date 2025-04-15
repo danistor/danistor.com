@@ -2,8 +2,6 @@ import type React from "react";
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-// Assuming globals.css is in the new root app/layout.tsx
-// import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { I18nProvider, LocaleKey } from "@/components/i18n-provider";
 import { Analytics } from "@/components/analytics";
@@ -56,12 +54,6 @@ const jsonLdPerson = {
   url: authorUrl,
 };
 
-// Define the supported locales explicitly for generateStaticParams - MOVED TO PAGE
-// export async function generateStaticParams() {
-//   const locales: LocaleKey[] = ['en', 'de', 'fr', 'it'];
-//   return locales.map((locale) => ({ locale }));
-// }
-
 // Server component extracts locale and renders client wrapper
 export default async function LocaleLayout({
   children,
@@ -71,33 +63,22 @@ export default async function LocaleLayout({
   params: { locale: LocaleKey };
 }) {
   const { locale } = await Promise.resolve(params);
-
   const validLocale = ['en', 'de', 'fr', 'it'].includes(locale) ? locale : 'en';
 
   return (
-    // Root layout now handles <html> and <body>
-    // We add the lang attribute here
-    // Using a Fragment as the direct child of body is cleaner than adding a div
-    <>
-      {/* Render JSON-LD from the server component */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }}
-      />
-      {/* Pass validated locale down to the client component */}
-      <LocaleLayoutClientWrapper locale={validLocale}>
-        <div lang={locale} className={inter.className}> {/* Pass locale directly */}
-          <ThemeProvider attribute="class" defaultTheme="light">
-            <I18nProvider locale={locale}>
-              {children}
-              <Suspense fallback={null}>
-                <Analytics />
-              </Suspense>
-              <SonnerProvider />
-            </I18nProvider>
-          </ThemeProvider>
-        </div>
-      </LocaleLayoutClientWrapper>
-    </>
-  );
+    <html lang={validLocale} suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }}
+        />
+      </head>
+      <body className={inter.className}>
+        <LocaleLayoutClientWrapper locale={validLocale}>
+          {children}
+        </LocaleLayoutClientWrapper>
+      </body>
+    </html>
+  )
 } 

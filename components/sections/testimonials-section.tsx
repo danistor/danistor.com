@@ -112,9 +112,8 @@ export function TestimonialsSection() {
               <button
                 key={index}
                 onClick={() => setActiveTestimonial(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  activeTestimonial === index ? 'bg-accent' : 'bg-slate-300'
-                }`}
+                className={`w-3 h-3 rounded-full transition-colors cursor-pointer ${activeTestimonial === index ? 'bg-accent' : 'bg-slate-300'
+                  }`}
                 aria-label={`View testimonial ${index + 1}`}
               />
             ))}

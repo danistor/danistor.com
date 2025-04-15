@@ -30,7 +30,7 @@ export function HeroSection() {
   ]
 
   return (
-    <section ref={ref} className="min-h-screen pt-20 flex flex-col md:flex-row">
+    <section ref={ref} className="flex flex-col md:flex-row min-h-[calc(100vh-4rem)]">
       <motion.div
         style={{ opacity, scale }}
         className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 overflow-hidden"
@@ -39,71 +39,71 @@ export function HeroSection() {
         <div className="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-slate-200 rounded-full filter blur-[120px] opacity-30" />
       </motion.div>
 
-      <div className="w-full md:w-1/2 h-[50vh] md:h-screen flex items-center justify-center p-8 md:p-16 relative z-10">
+      <div className="w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center p-4 sm:p-6 md:p-16 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-xl"
+          className="max-w-xl w-full"
         >
-          <div className="mb-6 inline-block">
-            <Badge className="bg-accent/10 text-accent hover:bg-accent/20 transition-colors">
+          <div className="mb-4 md:mb-6 inline-block">
+            <Badge className="bg-accent/10 text-accent hover:bg-accent/20 transition-colors text-xs sm:text-sm">
               <MapPin className="h-3 w-3 mr-1" /> {t("hero.location")}
             </Badge>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
             {t("hero.title")}
             <span className="block text-accent">{t("hero.subtitle")}</span>
           </h2>
-          <p className="text-xl text-muted-foreground mb-8">{t("hero.description")}</p>
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">{t("hero.description")}</p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full">
             <Dialog>
               <DialogTrigger asChild>
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white w-full sm:w-auto">
                   {t("cta.startProject")}
                 </Button>
               </DialogTrigger>
-              <DialogContent className="sm:max-w-[500px]">
+              <DialogContent className="sm:max-w-[500px] w-[95%]">
                 <ContactForm formType="project" />
               </DialogContent>
             </Dialog>
 
-            <Button variant="outline" size="lg" asChild>
+            <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
               <Link href="#portfolio">{t("cta.viewWork")}</Link>
             </Button>
           </div>
 
           {/* Trusted by logos */}
-          <div className="mt-12">
-            <p className="text-sm text-muted-foreground mb-4">{t("hero.trustedBy")}</p>
-            <div className="flex flex-wrap items-center gap-6 opacity-70">
+          <div className="mt-8 md:mt-12">
+            <p className="text-xs sm:text-sm text-muted-foreground mb-3 md:mb-4">{t("hero.trustedBy")}</p>
+            <div className="flex flex-wrap items-center gap-4 md:gap-6 opacity-70">
               <img
                 src="/placeholder.svg?height=30&width=100"
                 alt="Client logo"
-                className="h-8 grayscale hover:grayscale-0 transition-all"
+                className="h-6 sm:h-8 grayscale hover:grayscale-0 transition-all"
               />
               <img
                 src="/placeholder.svg?height=30&width=100"
                 alt="Client logo"
-                className="h-8 grayscale hover:grayscale-0 transition-all"
+                className="h-6 sm:h-8 grayscale hover:grayscale-0 transition-all"
               />
               <img
                 src="/placeholder.svg?height=30&width=100"
                 alt="Client logo"
-                className="h-8 grayscale hover:grayscale-0 transition-all"
+                className="h-6 sm:h-8 grayscale hover:grayscale-0 transition-all"
               />
               <img
                 src="/placeholder.svg?height=30&width=100"
                 alt="Client logo"
-                className="h-8 grayscale hover:grayscale-0 transition-all"
+                className="h-6 sm:h-8 grayscale hover:grayscale-0 transition-all"
               />
             </div>
           </div>
         </motion.div>
       </div>
 
-      <div className="w-full md:w-1/2 h-[50vh] md:h-screen bg-slate-100 flex items-center justify-center overflow-hidden relative">
+      <div className="w-full md:w-1/2 h-[40vh] sm:h-[45vh] md:h-screen bg-slate-100 flex items-center justify-center overflow-hidden relative mt-6 md:mt-0">
         <motion.div
           initial={{ opacity: 0, scale: 1.1 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -117,9 +117,11 @@ export function HeroSection() {
             className="w-full h-full object-cover"
           />
 
-          {/* Floating skill badges */}
+          {/* Floating skill badges - Only show on larger screens */}
           {skills.map((skill, index) => (
-            <SkillBadge key={skill.name} name={skill.name} position={skill.position} delay={0.8 + index * 0.2} />
+            <div className="hidden md:block" key={skill.name}>
+              <SkillBadge name={skill.name} position={skill.position} delay={0.8 + index * 0.2} />
+            </div>
           ))}
         </motion.div>
       </div>

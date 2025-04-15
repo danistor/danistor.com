@@ -26,6 +26,17 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  // Close mobile menu on window resize (when switching to desktop)
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768 && isMenuOpen) {
+        setIsMenuOpen(false)
+      }
+    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [isMenuOpen])
+
   const navItems = [
     { href: "#about", label: t("nav.about") },
     { href: "#services", label: t("nav.services") },
@@ -38,16 +49,17 @@ export function Header() {
     <header
       className={cn(
         "fixed w-full z-50 transition-all duration-300",
-        scrollPosition > 50 ? "py-3 bg-background/90 backdrop-blur-sm border-b border-border" : "py-6",
+        scrollPosition > 50 ? "py-3 bg-background/90 backdrop-blur-sm border-b border-border" : "py-4 sm:py-6",
+        isMenuOpen ? "bg-background" : ""
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="z-10 flex items-center">
-          <div className="relative w-10 h-10 mr-2 rounded-full bg-slate-700 flex items-center justify-center text-white font-bold text-lg">
+          <div className="relative w-8 h-8 sm:w-10 sm:h-10 mr-2 rounded-full bg-slate-700 flex items-center justify-center text-white font-bold text-lg">
             DN
           </div>
-          <h1 className="text-xl font-semibold text-foreground">
+          <h1 className="text-lg sm:text-xl font-semibold text-foreground">
             Dan <span className="text-accent">Nistor</span>
           </h1>
         </Link>
@@ -74,11 +86,11 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Mobile Menu Button */}
-        <div className="flex items-center gap-4 md:hidden">
+        {/* Mobile Menu Button and Language Switcher */}
+        <div className="flex items-center gap-2 md:hidden">
           <LanguageSwitcher />
           <button
-            className="z-10"
+            className="z-50 p-2 cursor-pointer"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
@@ -107,14 +119,15 @@ export function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.2 }}
-              className="md:hidden fixed inset-0 bg-background z-40 flex items-center justify-center"
+              className="md:hidden fixed inset-0 top-0 left-0 right-0 bottom-0 bg-background z-40 flex items-center justify-center"
+              style={{ height: "100vh", overflowY: "auto" }}
             >
-              <div className="flex flex-col space-y-8 text-center">
+              <div className="flex flex-col space-y-6 text-center py-16">
                 {navItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="text-2xl font-medium text-foreground hover:text-accent transition-colors"
+                    className="text-xl font-medium text-foreground hover:text-accent transition-colors"
                     scroll={false}
                     onClick={(e) => {
                       e.preventDefault()
@@ -132,7 +145,7 @@ export function Header() {
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button
-                      className="mt-4 bg-accent hover:bg-accent/90 text-white"
+                      className="mt-4 bg-accent hover:bg-accent/90 text-white mx-auto"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {t("cta.getQuote")}

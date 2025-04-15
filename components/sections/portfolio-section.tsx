@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef, SetStateAction } from "react"
+import { useState, useRef } from "react"
 import Link from "next/link"
 import Image from 'next/image'
 import { motion, useInView } from "framer-motion"
@@ -23,26 +23,26 @@ export function PortfolioSection() {
   const projects: ProjectType[] = getTranslatedProjects(t)
 
   return (
-    <section id="portfolio" ref={ref} className="py-16 md:py-24 bg-slate-50">
+    <section id="portfolio" ref={ref} className="py-12 md:py-24 bg-slate-50">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-12">
-          <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20">{t("sections.portfolio")}</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t("portfolio.heading")}</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{t("portfolio.subheading")}</p>
+        <div className="text-center mb-8 md:mb-12">
+          <Badge className="mb-3 md:mb-4 bg-accent/10 text-accent hover:bg-accent/20">{t("sections.portfolio")}</Badge>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">{t("portfolio.heading")}</h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">{t("portfolio.subheading")}</p>
         </div>
 
         <Tabs defaultValue="all" className="w-full mb-8">
-          <div className="flex justify-center">
-            <TabsList className="mb-8">
-              <TabsTrigger value="all">{t("portfolio.filters.all")}</TabsTrigger>
-              <TabsTrigger value="web">{t("portfolio.filters.web")}</TabsTrigger>
-              <TabsTrigger value="mobile">{t("portfolio.filters.mobile")}</TabsTrigger>
-              <TabsTrigger value="ecommerce">{t("portfolio.filters.ecommerce")}</TabsTrigger>
+          <div className="flex justify-center overflow-x-auto pb-2">
+            <TabsList className="mb-6 md:mb-8 flex-wrap justify-center">
+              <TabsTrigger value="all" className="px-3 py-1.5 text-sm">{t("portfolio.filters.all")}</TabsTrigger>
+              <TabsTrigger value="web" className="px-3 py-1.5 text-sm">{t("portfolio.filters.web")}</TabsTrigger>
+              <TabsTrigger value="mobile" className="px-3 py-1.5 text-sm">{t("portfolio.filters.mobile")}</TabsTrigger>
+              <TabsTrigger value="ecommerce" className="px-3 py-1.5 text-sm">{t("portfolio.filters.ecommerce")}</TabsTrigger>
             </TabsList>
           </div>
 
           <TabsContent value="all" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               {projects.map((project: ProjectType, index: number) => (
                 <ProjectCard
                   key={project.id}
@@ -56,7 +56,7 @@ export function PortfolioSection() {
           </TabsContent>
 
           <TabsContent value="web" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               {projects
                 .filter((p: ProjectType) => p.tags.includes("React") || p.tags.includes("Angular") || p.tags.includes("Next.js"))
                 .map((project: ProjectType, index: number) => (
@@ -72,7 +72,7 @@ export function PortfolioSection() {
           </TabsContent>
 
           <TabsContent value="mobile" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               {projects
                 .filter((p: ProjectType) => p.tags.includes("React Native"))
                 .map((project: ProjectType, index: number) => (
@@ -88,7 +88,7 @@ export function PortfolioSection() {
           </TabsContent>
 
           <TabsContent value="ecommerce" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               {projects
                 .filter(
                   (p: ProjectType) => p.tags.includes("Shopify") || p.tags.includes("Stripe") || p.category.includes("E-commerce"),
@@ -106,7 +106,7 @@ export function PortfolioSection() {
           </TabsContent>
         </Tabs>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8 md:mt-12">
           <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/10" asChild>
             <Link href="#contact">{t("cta.discussProject")}</Link>
           </Button>
@@ -114,7 +114,7 @@ export function PortfolioSection() {
 
         {activeProject && (
           <Dialog open={!!activeProject} onOpenChange={() => setActiveProject(null)}>
-            <DialogContent className="sm:max-w-[700px]">
+            <DialogContent className="sm:max-w-[700px] w-[95%] max-h-[90vh] overflow-y-auto">
               <ProjectDialog project={activeProject} />
             </DialogContent>
           </Dialog>
@@ -144,7 +144,7 @@ function ProjectCard({ project, index, isInView, onSelect }: ProjectCardProps) {
       role="button"
       aria-label={`View details for ${project.title}`}
     >
-      <div className="aspect-[16/9] bg-slate-100 overflow-hidden rounded-lg mb-4 relative">
+      <div className="aspect-[16/9] bg-slate-100 overflow-hidden rounded-lg mb-3 md:mb-4 relative">
         <Image
           src={project.image}
           alt={project.title}
@@ -155,19 +155,24 @@ function ProjectCard({ project, index, isInView, onSelect }: ProjectCardProps) {
       </div>
       <div className="flex justify-between items-start">
         <div>
-          <h4 className="text-lg font-medium text-foreground group-hover:text-accent transition-colors">
+          <h4 className="text-base md:text-lg font-medium text-foreground group-hover:text-accent transition-colors">
             {project.title}
           </h4>
-          <p className="text-sm text-muted-foreground">{project.category}</p>
-          <div className="flex flex-wrap gap-2 mt-2">
-            {project.tags.map((tag: string, i: number) => (
-              <Badge key={i} variant="outline" className="text-xs bg-background">
+          <p className="text-xs md:text-sm text-muted-foreground">{project.category}</p>
+          <div className="flex flex-wrap gap-1 md:gap-2 mt-2">
+            {project.tags.slice(0, 3).map((tag: string, i: number) => (
+              <Badge key={i} variant="outline" className="text-xs bg-background px-1.5 py-0.5">
                 {tag}
               </Badge>
             ))}
+            {project.tags.length > 3 && (
+              <Badge variant="outline" className="text-xs bg-background px-1.5 py-0.5">
+                +{project.tags.length - 3}
+              </Badge>
+            )}
           </div>
         </div>
-        <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-accent transition-colors transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+        <ArrowRight className="h-4 w-4 md:h-5 md:w-5 text-muted-foreground group-hover:text-accent transition-colors transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
       </div>
     </motion.div>
   )
