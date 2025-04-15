@@ -2,11 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import Negotiator from 'negotiator';
 import { match as matchLocale } from '@formatjs/intl-localematcher';
 
-// Your supported locales
 const locales: string[] = ['en', 'de', 'fr', 'it'];
 const defaultLocale = 'en';
-
-// Password protection config
 const isPasswordProtected = process.env.PASSWORD_PROTECTED === 'true';
 const sitePassword = process.env.SITE_PASSWORD || 'default-password';
 
