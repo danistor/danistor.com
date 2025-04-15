@@ -18,11 +18,10 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-// Note: The locale param is available here if needed for fetching locale-specific page data
+// In Next.js 15.3, params are actually a Promise that needs to be awaited
 export default async function Home({ params }: { params: Promise<{ locale: LocaleKey }> }) {
   // Resolve the Promise params
   const resolvedParams = await params;
-  // console.log("Rendering page for locale:", resolvedParams.locale);
 
   return (
     <MainLayout>

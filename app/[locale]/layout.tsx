@@ -11,12 +11,13 @@ const siteUrl = "https://danistor.com";
 
 // Using generateMetadata for dynamic locale handling
 export async function generateMetadata({ params }: { params: Promise<{ locale: LocaleKey }> }): Promise<Metadata> {
-  // Resolve the Promise params
+  // Resolve the Promise params in Next.js 15.3
   const resolvedParams = await params;
+  const locale = resolvedParams.locale;
 
   // Here you could potentially load locale-specific titles/descriptions
   // For now, keeping it static but using params.locale for OG
-  const ogLocale = resolvedParams.locale === 'de' ? 'de_DE' : resolvedParams.locale === 'fr' ? 'fr_FR' : resolvedParams.locale === 'it' ? 'it_IT' : 'en_US';
+  const ogLocale = locale === 'de' ? 'de_DE' : locale === 'fr' ? 'fr_FR' : locale === 'it' ? 'it_IT' : 'en_US';
 
   return {
     metadataBase: new URL(siteUrl),
@@ -28,15 +29,24 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
     openGraph: {
       title: `${authorName} | Full-Stack Developer & Designer`,
       description: "Full-stack developer and designer based in Zurich, Switzerland...",
-      url: `${siteUrl}/${resolvedParams.locale}`, // Use locale variable
+      url: `${siteUrl}/${locale}`, // Use locale variable
       siteName: `${authorName} Portfolio`,
       locale: ogLocale,
       type: 'website',
+      images: [
+        {
+          url: `/api/og?locale=${locale}`,
+          width: 1200,
+          height: 630,
+          alt: `${authorName} - Portfolio`,
+        }
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${authorName} | Full-Stack Developer & Designer`,
       description: "Full-stack developer and designer based in Zurich, Switzerland...",
+      images: [`/api/og?locale=${locale}`],
     },
   };
 }
@@ -60,8 +70,10 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: LocaleKey }>;
 }) {
-  // Resolve the Promise params
+  // In Next.js 15, params are a Promise that need to be awaited
   const resolvedParams = await params;
+
+  // Validate the locale
   const validLocale = ['en', 'de', 'fr', 'it'].includes(resolvedParams.locale) ? resolvedParams.locale : 'en';
 
   return (
