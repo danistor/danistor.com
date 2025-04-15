@@ -8,16 +8,17 @@ const inter = Inter({ subsets: ["latin"] });
 
 // Add your specific details here
 const authorName = "Dan Nistor";
-const authorUrl = "https://your-website.com"; // Change this!
-const siteUrl = "https://your-website.com"; // Change this!
+const authorUrl = "https://danistor.com";
+const siteUrl = "https://danistor.com";
 
 // Using generateMetadata for dynamic locale handling
-export async function generateMetadata({ params: _params }: { params: { locale: LocaleKey } }): Promise<Metadata> {
-  const { locale } = await Promise.resolve(_params);
+export async function generateMetadata({ params }: { params: Promise<{ locale: LocaleKey }> }): Promise<Metadata> {
+  // Resolve the Promise params
+  const resolvedParams = await params;
 
   // Here you could potentially load locale-specific titles/descriptions
   // For now, keeping it static but using params.locale for OG
-  const ogLocale = locale === 'de' ? 'de_DE' : locale === 'fr' ? 'fr_FR' : locale === 'it' ? 'it_IT' : 'en_US';
+  const ogLocale = resolvedParams.locale === 'de' ? 'de_DE' : resolvedParams.locale === 'fr' ? 'fr_FR' : resolvedParams.locale === 'it' ? 'it_IT' : 'en_US';
 
   return {
     metadataBase: new URL(siteUrl),
@@ -29,7 +30,7 @@ export async function generateMetadata({ params: _params }: { params: { locale: 
     openGraph: {
       title: `${authorName} | Full-Stack Developer & Designer`,
       description: "Full-stack developer and designer based in Zurich, Switzerland...",
-      url: `${siteUrl}/${locale}`, // Use locale variable
+      url: `${siteUrl}/${resolvedParams.locale}`, // Use locale variable
       siteName: `${authorName} Portfolio`,
       locale: ogLocale,
       type: 'website',
@@ -56,10 +57,11 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: LocaleKey };
+  params: Promise<{ locale: LocaleKey }>;
 }) {
-  const { locale } = await Promise.resolve(params);
-  const validLocale = ['en', 'de', 'fr', 'it'].includes(locale) ? locale : 'en';
+  // Resolve the Promise params
+  const resolvedParams = await params;
+  const validLocale = ['en', 'de', 'fr', 'it'].includes(resolvedParams.locale) ? resolvedParams.locale : 'en';
 
   return (
     <html lang={validLocale} suppressHydrationWarning>
