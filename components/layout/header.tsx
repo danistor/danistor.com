@@ -45,10 +45,10 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="z-10 flex items-center">
           <div className="relative w-10 h-10 mr-2 rounded-full bg-slate-700 flex items-center justify-center text-white font-bold text-lg">
-            AW
+            DN
           </div>
           <h1 className="text-xl font-semibold text-foreground">
-            Alex <span className="text-accent">Weber</span>
+            Dan <span className="text-accent">Nistor</span>
           </h1>
         </Link>
 

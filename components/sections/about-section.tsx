@@ -26,7 +26,7 @@ export function AboutSection() {
             <div className="aspect-square bg-slate-200 rounded-lg overflow-hidden">
               <img
                 src="/placeholder.svg?height=600&width=600"
-                alt="Alex Weber, Full-Stack Developer"
+                alt="Dan Nistor, Full-Stack Developer"
                 className="w-full h-full object-cover"
               />
             </div>

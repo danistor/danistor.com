@@ -30,7 +30,28 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Skip middleware for static assets, API routes, etc.
+  // CORS configuration for API routes
+  if (pathname.startsWith('/api/contact')) {
+    const origin = request.headers.get('origin') || '';
+
+    // Only allow your own domain in production
+    const allowedOrigins = process.env.NODE_ENV === 'production'
+      ? [process.env.NEXT_PUBLIC_SITE_URL || '']
+      : ['http://localhost:3000'];
+
+    const response = NextResponse.next();
+
+    if (allowedOrigins.includes(origin)) {
+      response.headers.set('Access-Control-Allow-Origin', origin);
+    }
+
+    response.headers.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
+
+    return response;
+  }
+
+  // Skip middleware for other static assets, API routes, etc.
   if (
     pathname.startsWith('/api') ||
     pathname.startsWith('/_next/static') ||
@@ -77,5 +98,7 @@ export const config = {
   matcher: [
     // Skip internal paths
     '/((?!api|_next/static|_next/image|favicon.ico|images).*)',
+    // Add API paths that need middleware
+    '/api/contact'
   ],
 }; 

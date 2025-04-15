@@ -193,7 +193,7 @@ export const en = {
     markus: {
       name: "Markus Weber",
       company: "FinTech Solutions AG, Zurich",
-      text: "Working with Alex transformed our financial platform. The technical expertise and attention to detail resulted in a 40% increase in user engagement and significantly improved our conversion rates.",
+      text: "Working with Dan transformed our financial platform. The technical expertise and attention to detail resulted in a 40% increase in user engagement and significantly improved our conversion rates.",
     },
     laura: {
       name: "Laura Meier",

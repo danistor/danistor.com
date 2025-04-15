@@ -18,7 +18,7 @@ export function Footer() {
               <div className="w-10 h-10 mr-2 rounded-full bg-slate-700 flex items-center justify-center text-white font-bold text-lg">
                 AW
               </div>
-              <h2 className="text-xl font-semibold">Alex Weber</h2>
+              <h2 className="text-xl font-semibold">Dan Nistor</h2>
             </div>
             <p className="text-slate-300 mb-6 max-w-md">{t("footer.description")}</p>
             <SocialLinks className="text-slate-300 hover:text-accent" />
@@ -102,7 +102,7 @@ export function Footer() {
             <h3 className="text-lg font-medium mb-4">{t("footer.contact")}</h3>
             <div className="space-y-3">
               <p className="text-slate-300 flex items-center">
-                <Mail className="h-5 w-5 mr-2" /> hello@alexweber.dev
+                <Mail className="h-5 w-5 mr-2" /> hello@danistor.com
               </p>
               <p className="text-slate-300 flex items-center">
                 <Phone className="h-5 w-5 mr-2" /> +41 12 345 67 89
@@ -115,7 +115,7 @@ export function Footer() {
         </div>
         <div className="border-t border-slate-700 pt-8 text-center text-slate-400 text-sm">
           <p>
-            © {currentYear} Alex Weber. {t("footer.rights")}
+            © {currentYear} Dan Nistor. {t("footer.rights")}
           </p>
         </div>
       </div>

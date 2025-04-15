@@ -3,6 +3,9 @@
 import type React from "react"
 
 import { useState } from "react"
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { z } from "zod"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -16,48 +19,79 @@ interface ContactFormProps {
   formType: "contact" | "quote" | "project" | "general"
 }
 
+// Match validation schema from server
+const formSchema = z.object({
+  name: z.string().min(2, {
+    message: "Name must be at least 2 characters.",
+  }).max(100),
+  email: z.string().email({
+    message: "Please enter a valid email address.",
+  }),
+  message: z.string().min(10, {
+    message: "Message must be at least 10 characters.",
+  }).max(1000, {
+    message: "Message cannot exceed 1000 characters."
+  }),
+  projectType: z.string().optional(),
+  budget: z.string().optional(),
+  // Hidden field for honeypot
+  honeypot: z.string().max(0).optional(),
+});
+
+type FormValues = z.infer<typeof formSchema>;
+
 export function ContactForm({ formType }: ContactFormProps) {
   const { t } = useTranslation()
   const { toast } = useSonnerToast()
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    projectType: "",
-    budget: "",
-    message: "",
-  })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSelectChange = (name: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-
-    toast({
-      title: t("form.success.title"),
-      description: t("form.success.description"),
-      type: "success",
-    })
-
-    setIsSubmitting(false)
-    setFormData({
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormValues>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
       name: "",
       email: "",
+      message: "",
       projectType: "",
       budget: "",
-      message: "",
-    })
+      honeypot: "",
+    },
+  });
+
+  const onSubmit = async (data: FormValues) => {
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Failed to send message");
+      }
+
+      toast({
+        title: t("form.success.title"),
+        description: t("form.success.description"),
+        type: "success",
+      });
+
+      reset();
+    } catch (error) {
+      console.error("Contact form error:", error);
+      toast({
+        title: t("form.error.title"),
+        description: t("form.error.description"),
+        type: "error",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   const getFormTitle = () => {
@@ -94,38 +128,43 @@ export function ContactForm({ formType }: ContactFormProps) {
           <DialogDescription>{getFormDescription()}</DialogDescription>
         </DialogHeader>
       )}
-      <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 mt-4">
         <div className="grid grid-cols-1 gap-4">
           <div className="space-y-2">
             <Label htmlFor={`${formType}-name`}>{t("form.name")}</Label>
             <Input
               id={`${formType}-name`}
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
+              {...register("name")}
               placeholder={t("form.namePlaceholder")}
-              required
             />
+            {errors.name && (
+              <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
+            )}
           </div>
           <div className="space-y-2">
             <Label htmlFor={`${formType}-email`}>{t("form.email")}</Label>
             <Input
               id={`${formType}-email`}
-              name="email"
               type="email"
-              value={formData.email}
-              onChange={handleInputChange}
+              {...register("email")}
               placeholder={t("form.emailPlaceholder")}
-              required
             />
+            {errors.email && (
+              <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+            )}
           </div>
           {(formType === "quote" || formType === "project") && (
             <>
               <div className="space-y-2">
                 <Label htmlFor={`${formType}-projectType`}>{t("form.projectType")}</Label>
                 <Select
-                  value={formData.projectType}
-                  onValueChange={(value) => handleSelectChange("projectType", value)}
+                  onValueChange={(value) => {
+                    // Use this approach for select with react-hook-form
+                    const event = {
+                      target: { name: "projectType", value }
+                    } as unknown as React.ChangeEvent<HTMLInputElement>;
+                    register("projectType").onChange(event);
+                  }}
                 >
                   <SelectTrigger id={`${formType}-projectType`}>
                     <SelectValue placeholder={t("form.projectTypePlaceholder")} />
@@ -141,7 +180,15 @@ export function ContactForm({ formType }: ContactFormProps) {
               </div>
               <div className="space-y-2">
                 <Label htmlFor={`${formType}-budget`}>{t("form.budget")}</Label>
-                <Select value={formData.budget} onValueChange={(value) => handleSelectChange("budget", value)}>
+                <Select
+                  onValueChange={(value) => {
+                    // Use this approach for select with react-hook-form
+                    const event = {
+                      target: { name: "budget", value }
+                    } as unknown as React.ChangeEvent<HTMLInputElement>;
+                    register("budget").onChange(event);
+                  }}
+                >
                   <SelectTrigger id={`${formType}-budget`}>
                     <SelectValue placeholder={t("form.budgetPlaceholder")} />
                   </SelectTrigger>
@@ -160,12 +207,21 @@ export function ContactForm({ formType }: ContactFormProps) {
             <Label htmlFor={`${formType}-message`}>{t("form.message")}</Label>
             <Textarea
               id={`${formType}-message`}
-              name="message"
-              value={formData.message}
-              onChange={handleInputChange}
+              {...register("message")}
               placeholder={t("form.messagePlaceholder")}
               rows={4}
-              required
+            />
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
+            )}
+          </div>
+
+          {/* Honeypot field - hidden from users but bots will fill it */}
+          <div className="hidden" aria-hidden="true">
+            <Input
+              tabIndex={-1}
+              autoComplete="off"
+              {...register("honeypot")}
             />
           </div>
         </div>
