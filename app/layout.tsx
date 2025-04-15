@@ -1,6 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
 import "./globals.css"
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 // Add your specific details here
 const authorName = "Dan Nistor";
@@ -66,8 +69,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+      </head>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

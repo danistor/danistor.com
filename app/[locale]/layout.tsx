@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import type { LocaleKey } from "@/components/i18n-provider";
 import { LocaleLayoutClientWrapper } from "@/components/layout/locale-layout-client-wrapper";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +52,9 @@ const jsonLdPerson = {
   url: authorUrl,
 };
 
+// Create a stable string representation of the JSON-LD
+const jsonLdString = JSON.stringify(jsonLdPerson);
+
 // Server component extracts locale and renders client wrapper
 export default async function LocaleLayout({
   children,
@@ -64,19 +68,16 @@ export default async function LocaleLayout({
   const validLocale = ['en', 'de', 'fr', 'it'].includes(resolvedParams.locale) ? resolvedParams.locale : 'en';
 
   return (
-    <html lang={validLocale} suppressHydrationWarning>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }}
-        />
-      </head>
-      <body className={inter.className}>
-        <LocaleLayoutClientWrapper locale={validLocale}>
-          {children}
-        </LocaleLayoutClientWrapper>
-      </body>
-    </html>
+    <>
+      <Script
+        id="jsonld-person"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString }}
+        strategy="afterInteractive"
+      />
+      <LocaleLayoutClientWrapper locale={validLocale}>
+        {children}
+      </LocaleLayoutClientWrapper>
+    </>
   )
 } 
