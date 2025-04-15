@@ -64,11 +64,45 @@
   --normal-border: hsl(var(--border));
   --normal-text: hsl(var(--foreground));
   --success-bg: hsl(var(--background));
-  --success-border: hsl(142.1 76.2% 36.3%);
-  --success-text: hsl(142.1 76.2% 36.3%);
+  --success-border: hsl(var(--accent));
+  --success-text: hsl(var(--accent));
   --error-bg: hsl(var(--background));
   --error-border: hsl(var(--destructive));
   --error-text: hsl(var(--destructive));
+  /* Increase size and visibility */
+  --font-size: 1.05rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
+  padding: 16px !important;
+  border-width: 1px;
+  border-style: solid;
+  border-left-width: 6px !important;
+  transform: scale(1.05);
+}
+
+/* Success toast */
+.sonner-toast[data-type="success"] {
+  border-left-color: hsl(var(--accent)) !important;
+}
+
+.sonner-toast[data-type="success"] .sonner-toast-title {
+  color: hsl(var(--accent));
+  font-weight: 600;
+}
+
+.sonner-toast[data-type="success"] .sonner-toast-icon {
+  background-color: hsl(var(--accent));
+  color: white;
+}
+
+/* Error toast */
+.sonner-toast[data-type="error"] {
+  border-left-color: hsl(var(--destructive)) !important;
+}
+
+.sonner-toast[data-type="error"] .sonner-toast-title {
+  color: hsl(var(--destructive));
+  font-weight: 600;
 }
 
 /* Custom animations */

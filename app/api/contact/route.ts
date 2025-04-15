@@ -82,6 +82,8 @@ export async function POST(request: Request) {
         <p><strong>Message:</strong></p>
         <p>${sanitizedMessage.replace(/\n/g, '<br>')}</p>
       `,
+      // Add reply-to with the sender's email
+      replyTo: email,
     });
 
     return NextResponse.json({ success: true });

@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
@@ -44,6 +44,7 @@ export function ContactForm({ formType }: ContactFormProps) {
   const { t } = useTranslation()
   const { toast } = useSonnerToast()
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const dialogCloseRef = useRef<HTMLButtonElement>(null)
 
   const { register, handleSubmit, reset, formState: { errors } } = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -79,9 +80,15 @@ export function ContactForm({ formType }: ContactFormProps) {
         title: t("form.success.title"),
         description: t("form.success.description"),
         type: "success",
+        duration: 7000,
       });
 
       reset();
+
+      // Close the dialog if this form is in a modal
+      if (formType !== "contact" && dialogCloseRef.current) {
+        dialogCloseRef.current.click();
+      }
     } catch (error) {
       console.error("Contact form error:", error);
       toast({
@@ -227,7 +234,7 @@ export function ContactForm({ formType }: ContactFormProps) {
         </div>
         {formType === "quote" || formType === "project" || formType === "general" ? (
           <DialogFooter className="mt-6">
-            <DialogClose asChild>
+            <DialogClose ref={dialogCloseRef} asChild>
               <Button type="button" variant="outline">
                 {t("form.cancel")}
               </Button>
