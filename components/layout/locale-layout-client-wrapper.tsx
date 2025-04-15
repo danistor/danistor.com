@@ -7,20 +7,25 @@ import { I18nProvider, LocaleKey } from "@/components/i18n-provider";
 import { Analytics } from "@/components/analytics";
 import { SonnerProvider } from "@/components/ui/sonner-provider";
 
+/**
+ * Props for the LocaleLayoutClientWrapper component
+ */
 interface LocaleLayoutClientWrapperProps {
   children: React.ReactNode;
-  locale: LocaleKey; // Receive validated/extracted locale as prop
+  locale: LocaleKey;
 }
 
+/**
+ * Client component wrapper that provides theme, internationalization, 
+ * analytics, and notification contexts to the application.
+ * 
+ * This component bridges server components with client-only providers.
+ */
 export function LocaleLayoutClientWrapper({ children, locale }: LocaleLayoutClientWrapperProps) {
-
-  // Use the passed locale directly
-  const validLocale = locale; // Assuming validation happened in server component if needed
-
   return (
-    <div lang={validLocale}>
+    <div lang={locale}>
       <ThemeProvider attribute="class" defaultTheme="light">
-        <I18nProvider locale={validLocale}>
+        <I18nProvider locale={locale}>
           {children}
           <Suspense fallback={null}>
             <Analytics />
