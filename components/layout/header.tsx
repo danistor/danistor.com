@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -15,7 +14,6 @@ import { cn } from "@/lib/utils"
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrollPosition, setScrollPosition] = useState(0)
-  const pathname = usePathname()
   const { t } = useTranslation()
 
   useEffect(() => {

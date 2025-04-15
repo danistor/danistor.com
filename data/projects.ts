@@ -1,5 +1,3 @@
-import { type LocaleKey } from "@/components/i18n-provider";
-
 // Base type for data stored with translation keys
 export interface ProjectDataType {
   id: string;

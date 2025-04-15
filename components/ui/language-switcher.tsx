@@ -2,7 +2,6 @@
 
 import { usePathname, useRouter } from 'next/navigation'
 import { useTranslation } from '@/hooks/use-translation'
-import type { LocaleKey } from '@/components/i18n-provider'
 import {
   Select,
   SelectContent,

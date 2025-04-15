@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import { z } from 'zod'; // Add zod to package.json for validation
+import { z } from 'zod';
 
 // Initialize Resend (store API key in env variables)
 const resend = new Resend(process.env.RESEND_API_KEY);

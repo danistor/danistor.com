@@ -19,8 +19,8 @@ export async function generateStaticParams() {
 }
 
 // Note: The locale param is available here if needed for fetching locale-specific page data
-export default function Home({ params }: { params: { locale: LocaleKey } }) {
-  // console.log("Rendering page for locale:", params.locale);
+export default function Home({ params: _params }: { params: { locale: LocaleKey } }) {
+  // console.log("Rendering page for locale:", _params.locale);
   return (
     <MainLayout>
       <HeroSection />

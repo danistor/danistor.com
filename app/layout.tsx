@@ -1,19 +1,11 @@
 import type React from "react"
-import { Suspense } from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { I18nProvider, LocaleKey } from "@/components/i18n-provider"
-import { Analytics } from "@/components/analytics"
-import { SonnerProvider } from "@/components/ui/sonner-provider"
-
-const inter = Inter({ subsets: ["latin"] })
 
 // Add your specific details here
 const authorName = "Dan Nistor";
-const authorUrl = "https://your-website.com"; // Change this!
-const siteUrl = "https://your-website.com"; // Change this!
+const authorUrl = "https://danistor.com";
+const siteUrl = "https://danistor.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl), // Important for resolving relative paths
@@ -36,7 +28,7 @@ export const metadata: Metadata = {
     //     height: 630,
     //   },
     // ],
-    locale: 'en_US', // Default locale for OG
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
@@ -66,19 +58,6 @@ export const metadata: Metadata = {
   //   apple: '/apple-touch-icon.png',
   // },
 }
-
-// Basic Person JSON-LD Schema
-const jsonLdPerson = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: authorName,
-  url: authorUrl,
-  // Add other relevant properties like sameAs (LinkedIn, GitHub), jobTitle, etc.
-  // "sameAs": [
-  //   "https://www.linkedin.com/in/yourprofile",
-  //   "https://github.com/yourprofile"
-  // ]
-};
 
 // Basic root layout, only html and body tags
 export default function RootLayout({

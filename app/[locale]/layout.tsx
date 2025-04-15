@@ -1,11 +1,7 @@
 import type React from "react";
-import { Suspense } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
-import { I18nProvider, LocaleKey } from "@/components/i18n-provider";
-import { Analytics } from "@/components/analytics";
-import { SonnerProvider } from "@/components/ui/sonner-provider";
+import type { LocaleKey } from "@/components/i18n-provider";
 import { LocaleLayoutClientWrapper } from "@/components/layout/locale-layout-client-wrapper";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,8 +12,8 @@ const authorUrl = "https://your-website.com"; // Change this!
 const siteUrl = "https://your-website.com"; // Change this!
 
 // Using generateMetadata for dynamic locale handling
-export async function generateMetadata({ params }: { params: { locale: LocaleKey } }): Promise<Metadata> {
-  const { locale } = await Promise.resolve(params);
+export async function generateMetadata({ params: _params }: { params: { locale: LocaleKey } }): Promise<Metadata> {
+  const { locale } = await Promise.resolve(_params);
 
   // Here you could potentially load locale-specific titles/descriptions
   // For now, keeping it static but using params.locale for OG
