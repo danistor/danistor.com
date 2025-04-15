@@ -70,7 +70,7 @@ export async function POST(request: Request) {
 
     // Send email
     await resend.emails.send({
-      from: email,
+      from: `Contact Form <${process.env.FROM_EMAIL || 'contact@yourdomain.com'}>`,
       to: process.env.TO_EMAIL || 'your@email.com',
       subject: `New Contact Form: ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${sanitizedMessage}`,
