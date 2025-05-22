@@ -16,7 +16,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 mr-2 rounded-full bg-slate-700 flex items-center justify-center text-white font-bold text-lg">
-                AW
+                DN
               </div>
               <h2 className="text-xl font-semibold">Dan Nistor</h2>
             </div>

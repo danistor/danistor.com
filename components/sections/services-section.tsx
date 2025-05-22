@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { Globe, Layers, Smartphone, Server, Check } from "lucide-react"
+import { Globe, Layers, Smartphone, Server, Check, Database, BarChart, RefreshCw, Code } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
@@ -18,13 +18,24 @@ export function ServicesSection() {
     {
       id: "web-development",
       title: t("services.webDev.title"),
-      icon: <Globe className="h-10 w-10 text-accent" />,
+      icon: <Code className="h-10 w-10 text-accent" />,
       description: t("services.webDev.description"),
       features: [
         t("services.webDev.features.responsive"),
         t("services.webDev.features.api"),
         t("services.webDev.features.database"),
         t("services.webDev.features.cloud"),
+      ],
+    },
+    {
+      id: "responsive-design",
+      title: t("services.responsiveDesign.title"),
+      icon: <Smartphone className="h-10 w-10 text-accent" />,
+      description: t("services.responsiveDesign.description"),
+      features: [
+        t("services.responsiveDesign.features.mobile"),
+        t("services.responsiveDesign.features.responsive"),
+        t("services.responsiveDesign.features.seo"),
       ],
     },
     {
@@ -40,15 +51,47 @@ export function ServicesSection() {
       ],
     },
     {
-      id: "mobile-apps",
-      title: t("services.mobileApps.title"),
-      icon: <Smartphone className="h-10 w-10 text-accent" />,
-      description: t("services.mobileApps.description"),
+      id: "frontend-development",
+      title: t("services.frontendDevelopment.title"),
+      icon: <Globe className="h-10 w-10 text-accent" />,
+      description: t("services.frontendDevelopment.description"),
       features: [
-        t("services.mobileApps.features.cross"),
-        t("services.mobileApps.features.native"),
-        t("services.mobileApps.features.offline"),
-        t("services.mobileApps.features.store"),
+        t("services.frontendDevelopment.features.responsive"),
+        t("services.frontendDevelopment.features.animations"),
+        t("services.frontendDevelopment.features.navigation"),
+      ],
+    },
+    {
+      id: "backend-development",
+      title: t("services.backendDevelopment.title"),
+      icon: <Database className="h-10 w-10 text-accent" />,
+      description: t("services.backendDevelopment.description"),
+      features: [
+        t("services.backendDevelopment.features.api"),
+        t("services.backendDevelopment.features.database"),
+        t("services.backendDevelopment.features.security"),
+      ],
+    },
+    {
+      id: "performance-optimization",
+      title: t("services.performanceOptimization.title"),
+      icon: <BarChart className="h-10 w-10 text-accent" />,
+      description: t("services.performanceOptimization.description"),
+      features: [
+        t("services.performanceOptimization.features.code"),
+        t("services.performanceOptimization.features.caching"),
+        t("services.performanceOptimization.features.infrastructure"),
+      ],
+    },
+    {
+      id: "maintenance-support",
+      title: t("services.maintenanceSupport.title"),
+      icon: <RefreshCw className="h-10 w-10 text-accent" />,
+      description: t("services.maintenanceSupport.description"),
+      features: [
+        t("services.maintenanceSupport.features.support"),
+        t("services.maintenanceSupport.features.updates"),
+        t("services.maintenanceSupport.features.improvements"),
       ],
     },
     {

@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import Link from "next/link"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { MapPin } from "lucide-react"
+import { Code, MapPin, Shield, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
@@ -74,30 +74,24 @@ export function HeroSection() {
             </Button>
           </div>
 
-          {/* Trusted by logos */}
-          <div className="mt-8 md:mt-12">
-            <p className="text-xs sm:text-sm text-muted-foreground mb-3 md:mb-4">{t("hero.trustedBy")}</p>
-            <div className="flex flex-wrap items-center gap-4 md:gap-6 opacity-70">
-              <img
-                src="/placeholder.svg?height=30&width=100"
-                alt="Client logo"
-                className="h-6 sm:h-8 grayscale hover:grayscale-0 transition-all"
-              />
-              <img
-                src="/placeholder.svg?height=30&width=100"
-                alt="Client logo"
-                className="h-6 sm:h-8 grayscale hover:grayscale-0 transition-all"
-              />
-              <img
-                src="/placeholder.svg?height=30&width=100"
-                alt="Client logo"
-                className="h-6 sm:h-8 grayscale hover:grayscale-0 transition-all"
-              />
-              <img
-                src="/placeholder.svg?height=30&width=100"
-                alt="Client logo"
-                className="h-6 sm:h-8 grayscale hover:grayscale-0 transition-all"
-              />
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
+            <div className="flex items-center">
+              <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2 rounded-full mr-3">
+                <Code className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+              </div>
+              <span className="font-medium">Clean Code</span>
+            </div>
+            <div className="flex items-center">
+              <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2 rounded-full mr-3">
+                <Zap className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+              </div>
+              <span className="font-medium">Fast Delivery</span>
+            </div>
+            <div className="flex items-center">
+              <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2 rounded-full mr-3">
+                <Shield className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+              </div>
+              <span className="font-medium">Secure Solutions</span>
             </div>
           </div>
         </motion.div>

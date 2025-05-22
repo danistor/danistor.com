@@ -26,8 +26,8 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
   return (
     <MainLayout>
       <HeroSection />
-      <ClientsSection />
-      <StatsSection />
+      {/* <ClientsSection /> */}
+      {/* <StatsSection /> */}
       <ServicesSection />
       <ProcessSection />
       <PortfolioSection />
