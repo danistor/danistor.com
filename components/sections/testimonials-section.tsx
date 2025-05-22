@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence, useInView } from 'framer-motion'
-import { Star } from 'lucide-react'
+import { Star, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { useTranslation } from '@/hooks/use-translation'
 
@@ -32,6 +32,13 @@ export function TestimonialsSection() {
       company: t('testimonials.thomas.company'),
       image: '/placeholder.svg?height=100&width=100',
       text: t('testimonials.thomas.text'),
+      stars: 5,
+    },
+    {
+      name: t('testimonials.daniela.name'),
+      company: t('testimonials.daniela.company'),
+      image: '/placeholder.svg?height=100&width=100',
+      text: t('testimonials.daniela.text'),
       stars: 5,
     },
   ]
@@ -107,7 +114,14 @@ export function TestimonialsSection() {
             </AnimatePresence>
           </div>
 
-          <div className="flex justify-center mt-8 gap-2">
+          <div className="flex justify-center mt-8 gap-3 items-center">
+            <button
+              onClick={() => setActiveTestimonial(prev => (prev - 1 + testimonials.length) % testimonials.length)}
+              className="p-2.5 text-accent hover:text-accent/80 transition-colors"
+              aria-label="Previous testimonial"
+            >
+              <ChevronLeft className="h-6 w-6" />
+            </button>
             {testimonials.map((_, index) => (
               <button
                 key={index}
@@ -117,6 +131,13 @@ export function TestimonialsSection() {
                 aria-label={`View testimonial ${index + 1}`}
               />
             ))}
+            <button
+              onClick={() => setActiveTestimonial(prev => (prev + 1) % testimonials.length)}
+              className="p-2.5 text-accent hover:text-accent/80 transition-colors"
+              aria-label="Next testimonial"
+            >
+              <ChevronRight className="h-6 w-6" />
+            </button>
           </div>
         </motion.div>
       </div>

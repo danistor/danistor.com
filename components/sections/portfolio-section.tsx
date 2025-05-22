@@ -7,7 +7,6 @@ import { motion, useInView } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { ProjectDialog } from "@/components/dialogs/project-dialog"
 import { useTranslation } from "@/hooks/use-translation"
@@ -31,80 +30,17 @@ export function PortfolioSection() {
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">{t("portfolio.subheading")}</p>
         </div>
 
-        <Tabs defaultValue="all" className="w-full mb-8">
-          <div className="flex justify-center overflow-x-auto pb-2">
-            <TabsList className="mb-6 md:mb-8 flex-wrap justify-center">
-              <TabsTrigger value="all" className="px-3 py-1.5 text-sm">{t("portfolio.filters.all")}</TabsTrigger>
-              <TabsTrigger value="web" className="px-3 py-1.5 text-sm">{t("portfolio.filters.web")}</TabsTrigger>
-              <TabsTrigger value="mobile" className="px-3 py-1.5 text-sm">{t("portfolio.filters.mobile")}</TabsTrigger>
-              <TabsTrigger value="ecommerce" className="px-3 py-1.5 text-sm">{t("portfolio.filters.ecommerce")}</TabsTrigger>
-            </TabsList>
-          </div>
-
-          <TabsContent value="all" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              {projects.map((project: ProjectType, index: number) => (
-                <ProjectCard
-                  key={project.id}
-                  project={project}
-                  index={index}
-                  isInView={isInView}
-                  onSelect={() => setActiveProject(project)}
-                />
-              ))}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="web" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              {projects
-                .filter((p: ProjectType) => p.tags.includes("React") || p.tags.includes("Angular") || p.tags.includes("Next.js"))
-                .map((project: ProjectType, index: number) => (
-                  <ProjectCard
-                    key={project.id}
-                    project={project}
-                    index={index}
-                    isInView={isInView}
-                    onSelect={() => setActiveProject(project)}
-                  />
-                ))}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="mobile" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              {projects
-                .filter((p: ProjectType) => p.tags.includes("React Native"))
-                .map((project: ProjectType, index: number) => (
-                  <ProjectCard
-                    key={project.id}
-                    project={project}
-                    index={index}
-                    isInView={isInView}
-                    onSelect={() => setActiveProject(project)}
-                  />
-                ))}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="ecommerce" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              {projects
-                .filter(
-                  (p: ProjectType) => p.tags.includes("Shopify") || p.tags.includes("Stripe") || p.category.includes("E-commerce"),
-                )
-                .map((project: ProjectType, index: number) => (
-                  <ProjectCard
-                    key={project.id}
-                    project={project}
-                    index={index}
-                    isInView={isInView}
-                    onSelect={() => setActiveProject(project)}
-                  />
-                ))}
-            </div>
-          </TabsContent>
-        </Tabs>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8">
+          {projects.map((project: ProjectType, index: number) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              index={index}
+              isInView={isInView}
+              onSelect={() => setActiveProject(project)}
+            />
+          ))}
+        </div>
 
         <div className="text-center mt-8 md:mt-12">
           <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/10" asChild>

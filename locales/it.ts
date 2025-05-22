@@ -33,7 +33,12 @@ export const it = {
     subtitle: "Creo esperienze digitali che guidano la crescita aziendale",
     description:
       "Creo soluzioni digitali personalizzate che aiutano le aziende svizzere ad aumentare i ricavi, ottimizzare le operazioni e offrire esperienze utente eccezionali.",
-    trustedBy: "Scelto dalle principali aziende svizzere",
+    trustedBy: "Approvato dalle principali aziende svizzere",
+    features: {
+      fastDelivery: "Consegna Rapida",
+      cleanCode: "Codice Pulito",
+      secureSolutions: "Soluzioni Sicure"
+    }
   },
   // Additional translations would be added here
 }

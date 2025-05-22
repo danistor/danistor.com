@@ -34,6 +34,11 @@ export const en = {
     description:
       "I create custom digital solutions that help Swiss businesses increase revenue, optimize operations, and deliver exceptional user experiences.",
     trustedBy: "Trusted by leading Swiss companies",
+    features: {
+      fastDelivery: "Fast Delivery",
+      cleanCode: "Clean Code",
+      secureSolutions: "Secure Solutions"
+    }
   },
   stats: {
     yearsExperience: "Years Experience",
@@ -126,6 +131,39 @@ export const en = {
       mobile: "Mobile",
       ecommerce: "E-commerce",
     },
+    bithy: {
+      title: "Bithy E-Commerce Platform",
+      category: "E-Commerce",
+      description: "A full-featured online store with product management, cart functionality, and secure checkout process.",
+      challenge: "Creative design and development of a full-featured online store. Fast time to market was a must.",
+      solution: "Time-efficient development of a full-featured online store with a focus on user experience and SEO.",
+      results: {
+        sales: "Starting to be visible on Google Search",
+        conversion: "Successfully launched the store",
+      },
+    },
+    nahrin: {
+      title: "Nahrin Headless CMS",
+      category: "Content Management System",
+      description: "A content management system for a Swiss company.",
+      challenge: "The client needed a content management system for their website.",
+      solution: "I developed a content management system for their website.",
+      results: {
+        sales: "Starting to be visible on Google Search",
+        conversion: "Successfully launched the store",
+      },
+    },
+    crosare: {
+      title: "Crosare Website",
+      category: "Website",
+      description: "A website for a Swiss company.",
+      challenge: "The client needed a website for their company.",
+      solution: "I developed a website for their company.",
+      results: {
+        sales: "Starting to be visible on Google Search",
+        conversion: "Successfully launched the store",
+      },
+    },
     ubs: {
       title: "UBS Digital Banking Platform",
       category: "Financial Technology",
@@ -141,21 +179,6 @@ export const en = {
         performance: "Improved system performance by 60%",
       },
     },
-    nestle: {
-      title: "Nestlé Supply Chain Management System",
-      category: "Enterprise Software",
-      description:
-        "Built a custom supply chain management system that optimized inventory tracking and reduced operational costs by 15%.",
-      challenge:
-        "Nestlé needed to modernize their supply chain management to improve efficiency and reduce costs across their global operations.",
-      solution:
-        "I created a centralized platform that integrated with existing systems and provided real-time inventory tracking, predictive analytics, and automated workflows.",
-      results: {
-        inventory: "Reduced inventory discrepancies by 35%",
-        costs: "Decreased operational costs by 15%",
-        efficiency: "Improved supply chain efficiency by 22%",
-      },
-    },
     swatch: {
       title: "Swatch Group E-commerce Platform",
       category: "E-commerce",
@@ -169,21 +192,6 @@ export const en = {
         sales: "Increased online sales by 45%",
         conversion: "Improved conversion rates by 30%",
         global: "Successfully expanded to 20+ new markets",
-      },
-    },
-    zurich: {
-      title: "Zurich Tourism Interactive Guide",
-      category: "Travel & Tourism",
-      description:
-        "Created an interactive mobile guide for tourists visiting Zurich, featuring AR experiences and personalized recommendations.",
-      challenge:
-        "Zurich Tourism wanted to enhance the visitor experience with a modern, interactive guide that would showcase the city's attractions.",
-      solution:
-        "I developed a mobile app with augmented reality features, personalized recommendations, and offline functionality for international travelers.",
-      results: {
-        downloads: "Over 100,000 downloads in the first year",
-        engagement: "Average user engagement of 45 minutes per session",
-        ratings: "4.8/5 star rating on app stores",
       },
     },
   },
@@ -205,6 +213,11 @@ export const en = {
       company: "Alpine Tech Ventures",
       text: "The most reliable developer we've worked with. From initial concept to final deployment, every step was handled with professionalism and technical excellence. Our e-commerce conversion rate increased by 35%.",
     },
+    daniela: {
+      name: "Daniela Bopp",
+      company: "Swiss Innovation Group",
+      text: "Dan's ability to translate complex requirements into elegant solutions is remarkable. Our dashboard project was delivered on time and our users love the intuitive interface.",
+    },
   },
   about: {
     heading: "Full-Stack Developer Based in Zurich",
@@ -216,9 +229,9 @@ export const en = {
     skills: "Technical Skills",
     languages: "Languages",
     english: "English (Fluent)",
-    german: "German (Fluent)",
-    french: "French (Conversational)",
-    italian: "Italian (Conversational)",
+    german: "German (Basic)",
+    french: "French (Fluent)",
+    italian: "Italian (Fluent)",
   },
   blog: {
     heading: "Latest Insights & Articles",

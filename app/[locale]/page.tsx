@@ -33,7 +33,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
       <PortfolioSection />
       <TestimonialsSection />
       <AboutSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <ContactSection />
       <NewsletterSection />
     </MainLayout>

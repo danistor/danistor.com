@@ -34,6 +34,11 @@ export const de = {
     description:
       "Ich erstelle massgeschneiderte digitale Lösungen, die Schweizer Unternehmen dabei helfen, Umsätze zu steigern, Abläufe zu optimieren und aussergewöhnliche Benutzererlebnisse zu bieten.",
     trustedBy: "Vertraut von führenden Schweizer Unternehmen",
+    features: {
+      fastDelivery: "Schnelle Lieferung",
+      cleanCode: "Sauberer Code",
+      secureSolutions: "Sichere Lösungen"
+    }
   },
   // Additional translations would be added here
 }

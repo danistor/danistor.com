@@ -54,7 +54,11 @@ export function AboutSection() {
                 <ul className="space-y-1">
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">React & Next.js</span>
+                    <span className="text-muted-foreground text-sm">React & TypeScript</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="h-4 w-4 text-accent mr-2" />
+                    <span className="text-muted-foreground text-sm">React Router & Next.js</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
@@ -62,11 +66,19 @@ export function AboutSection() {
                   </li>
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">TypeScript</span>
+                    <span className="text-muted-foreground text-sm">PHP & Laravel</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">AWS & Cloud Services</span>
+                    <span className="text-muted-foreground text-sm">MySQL & PostgreSQL</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="h-4 w-4 text-accent mr-2" />
+                    <span className="text-muted-foreground text-sm">Tailwind CSS & Shadcn UI</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="h-4 w-4 text-accent mr-2" />
+                    <span className="text-muted-foreground text-sm">Cloud Services</span>
                   </li>
                 </ul>
               </div>

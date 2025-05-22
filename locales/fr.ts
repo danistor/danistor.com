@@ -32,8 +32,13 @@ export const fr = {
     title: "Développeur Full-Stack & Designer",
     subtitle: "Créer des expériences digitales qui stimulent la croissance",
     description:
-      "Je crée des solutions digitales personnalisées qui aident les entreprises suisses à augmenter leurs revenus, optimiser leurs opérations et offrir des expériences utilisateur exceptionnelles.",
-    trustedBy: "Fait confiance par les principales entreprises suisses",
+      "Je crée des solutions numériques sur mesure qui aident les entreprises suisses à augmenter leurs revenus, optimiser leurs opérations et offrir des expériences utilisateur exceptionnelles.",
+    trustedBy: "Approuvé par les entreprises suisses leaders",
+    features: {
+      fastDelivery: "Livraison Rapide",
+      cleanCode: "Code Propre",
+      secureSolutions: "Solutions Sécurisées"
+    }
   },
   // Additional translations would be added here
 }

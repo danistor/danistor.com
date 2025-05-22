@@ -46,11 +46,11 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-xl w-full"
         >
-          <div className="mb-4 md:mb-6 inline-block">
+          {/* <div className="mb-4 md:mb-6 inline-block">
             <Badge className="bg-accent/10 text-accent hover:bg-accent/20 transition-colors text-xs sm:text-sm">
               <MapPin className="h-3 w-3 mr-1" /> {t("hero.location")}
             </Badge>
-          </div>
+          </div> */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
             {t("hero.title")}
             <span className="block text-accent">{t("hero.subtitle")}</span>
@@ -79,25 +79,81 @@ export function HeroSection() {
               <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2 rounded-full mr-3">
                 <Code className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
               </div>
-              <span className="font-medium">Clean Code</span>
+              <span className="font-medium">{t("hero.features.fastDelivery")}</span>
             </div>
             <div className="flex items-center">
               <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2 rounded-full mr-3">
                 <Zap className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
               </div>
-              <span className="font-medium">Fast Delivery</span>
+              <span className="font-medium">{t("hero.features.cleanCode")}</span>
             </div>
             <div className="flex items-center">
               <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2 rounded-full mr-3">
                 <Shield className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
               </div>
-              <span className="font-medium">Secure Solutions</span>
+              <span className="font-medium">{t("hero.features.secureSolutions")}</span>
             </div>
           </div>
         </motion.div>
       </div>
 
-      <div className="w-full md:w-1/2 h-[40vh] sm:h-[45vh] md:h-screen bg-slate-100 flex items-center justify-center overflow-hidden relative mt-6 md:mt-0">
+      <div className="aspect-square bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg shadow-xl p-6 overflow-hidden relative w-full md:w-1/2 h-[40vh] sm:h-[45vh] md:h-screen bg-slate-100 flex items-center justify-center overflow-hidden relative mt-6 md:mt-0">
+        <div
+          className="absolute w-[60%] h-[60%] top-[20%] left-[20%] rounded-full bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 animate-pulse"
+          style={{ animationDuration: "7s" }}
+        ></div>
+        <div
+          className="absolute w-[70%] h-[70%] top-[15%] left-[15%] rounded-full border-4 border-emerald-500/20 animate-spin"
+          style={{ animationDuration: "15s" }}
+        ></div>
+        <div
+          className="absolute w-[80%] h-[80%] top-[10%] left-[10%] rounded-full border-2 border-dashed border-emerald-500/10 animate-spin"
+          style={{ animationDuration: "25s", animationDirection: "reverse" }}
+        ></div>
+
+        <div className="absolute top-[20%] left-[25%] text-emerald-500/70 font-mono text-xs">function()</div>
+        <div className="absolute top-[30%] left-[55%] text-emerald-500/70 font-mono text-xs">const app = ()</div>
+        <div className="absolute top-[60%] left-[30%] text-emerald-500/70 font-mono text-xs">
+          {"return <App />"}
+        </div>
+        <div className="absolute top-[70%] left-[50%] text-emerald-500/70 font-mono text-xs">export default</div>
+
+        <div
+          className="absolute top-[25%] left-[20%] w-6 h-6 bg-emerald-500/30 rounded-md animate-bounce"
+          style={{ animationDuration: "4s" }}
+        ></div>
+        <div
+          className="absolute top-[40%] left-[70%] w-4 h-4 bg-emerald-500/40 rounded-full animate-bounce"
+          style={{ animationDuration: "3.5s", animationDelay: "0.5s" }}
+        ></div>
+        <div
+          className="absolute top-[65%] left-[25%] w-5 h-5 bg-emerald-500/30 rounded-full animate-bounce"
+          style={{ animationDuration: "4.5s", animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute top-[75%] left-[65%] w-3 h-3 bg-emerald-500/50 rounded-md animate-bounce"
+          style={{ animationDuration: "3s", animationDelay: "1.5s" }}
+        ></div>
+
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl shadow-lg flex items-center justify-center z-10 rotate-45">
+          <div className="rotate-[-45deg] text-white font-bold text-xl">DN</div>
+        </div>
+
+        <div className="absolute top-[15%] left-[50%] -translate-x-1/2 bg-gray-800/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs text-white">
+          React
+        </div>
+        <div className="absolute top-[50%] left-[85%] -translate-x-1/2 bg-gray-800/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs text-white">
+          TypeScript
+        </div>
+        <div className="absolute top-[85%] left-[50%] -translate-x-1/2 bg-gray-800/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs text-white">
+          Node.js
+        </div>
+        <div className="absolute top-[50%] left-[15%] -translate-x-1/2 bg-gray-800/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs text-white">
+          Next.js
+        </div>
+      </div>
+
+      <div className="hidden w-full md:w-1/2 h-[40vh] sm:h-[45vh] md:h-screen bg-slate-100 flex items-center justify-center overflow-hidden relative mt-6 md:mt-0">
         <motion.div
           initial={{ opacity: 0, scale: 1.1 }}
           animate={{ opacity: 1, scale: 1 }}
