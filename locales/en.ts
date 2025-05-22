@@ -20,7 +20,7 @@ export const en = {
   },
   sections: {
     about: "About Me",
-    services: "Services",
+    services: "Services I Offer",
     portfolio: "Portfolio",
     testimonials: "Testimonials",
     process: "My Process",
@@ -51,7 +51,7 @@ export const en = {
     subheading:
       "I offer comprehensive development services tailored to help Swiss businesses thrive in the digital landscape.",
     webDev: {
-      title: "Custom Web Application Development",
+      title: "Web Application Development",
       description:
         "End-to-end development of scalable, high-performance web applications tailored to your business needs.",
       features: {
@@ -59,6 +59,15 @@ export const en = {
         api: "API integration",
         database: "Database architecture",
         cloud: "Cloud deployment",
+      },
+    },
+    responsiveDesign: {
+      title: "Responsive Design",
+      description:
+        "Mobile-first websites that provide an optimal viewing experience across all devices and screen sizes.",
+      features: {
+        mobile: "Mobile optimization",
+        responsive: "Responsive design",
       },
     },
     ecommerce: {
@@ -72,55 +81,132 @@ export const en = {
         mobile: "Mobile optimization",
       },
     },
-    mobileApps: {
-      title: "Mobile App Development",
+    frontendDevelopment: {
+      title: "Frontend Development",
       description:
-        "Native and cross-platform mobile applications for iOS and Android with focus on performance and user experience.",
+        "Frontend development focuses on creating a user-friendly interface that allows users to interact with the website or application.",
       features: {
-        cross: "Cross-platform development",
-        native: "Native iOS/Android",
-        offline: "Offline functionality",
-        store: "App Store optimization",
+        responsive: "Responsive design",
       },
     },
-    enterprise: {
-      title: "Enterprise Software Solutions",
+    backendDevelopment: {
+      title: "Backend Development",
       description:
-        "Robust, secure, and scalable enterprise applications that streamline operations and boost productivity.",
+        "Backend development focuses on creating a secure and scalable infrastructure that allows the website or application to function properly.",
       features: {
-        integration: "System integration",
-        legacy: "Legacy system modernization",
-        workflow: "Workflow automation",
-        security: "Data security",
+        api: "API development",
+        database: "Database architecture",
+        security: "Security",
+      },
+    },
+    performanceOptimization: {
+      title: "Performance Optimization",
+      description:
+        "Performance optimization focuses on improving the speed and efficiency of the website or application.",
+      features: {
+        code: "Code optimization",
+        caching: "Caching",
+        infrastructure: "Infrastructure optimization",
+      },
+    },
+    maintenanceSupport: {
+      title: "Maintenance & Support",
+      description:
+        "Maintenance and support focuses on ensuring the website or application is always up to date and functioning properly.",
+      features: {
+        support: "Support",
+        updates: "Updates",
+        improvements: "Improvements",
       },
     },
   },
   process: {
     heading: "How I Work",
-    subheading: "A transparent, collaborative approach to ensure your project's success from concept to completion.",
+    subheading: "A comprehensive methodology designed to deliver exceptional results at every stage of your project.",
+    activities: "Key Activities",
+    deliverables: "Deliverables",
+    previousPhase: "Previous Phase",
+    nextPhase: "Next Phase",
     discovery: {
       title: "Discovery & Planning",
-      description:
-        "In-depth consultation to understand your business goals, target audience, and project requirements.",
+      description: "Every successful project starts with a thorough understanding of your business goals, target audience, and specific requirements.",
+      activities: {
+        consultation: "In-depth consultation to understand your vision",
+        research: "Research of your industry and competitors",
+        identification: "Identification of key performance indicators",
+        definition: "Definition of project scope and deliverables"
+      },
+      deliverables: {
+        brief: "Detailed project brief",
+        requirements: "Technical requirements document",
+        timeline: "Project timeline with milestones",
+        resources: "Resource allocation plan"
+      }
     },
     design: {
       title: "Design & Prototyping",
-      description:
-        "Creating wireframes and interactive prototypes to visualize the solution before development begins.",
+      description: "Translating requirements into visual concepts that align with your brand and provide an exceptional user experience.",
+      activities: {
+        concepts: "Creation of visual design concepts",
+        prototypes: "Development of interactive prototypes",
+        optimization: "User experience optimization",
+        accessibility: "Accessibility considerations"
+      },
+      deliverables: {
+        mockups: "Visual design mockups",
+        prototype: "Interactive prototype",
+        documentation: "Design system documentation",
+        assets: "Asset library"
+      }
     },
     development: {
-      title: "Development",
-      description: "Agile development process with regular updates and opportunities for feedback and adjustments.",
+      title: "Development & Implementation",
+      description: "Building your solution using modern technologies and best practices, with a focus on performance, scalability, and maintainability.",
+      activities: {
+        development: "Frontend and backend development",
+        database: "Database architecture and implementation",
+        integration: "Integration with third-party services",
+        reviews: "Regular code reviews and testing"
+      },
+      deliverables: {
+        code: "Clean, well-documented code",
+        application: "Functional application meeting requirements",
+        documentation: "Technical documentation",
+        reports: "Testing reports"
+      }
     },
     testing: {
       title: "Testing & Deployment",
-      description: "Rigorous testing across devices and browsers, followed by smooth deployment to production.",
+      description: "Ensuring a smooth deployment process and optimizing performance for the best possible user experience.",
+      activities: {
+        testing: "Comprehensive pre-launch testing",
+        optimization: "Performance optimization",
+        deployment: "Deployment to production environment",
+        training: "Knowledge transfer and training"
+      },
+      deliverables: {
+        application: "Deployed application",
+        benchmark: "Performance benchmark report",
+        documentation: "User documentation",
+        training: "Training materials"
+      }
     },
     support: {
-      title: "Support & Maintenance",
-      description:
-        "Ongoing support, performance monitoring, and regular updates to ensure your solution remains optimal.",
-    },
+      title: "Support & Growth",
+      description: "Providing ongoing support and identifying opportunities for continuous improvement and growth.",
+      activities: {
+        monitoring: "Monitoring of application performance",
+        maintenance: "Regular maintenance and updates",
+        analysis: "Analysis of user behavior and feedback",
+        recommendations: "Recommendations for enhancements"
+      },
+      deliverables: {
+        reports: "Regular performance reports",
+        documentation: "Maintenance documentation",
+        strategy: "Growth strategy recommendations",
+        support: "Ongoing technical support"
+      }
+    }
   },
   portfolio: {
     heading: "Featured Projects",

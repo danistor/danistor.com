@@ -94,18 +94,6 @@ export function ServicesSection() {
         t("services.maintenanceSupport.features.improvements"),
       ],
     },
-    // {
-    //   id: "enterprise",
-    //   title: t("services.enterprise.title"),
-    //   icon: <Server className="h-10 w-10 text-accent" />,
-    //   description: t("services.enterprise.description"),
-    //   features: [
-    //     t("services.enterprise.features.integration"),
-    //     t("services.enterprise.features.legacy"),
-    //     t("services.enterprise.features.workflow"),
-    //     t("services.enterprise.features.security"),
-    //   ],
-    // },
   ]
 
   return (
