@@ -77,13 +77,13 @@ export function HeroSection() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
             <div className="flex items-center">
               <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2 rounded-full mr-3">
-                <Code className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                <Zap className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
               </div>
               <span className="font-medium">{t("hero.features.fastDelivery")}</span>
             </div>
             <div className="flex items-center">
               <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2 rounded-full mr-3">
-                <Zap className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                <Code className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
               </div>
               <span className="font-medium">{t("hero.features.cleanCode")}</span>
             </div>

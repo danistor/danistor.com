@@ -1,8 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
-  // Get the password from the environment variable or use default
-  const sitePassword = process.env.SITE_PASSWORD || 'default-password';
+  const sitePassword = process.env.SITE_PASSWORD;
 
   try {
     const body = await request.json();

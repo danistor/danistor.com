@@ -243,9 +243,9 @@ export function ProcessSection() {
           <div className="bg-white rounded-lg shadow-sm p-6 md:p-8 mt-12">
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-2/3 mb-6 md:mb-0 md:pr-6">
-                <h3 className="text-2xl font-bold mb-4">Ready to get started?</h3>
+                <h3 className="text-2xl font-bold mb-4">{t("process.readyHeading")}</h3>
                 <p className="text-gray-600">
-                  Let's work together to bring your vision to life with this proven, straightforward process.
+                  {t("process.readyDescription")}
                 </p>
               </div>
               <div className="md:w-1/3 flex justify-center md:justify-end">
@@ -253,7 +253,7 @@ export function ProcessSection() {
                   href="#contact"
                   className="inline-flex items-center px-6 py-3 bg-emerald-500 text-white font-medium rounded-md hover:bg-emerald-600 transition-colors"
                 >
-                  Start Your Project
+                  {t("process.startButton")}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </div>

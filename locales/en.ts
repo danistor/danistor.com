@@ -206,7 +206,10 @@ export const en = {
         strategy: "Growth strategy recommendations",
         support: "Ongoing technical support"
       }
-    }
+    },
+    readyHeading: "Ready to get started?",
+    readyDescription: "Let's work together to bring your vision to life with this proven, straightforward process.",
+    startButton: "Start Your Project",
   },
   portfolio: {
     heading: "Featured Projects",

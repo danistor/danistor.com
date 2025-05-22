@@ -126,7 +126,10 @@ export const de = {
         strategy: "Wachstumsstrategie-Empfehlungen",
         support: "Kontinuierlicher technischer Support"
       }
-    }
+    },
+    readyHeading: "Bereit loszulegen?",
+    readyDescription: "Lassen Sie uns zusammenarbeiten, um Ihre Vision mit diesem bewährten, unkomplizierten Prozess zum Leben zu erwecken.",
+    startButton: "Projekt starten",
   },
   // Additional translations would be added here
 }
