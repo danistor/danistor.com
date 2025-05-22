@@ -51,6 +51,24 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // Password protection check
+  const passwordProtected = process.env.PASSWORD_PROTECTED === 'true';
+  const isLoginPage = LOCALES.some(
+    (locale) => pathname === `/${locale}/login`
+  );
+
+  if (passwordProtected && !isLoginPage) {
+    const authToken = request.cookies.get('auth_token')?.value;
+    const sitePassword = process.env.SITE_PASSWORD;
+
+    // If auth token doesn't match the site password, redirect to login
+    if (!authToken || authToken !== sitePassword) {
+      const locale = getLocale(request);
+      const loginUrl = new URL(`/${locale}/login`, request.url);
+      return NextResponse.redirect(loginUrl);
+    }
+  }
+
   // Check if pathname already has a locale
   const pathnameHasLocale = LOCALES.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
