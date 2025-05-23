@@ -225,7 +225,7 @@ export const de = {
       challenge: "Bithy benötigte eine umfassende digitale Präsenz für den Launch ihrer Nahrungsergänzungsmittelmarke, was eine End-to-End-Entwicklung vom Design bis zur Bereitstellung mit außergewöhnlicher Leistung erforderte.",
       solution: "Ich lieferte eine Komplettlösung mit individuellem Design, Frontend- und Backend-Entwicklung, Leistungsoptimierung und Core Web Vitals-Verbesserung auf der Shopify-Plattform.",
       results: {
-        performance: "Erreichte 95+ Punktzahlen in Core Web Vitals mit optimierten Ladezeiten und Interaktionszeiten",
+        performance: "Erreichte 85+ Punktzahlen in Core Web Vitals mit optimierten Ladezeiten und Interaktionszeiten",
         conversion: "E-Commerce-Konversionsrate von 4,2%, 40% über dem Branchendurchschnitt",
         mobile: "Die Optimierung der mobilen Nutzererfahrung führte dazu, dass 65% der Gesamtverkäufe über mobile Geräte erfolgten",
         engagement: "Die durchschnittliche Sitzungsdauer erhöhte sich auf 3,5 Minuten mit 4,2 Seiten pro Sitzung",
@@ -240,7 +240,7 @@ export const de = {
       results: {
         content: "Ermöglichte die Erstellung von über 200 Rezeptseiten und Tipps innerhalb des ersten Quartals nach dem Launch",
         engagement: "Erhöhte die durchschnittliche Sitzungsdauer um 45% durch ansprechende Inhaltsseiten",
-        conversion: "Direkte Produktlinks von CMS-Inhaltsseiten verbesserten die Konversionsraten um 32%",
+        conversion: "Direkte Produktlinks von CMS-Inhaltsseiten verbesserten die Konversionsraten um 18%",
         retention: "Die Kundenrückkehrrate stieg dank regelmäßig aktualisierter Inhalte um 28%",
       },
     },
@@ -266,30 +266,6 @@ export const de = {
         sales: "Erhöhung des durchschnittlichen Bestellwerts um 23%",
         conversion: "Verbesserung der Konversionsrate um 18% durch personalisierte Empfehlungen",
         satisfaction: "Kundenzufriedenheitsbewertungen verbesserten sich um 28% nach der Implementierung der Empfehlungs-Engine",
-      },
-    },
-    ubs: {
-      title: "UBS Digital Banking Plattform",
-      category: "Finanztechnologie",
-      description: "Neugestaltung und Entwicklung der digitalen Banking-Erfahrung für eine der größten Banken der Schweiz, was zu einer Steigerung der mobilen Banking-Nutzung um 28% führte.",
-      challenge: "Der Kunde benötigte eine moderne, sichere und benutzerfreundliche digitale Banking-Plattform, die Millionen von Transaktionen verarbeiten und gleichzeitig eine außergewöhnliche Benutzererfahrung bieten konnte.",
-      solution: "Ich entwickelte eine responsive Webanwendung mit Echtzeit-Transaktionsverarbeitung, fortschrittlichen Sicherheitsfunktionen und einer intuitiven Benutzeroberfläche.",
-      results: {
-        engagement: "Steigerung der Benutzerinteraktion um 40%",
-        costs: "Reduzierung der Betriebskosten um 25%",
-        performance: "Verbesserung der Systemleistung um 60%",
-      },
-    },
-    swatch: {
-      title: "Swatch Group E-Commerce-Plattform",
-      category: "E-Commerce",
-      description: "Entwicklung einer Multi-Brand-E-Commerce-Plattform mit Lokalisierung für über 20 Länder, was zu einer Steigerung der Online-Verkäufe um 45% führte.",
-      challenge: "Swatch Group benötigte eine einheitliche E-Commerce-Plattform, die mehrere Marken präsentieren konnte, während die einzigartige Identität jeder Marke erhalten blieb.",
-      solution: "Ich baute eine skalierbare E-Commerce-Lösung mit mehrsprachiger Unterstützung, regionsspezifischen Preisen und angepassten Markenerlebnissen.",
-      results: {
-        sales: "Steigerung der Online-Verkäufe um 45%",
-        conversion: "Verbesserung der Konversionsraten um 30%",
-        global: "Erfolgreiche Expansion in über 20 neue Märkte",
       },
     },
   },
