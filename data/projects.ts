@@ -32,47 +32,68 @@ export const projectsData: ProjectDataType[] = [
     id: "bithy-ecommerce",
     titleKey: "portfolio.bithy.title",
     categoryKey: "portfolio.bithy.category",
-    tags: ["Shopify", "React", "Remix", "Headless E-Commerce", "Tailwind CSS"],
+    tags: ["Shopify", "React", "Remix", "Headless E-Commerce", "SEO", "Performance Optimization"],
     image: "/images/project-bithy-placeholder.jpg", // Update with real path
     descriptionKey: "portfolio.bithy.description",
     challengeKey: "portfolio.bithy.challenge",
     solutionKey: "portfolio.bithy.solution",
     resultsKeys: [
-      "portfolio.bithy.results.sales",
+      "portfolio.bithy.results.performance",
       "portfolio.bithy.results.conversion",
+      "portfolio.bithy.results.mobile",
+      "portfolio.bithy.results.engagement",
     ],
-    liveUrl: "#",
+    liveUrl: "https://bithy.ch",
   },
   {
     id: "nahrin-cms",
     titleKey: "portfolio.nahrin.title",
     categoryKey: "portfolio.nahrin.category",
-    tags: ["Headless CMS", "API", "Tailwind CSS", "Content Management System"],
+    tags: ["Headless CMS", "Prismic", "API", "Adobe Commerce", "Content Management System"],
     image: "/images/project-nahrin-placeholder.jpg", // Update with real path
     descriptionKey: "portfolio.nahrin.description",
     challengeKey: "portfolio.nahrin.challenge",
     solutionKey: "portfolio.nahrin.solution",
     resultsKeys: [
-      "portfolio.nahrin.results.sales",
+      "portfolio.nahrin.results.content",
+      "portfolio.nahrin.results.engagement",
       "portfolio.nahrin.results.conversion",
+      "portfolio.nahrin.results.retention",
     ],
-    liveUrl: "#",
+    liveUrl: "https://nahrin.ch",
   },
   {
     id: "crosare-website",
     titleKey: "portfolio.crosare.title",
     categoryKey: "portfolio.crosare.category",
-    tags: ["React", "Remix", "Tailwind CSS", "Website"],
+    tags: ["PHP", "Wordpress", "Responsive Design", "Front and Backend Development", "SEO"],
     image: "/images/project-crosare-placeholder.jpg", // Update with real path
     descriptionKey: "portfolio.crosare.description",
     challengeKey: "portfolio.crosare.challenge",
     solutionKey: "portfolio.crosare.solution",
     resultsKeys: [
       "portfolio.crosare.results.sales",
-      "portfolio.crosare.results.conversion",
+      "portfolio.crosare.results.efficiency",
+      "portfolio.crosare.results.events",
     ],
-    liveUrl: "#",
+    liveUrl: "https://ristorantecrosare.it",
   },
+  {
+    id: "qualipet-website",
+    titleKey: "portfolio.qualipet.title",
+    categoryKey: "portfolio.qualipet.category",
+    tags: ["PHP", "Recommendation Engine", "Rest API"],
+    image: "/images/project-qualipet-placeholder.jpg", // Update with real path
+    descriptionKey: "portfolio.qualipet.description",
+    challengeKey: "portfolio.qualipet.challenge",
+    solutionKey: "portfolio.qualipet.solution",
+    resultsKeys: [
+      "portfolio.qualipet.results.sales",
+      "portfolio.qualipet.results.conversion",
+      "portfolio.qualipet.results.satisfaction",
+    ],
+    liveUrl: "https://www.qualipet.ch/",
+  }
 ];
 
 // Function to get translated project data
