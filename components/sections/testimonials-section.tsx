@@ -53,7 +53,7 @@ export function TestimonialsSection() {
   }, [testimonials.length])
 
   return (
-    <section ref={ref} className="py-16 md:py-24">
+    <section ref={ref} id="testimonials" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20">

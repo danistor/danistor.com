@@ -2,9 +2,12 @@ export const de = {
   nav: {
     about: "Über mich",
     services: "Dienstleistungen",
+    process: "Prozess",
     portfolio: "Portfolio",
+    testimonials: "Referenzen",
     blog: "Blog",
     contact: "Kontakt",
+    newsletter: "Newsletter",
   },
   cta: {
     getQuote: "Angebot anfordern",

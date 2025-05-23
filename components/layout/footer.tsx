@@ -55,6 +55,20 @@ export function Footer() {
                 {t("nav.services")}
               </Link>
               <Link
+                href="#process"
+                className="text-slate-300 hover:text-accent transition-colors"
+                scroll={false}
+                onClick={(e) => {
+                  e.preventDefault()
+                  const targetElement = document.getElementById("process")
+                  if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" })
+                  }
+                }}
+              >
+                {t("nav.process")}
+              </Link>
+              <Link
                 href="#portfolio"
                 className="text-slate-300 hover:text-accent transition-colors"
                 scroll={false}
@@ -69,18 +83,18 @@ export function Footer() {
                 {t("nav.portfolio")}
               </Link>
               <Link
-                href="#blog"
+                href="#testimonials"
                 className="text-slate-300 hover:text-accent transition-colors"
                 scroll={false}
                 onClick={(e) => {
                   e.preventDefault()
-                  const targetElement = document.getElementById("blog")
+                  const targetElement = document.getElementById("testimonials")
                   if (targetElement) {
                     targetElement.scrollIntoView({ behavior: "smooth" })
                   }
                 }}
               >
-                {t("nav.blog")}
+                {t("nav.testimonials")}
               </Link>
               <Link
                 href="#contact"
@@ -95,6 +109,20 @@ export function Footer() {
                 }}
               >
                 {t("nav.contact")}
+              </Link>
+              <Link
+                href="#newsletter"
+                className="text-slate-300 hover:text-accent transition-colors"
+                scroll={false}
+                onClick={(e) => {
+                  e.preventDefault()
+                  const targetElement = document.getElementById("newsletter")
+                  if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" })
+                  }
+                }}
+              >
+                {t("nav.newsletter")}
               </Link>
             </nav>
           </div>

@@ -2,9 +2,12 @@ export const en = {
   nav: {
     about: "About",
     services: "Services",
+    process: "Process",
     portfolio: "Portfolio",
+    testimonials: "Testimonials",
     blog: "Blog",
     contact: "Contact",
+    newsletter: "Newsletter",
   },
   cta: {
     getQuote: "Get a Quote",

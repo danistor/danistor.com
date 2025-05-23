@@ -2,9 +2,12 @@ export const it = {
   nav: {
     about: "Chi sono",
     services: "Servizi",
+    process: "Processo",
     portfolio: "Portfolio",
+    testimonials: "Testimonianze",
     blog: "Blog",
     contact: "Contatti",
+    newsletter: "Newsletter",
   },
   cta: {
     getQuote: "Richiedi preventivo",

@@ -2,9 +2,12 @@ export const fr = {
   nav: {
     about: "À propos",
     services: "Services",
+    process: "Processus",
     portfolio: "Portfolio",
+    testimonials: "Témoignages",
     blog: "Blog",
     contact: "Contact",
+    newsletter: "Newsletter",
   },
   cta: {
     getQuote: "Obtenir un devis",
