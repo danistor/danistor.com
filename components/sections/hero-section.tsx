@@ -30,7 +30,7 @@ export function HeroSection() {
   ]
 
   return (
-    <section ref={ref} className="flex flex-col md:flex-row min-h-[calc(100vh-4rem)]">
+    <section ref={ref} className="flex flex-col md:flex-row min-h-[calc(100vh-4rem)] relative overflow-hidden">
       <motion.div
         style={{ opacity, scale }}
         className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 overflow-hidden"
@@ -39,7 +39,7 @@ export function HeroSection() {
         <div className="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-slate-200 rounded-full filter blur-[120px] opacity-30" />
       </motion.div>
 
-      <div className="w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center p-4 sm:p-6 md:p-16 relative z-10">
+      <div className="w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center px-4 md:px-6 py-8 md:p-16 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
