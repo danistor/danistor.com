@@ -23,7 +23,7 @@ export function AboutSection() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="aspect-square bg-slate-200 rounded-lg overflow-hidden">
+            <div className="aspect-square bg-slate-200 rounded-lg overflow-hidden shadow-sm border border-border">
               <img
                 src="/placeholder.svg?height=600&width=600"
                 alt="Dan Nistor, Full-Stack Developer"
@@ -106,13 +106,13 @@ export function AboutSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-accent hover:bg-accent/90 text-white" asChild>
+              <Button className="bg-accent hover:bg-accent/90 text-white" size="lg" asChild>
                 <a href="#" download>
                   <Download className="h-4 w-4 mr-2" />
                   {t("cta.downloadCV")}
                 </a>
               </Button>
-              <Button variant="outline" className="border-accent text-accent hover:bg-accent/10" asChild>
+              <Button variant="outline" size="lg" className="hover:bg-accent/10" asChild>
                 <Link href="#contact">{t("cta.contactMe")}</Link>
               </Button>
             </div>

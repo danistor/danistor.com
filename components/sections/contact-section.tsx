@@ -75,8 +75,8 @@ export function ContactSection() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Card>
-              <CardContent className="p-6">
+            <Card className="shadow-sm hover:shadow-md transition-shadow border border-border rounded-lg">
+              <CardContent className="p-6 md:p-8">
                 <h3 className="text-xl font-semibold text-foreground mb-6">{t("contact.formTitle")}</h3>
                 <ContactForm formType="contact" />
               </CardContent>

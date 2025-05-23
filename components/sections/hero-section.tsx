@@ -40,7 +40,7 @@ export function HeroSection() {
       </motion.div>
 
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row min-h-[calc(100vh-4rem)]">
+        <div className="flex flex-col md:flex-row min-h-[calc(100vh-8rem)]">
           <div className="w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center py-8 md:py-16 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

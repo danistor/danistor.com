@@ -81,7 +81,7 @@ export function TestimonialsSection() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.5 }}
-                className="bg-white p-8 md:p-10 rounded-xl shadow-sm border border-border"
+                className="bg-white p-8 md:p-10 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border"
               >
                 <div className="flex flex-col md:flex-row md:items-center gap-6">
                   <div className="shrink-0">
