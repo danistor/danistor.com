@@ -1,15 +1,77 @@
 "use client"
 
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import { motion, useInView } from "framer-motion"
-import { ArrowRight, MessageSquare, Layout, Code, Zap, BarChart, CheckCircle } from "lucide-react"
+import { ArrowRight, MessageSquare, Layout, Code, Zap, BarChart, CheckCircle, ChevronLeft, ChevronRight } from "lucide-react"
 import { useTranslation } from "@/hooks/use-translation"
 
 export function ProcessSection() {
   const { t } = useTranslation()
   const [activeTab, setActiveTab] = useState(0)
   const ref = useRef<HTMLDivElement>(null)
+  const tabsContainerRef = useRef<HTMLDivElement>(null)
+  const contentRef = useRef<HTMLDivElement>(null)
+  const sectionTitleRef = useRef<HTMLHeadingElement>(null)
+  const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
   const isInView = useInView(ref, { once: true, amount: 0.1 })
+
+  const handlePrevious = () => {
+    setActiveTab(Math.max(0, activeTab - 1))
+  }
+
+  const handleNext = () => {
+    setActiveTab(Math.min(tabs.length - 1, activeTab + 1))
+  }
+
+  const handleBottomPrevious = () => {
+    handlePrevious()
+    scrollToSectionTitle()
+  }
+
+  const handleBottomNext = () => {
+    handleNext()
+    scrollToSectionTitle()
+  }
+
+  const scrollToSectionTitle = () => {
+    if (sectionTitleRef.current) {
+      // Smooth scroll to the section title
+      sectionTitleRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+      // Add a slight delay and then scroll a bit more up to make sure the header is fully visible
+      setTimeout(() => {
+        window.scrollBy({
+          top: -20, // Scroll up by 20px to ensure the header is fully visible
+          behavior: 'smooth'
+        })
+      }, 300)
+    }
+  }
+
+  // Set up ref callback for tab buttons
+  const setTabRef = (el: HTMLButtonElement | null, index: number) => {
+    tabRefs.current[index] = el
+  }
+
+  // Scroll the active tab into view when it changes
+  useEffect(() => {
+    if (tabRefs.current[activeTab] && tabsContainerRef.current) {
+      const tabElement = tabRefs.current[activeTab]
+      const container = tabsContainerRef.current
+
+      // Calculate the center position for the tab
+      const tabRect = tabElement!.getBoundingClientRect()
+      const containerRect = container.getBoundingClientRect()
+
+      const centerPosition = tabElement!.offsetLeft - (containerRect.width / 2) + (tabRect.width / 2)
+
+      // Scroll the container to center the tab
+      container.scrollTo({
+        left: centerPosition,
+        behavior: "smooth"
+      })
+    }
+  }, [activeTab])
 
   const tabs = [
     {
@@ -123,36 +185,70 @@ export function ProcessSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("process.heading")}</h2>
+          <h2 ref={sectionTitleRef} className="text-3xl md:text-4xl font-bold mb-4">{t("process.heading")}</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {t("process.subheading")}
           </p>
         </motion.div>
 
-        {/* Tab Navigation */}
+        {/* Tab Navigation with Gradients */}
+        <div className="relative">
+          <div className="absolute left-0 top-0 bottom-0 w-8 md:w-12 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="flex overflow-x-auto scrollbar-hide mb-4 pb-2 relative"
+            ref={tabsContainerRef}
+          >
+            <div className="flex space-x-4 mx-auto px-4">
+              {tabs.map((tab, index) => (
+                <button
+                  key={index}
+                  ref={(el) => setTabRef(el, index)}
+                  onClick={() => setActiveTab(index)}
+                  className={`flex items-center px-4 py-2 rounded-full whitespace-nowrap cursor-pointer ${activeTab === index ? "bg-emerald-500 text-white" : "bg-white text-gray-600 hover:bg-gray-100"
+                    }`}
+                >
+                  {tab.icon}
+                  <span className="ml-2 font-medium">{tab.label}</span>
+                </button>
+              ))}
+            </div>
+          </motion.div>
+          <div className="absolute right-0 top-0 bottom-0 w-8 md:w-12 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent"></div>
+        </div>
+
+        {/* Navigation Arrows - Top */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="flex overflow-x-auto scrollbar-hide mb-8 pb-2"
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="flex justify-start mb-8 ml-4"
         >
-          <div className="flex space-x-4 mx-auto px-4">
-            {tabs.map((tab, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveTab(index)}
-                className={`flex items-center px-4 py-2 rounded-full whitespace-nowrap ${activeTab === index ? "bg-emerald-500 text-white" : "bg-white text-gray-600 hover:bg-gray-100"
-                  }`}
-              >
-                {tab.icon}
-                <span className="ml-2 font-medium">{tab.label}</span>
-              </button>
-            ))}
-          </div>
+          <button
+            onClick={handlePrevious}
+            disabled={activeTab === 0}
+            className="p-2 rounded-full bg-white shadow-sm text-gray-600 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer mr-3"
+            aria-label="Previous phase"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+
+          <button
+            onClick={handleNext}
+            disabled={activeTab === tabs.length - 1}
+            className="p-2 rounded-full bg-white shadow-sm text-gray-600 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+            aria-label="Next phase"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
         </motion.div>
 
         {/* Tab Content */}
         <motion.div
+          ref={contentRef}
+          id="process-content"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -208,6 +304,7 @@ export function ProcessSection() {
                 </ul>
               </motion.div>
 
+              {/* Navigation Arrows - Bottom */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -215,16 +312,16 @@ export function ProcessSection() {
                 className="mt-6 flex justify-between items-center"
               >
                 <button
-                  onClick={() => setActiveTab(Math.max(0, activeTab - 1))}
+                  onClick={handleBottomPrevious}
                   disabled={activeTab === 0}
-                  className="px-4 py-2 text-sm font-medium rounded disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="px-4 py-2 text-sm font-medium rounded disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                 >
                   {t("process.previousPhase")}
                 </button>
                 <button
-                  onClick={() => setActiveTab(Math.min(tabs.length - 1, activeTab + 1))}
+                  onClick={handleBottomNext}
                   disabled={activeTab === tabs.length - 1}
-                  className="px-4 py-2 bg-emerald-500 text-white text-sm font-medium rounded flex items-center disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="px-4 py-2 bg-emerald-500 text-white text-sm font-medium rounded flex items-center disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                 >
                   {t("process.nextPhase")}
                   <ArrowRight className="ml-1 w-4 h-4" />
@@ -251,7 +348,7 @@ export function ProcessSection() {
               <div className="md:w-1/3 flex justify-center md:justify-end">
                 <a
                   href="#contact"
-                  className="inline-flex items-center px-6 py-3 bg-emerald-500 text-white font-medium rounded-md hover:bg-emerald-600 transition-colors"
+                  className="inline-flex items-center px-6 py-3 bg-emerald-500 text-white font-medium rounded-md hover:bg-emerald-600 transition-colors cursor-pointer"
                 >
                   {t("process.startButton")}
                   <ArrowRight className="ml-2 h-4 w-4" />
