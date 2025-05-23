@@ -116,7 +116,7 @@ export function ProcessSection() {
 
   return (
     <section ref={ref} className="py-16 md:py-24">
-      <div className="max-w-6xl mx-auto">
+      <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -136,7 +136,7 @@ export function ProcessSection() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="flex overflow-x-auto scrollbar-hide mb-8 pb-2"
         >
-          <div className="flex space-x-2 mx-auto">
+          <div className="flex space-x-4 mx-auto px-4">
             {tabs.map((tab, index) => (
               <button
                 key={index}

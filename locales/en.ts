@@ -68,6 +68,7 @@ export const en = {
       features: {
         mobile: "Mobile optimization",
         responsive: "Responsive design",
+        seo: "SEO",
       },
     },
     ecommerce: {
@@ -87,6 +88,8 @@ export const en = {
         "Frontend development focuses on creating a user-friendly interface that allows users to interact with the website or application.",
       features: {
         responsive: "Responsive design",
+        animations: "Animations",
+        navigation: "Navigation",
       },
     },
     backendDevelopment: {
