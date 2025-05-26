@@ -80,13 +80,23 @@ function ProjectCard({ project, index, isInView, onSelect }: ProjectCardProps) {
       role="button"
       aria-label={`View details for ${project.title}`}
     >
-      <div className="aspect-[16/9] bg-slate-100 overflow-hidden rounded-lg mb-3 md:mb-4 relative">
+      <div className="aspect-[9/16] md:aspect-[16/9] bg-slate-100 overflow-hidden rounded-lg mb-3 md:mb-4 relative">
+        {/* Desktop Image */}
         <Image
           src={project.image}
           alt={project.title}
           fill
-          sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          sizes="50vw"
+          className="object-cover transition-transform duration-700 group-hover:scale-105 hidden md:block"
+        />
+        {/* Mobile Image */}
+        <Image
+          src={project.imageMobile}
+          alt={project.title}
+          layout="fill"
+          objectFit="contain"
+          sizes="(max-width: 767px) 100vw, 0vw"
+          className="transition-transform duration-700 group-hover:scale-105 block md:hidden"
         />
       </div>
       <div className="flex justify-between items-start">

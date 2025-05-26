@@ -4,7 +4,8 @@ export interface ProjectDataType {
   titleKey: string;
   categoryKey: string;
   tags: string[];
-  image: string; // Placeholder path, update with actual paths
+  image: string;
+  imageMobile: string;
   descriptionKey: string;
   challengeKey: string;
   solutionKey: string;
@@ -19,6 +20,7 @@ export interface ProjectType {
   category: string;
   tags: string[];
   image: string;
+  imageMobile: string;
   description: string;
   challenge: string;
   solution: string;
@@ -33,7 +35,8 @@ export const projectsData: ProjectDataType[] = [
     titleKey: "portfolio.bithy.title",
     categoryKey: "portfolio.bithy.category",
     tags: ["Shopify", "React", "Remix", "Headless E-Commerce", "SEO", "Performance Optimization"],
-    image: "/images/project-bithy-placeholder.jpg", // Update with real path
+    image: "/images/project-bithy-ecommerce.webp",
+    imageMobile: "/images/project-bithy-ecommerce-mobile.webp",
     descriptionKey: "portfolio.bithy.description",
     challengeKey: "portfolio.bithy.challenge",
     solutionKey: "portfolio.bithy.solution",
@@ -50,7 +53,8 @@ export const projectsData: ProjectDataType[] = [
     titleKey: "portfolio.nahrin.title",
     categoryKey: "portfolio.nahrin.category",
     tags: ["Headless CMS", "Prismic", "API", "Adobe Commerce", "Content Management System"],
-    image: "/images/project-nahrin-placeholder.jpg", // Update with real path
+    image: "/images/project-nahrin-cms.webp",
+    imageMobile: "/images/project-nahrin-cms-mobile.webp",
     descriptionKey: "portfolio.nahrin.description",
     challengeKey: "portfolio.nahrin.challenge",
     solutionKey: "portfolio.nahrin.solution",
@@ -67,7 +71,8 @@ export const projectsData: ProjectDataType[] = [
     titleKey: "portfolio.crosare.title",
     categoryKey: "portfolio.crosare.category",
     tags: ["PHP", "Wordpress", "Responsive Design", "Front and Backend Development", "SEO"],
-    image: "/images/project-crosare-placeholder.jpg", // Update with real path
+    image: "/images/project-crosare-website.webp",
+    imageMobile: "/images/project-crosare-website-mobile.webp",
     descriptionKey: "portfolio.crosare.description",
     challengeKey: "portfolio.crosare.challenge",
     solutionKey: "portfolio.crosare.solution",
@@ -83,7 +88,8 @@ export const projectsData: ProjectDataType[] = [
     titleKey: "portfolio.qualipet.title",
     categoryKey: "portfolio.qualipet.category",
     tags: ["PHP", "Recommendation Engine", "Rest API"],
-    image: "/images/project-qualipet-placeholder.jpg", // Update with real path
+    image: "/images/project-qualipet-website.webp",
+    imageMobile: "/images/project-qualipet-website-mobile.webp",
     descriptionKey: "portfolio.qualipet.description",
     challengeKey: "portfolio.qualipet.challenge",
     solutionKey: "portfolio.qualipet.solution",
@@ -102,6 +108,7 @@ export const getTranslatedProjects = (t: (key: string) => string): ProjectType[]
     id: p.id,
     tags: p.tags,
     image: p.image,
+    imageMobile: p.imageMobile,
     liveUrl: p.liveUrl,
     // Translated fields
     title: t(p.titleKey),
