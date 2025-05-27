@@ -31,16 +31,17 @@ export const de = {
     contact: "Kontakt",
   },
   hero: {
-    location: "Zürich, Schweiz",
-    title: "Full-Stack Entwickler & Designer",
-    subtitle: "Digitale Erlebnisse, die Geschäftswachstum fördern",
+    location: "Zürich, Schweiz · Verfügbar in ganz Europa",
+    title: "Full-Stack Entwickler & Lösungsingenieur",
+    subtitle: "Entwicklung herausragender digitaler Erlebnisse",
     description:
-      "Ich erstelle massgeschneiderte digitale Lösungen, die Schweizer Unternehmen dabei helfen, Umsätze zu steigern, Abläufe zu optimieren und aussergewöhnliche Benutzererlebnisse zu bieten.",
+      "Ich erstelle massgeschneiderte digitale Lösungen, die Unternehmen dabei helfen, Umsätze zu steigern, Abläufe zu optimieren und aussergewöhnliche Benutzererlebnisse mit voller regulatorischer Konformität in der Schweiz und darüber hinaus zu bieten.",
     trustedBy: "Vertraut von führenden Schweizer Unternehmen",
     features: {
       fastDelivery: "Schnelle Lieferung",
       cleanCode: "Sauberer Code",
-      secureSolutions: "Sichere Lösungen"
+      secureSolutions: "Sichere Lösungen",
+      multilingualSolutions: "Mehrsprachige Lösungen"
     }
   },
   process: {

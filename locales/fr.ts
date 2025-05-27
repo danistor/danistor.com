@@ -31,16 +31,17 @@ export const fr = {
     contact: "Contact",
   },
   hero: {
-    location: "Zurich, Suisse",
-    title: "Développeur Full-Stack & Designer",
-    subtitle: "Créer des expériences digitales qui stimulent la croissance",
+    location: "Zurich, Suisse · Disponible dans toute l'Europe",
+    title: "Développeur Full-Stack & Ingénieur de Solutions",
+    subtitle: "Création d'expériences digitales exceptionnelles",
     description:
-      "Je crée des solutions numériques sur mesure qui aident les entreprises suisses à augmenter leurs revenus, optimiser leurs opérations et offrir des expériences utilisateur exceptionnelles.",
+      "Je crée des solutions numériques sur mesure qui aident les entreprises à augmenter leurs revenus, optimiser leurs opérations et offrir des expériences utilisateur exceptionnelles avec une conformité réglementaire totale en Suisse et au-delà.",
     trustedBy: "Approuvé par les entreprises suisses leaders",
     features: {
       fastDelivery: "Livraison rapide",
       cleanCode: "Code propre",
-      secureSolutions: "Solutions sécurisées"
+      secureSolutions: "Solutions sécurisées",
+      multilingualSolutions: "Solutions multilingues"
     }
   },
   process: {

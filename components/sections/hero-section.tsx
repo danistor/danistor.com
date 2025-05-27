@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import Link from "next/link"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { Code, MapPin, Shield, Zap } from "lucide-react"
+import { Code, MapPin, Shield, Zap, Globe2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
@@ -48,11 +48,11 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="max-w-xl w-full"
             >
-              {/* <div className="mb-4 md:mb-6 inline-block">
+              <div className="mb-4 md:mb-6 inline-block">
                 <Badge className="bg-accent/10 text-accent hover:bg-accent/20 transition-colors text-xs sm:text-sm">
                   <MapPin className="h-3 w-3 mr-1" /> {t("hero.location")}
                 </Badge>
-              </div> */}
+              </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
                 {t("hero.title")}
                 <span className="block text-accent">{t("hero.subtitle")}</span>
@@ -85,9 +85,9 @@ export function HeroSection() {
                 </div>
                 <div className="flex items-center">
                   <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2 rounded-full mr-3">
-                    <Code className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                    <Globe2 className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
                   </div>
-                  <span className="font-medium">{t("hero.features.cleanCode")}</span>
+                  <span className="font-medium">{t("hero.features.multilingualSolutions")}</span>
                 </div>
                 <div className="flex items-center">
                   <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2 rounded-full mr-3">
