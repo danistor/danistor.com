@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { z } from 'zod';
 
-// Initialize Resend (store API key in env variables)
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Rate limiting setup
@@ -63,7 +62,6 @@ export async function POST(request: Request) {
 
     const { name, email, message } = result.data;
 
-    // Sanitize inputs (simple example - more robust sanitization may be needed)
     const sanitizedMessage = message
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;');

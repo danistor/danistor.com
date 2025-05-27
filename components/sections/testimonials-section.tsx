@@ -14,6 +14,20 @@ export function TestimonialsSection() {
 
   const testimonials = [
     {
+      name: t('testimonials.jenny.name'),
+      company: t('testimonials.jenny.company'),
+      image: '/placeholder.svg?height=100&width=100',
+      text: t('testimonials.jenny.text'),
+      stars: 5,
+    },
+    {
+      name: t('testimonials.daniela.name'),
+      company: t('testimonials.daniela.company'),
+      image: '/placeholder.svg?height=100&width=100',
+      text: t('testimonials.daniela.text'),
+      stars: 5,
+    },
+    {
       name: t('testimonials.markus.name'),
       company: t('testimonials.markus.company'),
       image: '/placeholder.svg?height=100&width=100',
@@ -26,28 +40,14 @@ export function TestimonialsSection() {
       image: '/placeholder.svg?height=100&width=100',
       text: t('testimonials.laura.text'),
       stars: 5,
-    },
-    {
-      name: t('testimonials.thomas.name'),
-      company: t('testimonials.thomas.company'),
-      image: '/placeholder.svg?height=100&width=100',
-      text: t('testimonials.thomas.text'),
-      stars: 5,
-    },
-    {
-      name: t('testimonials.daniela.name'),
-      company: t('testimonials.daniela.company'),
-      image: '/placeholder.svg?height=100&width=100',
-      text: t('testimonials.daniela.text'),
-      stars: 5,
-    },
+    }
   ]
 
   // Testimonial auto-rotation
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveTestimonial(prev => (prev + 1) % testimonials.length)
-    }, 8000)
+    }, 12000)
 
     return () => clearInterval(interval)
   }, [testimonials.length])
@@ -84,13 +84,6 @@ export function TestimonialsSection() {
                 className="bg-white p-8 md:p-10 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border"
               >
                 <div className="flex flex-col md:flex-row md:items-center gap-6">
-                  <div className="shrink-0">
-                    <img
-                      src={testimonials[activeTestimonial].image || '/placeholder.svg'}
-                      alt={testimonials[activeTestimonial].name}
-                      className="w-16 h-16 rounded-full object-cover"
-                    />
-                  </div>
                   <div>
                     <div className="flex mb-4">
                       {[...Array(testimonials[activeTestimonial].stars)].map((_, i) => (

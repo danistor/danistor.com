@@ -133,9 +133,6 @@ export function Footer() {
                 <Mail className="h-5 w-5 mr-2" /> hello@danistor.com
               </p>
               <p className="text-slate-300 flex items-center">
-                <Phone className="h-5 w-5 mr-2" /> +41 12 345 67 89
-              </p>
-              <p className="text-slate-300 flex items-center">
                 <MapPin className="h-5 w-5 mr-2" /> Zurich, Switzerland
               </p>
             </div>

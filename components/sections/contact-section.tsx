@@ -44,17 +44,6 @@ export function ContactSection() {
               </div>
               <div className="flex items-start">
                 <div className="bg-accent/10 p-3 rounded-lg mr-4">
-                  <Phone className="h-6 w-6 text-accent" />
-                </div>
-                <div>
-                  <h4 className="font-medium text-foreground mb-1">{t("contact.phone")}</h4>
-                  <a href="tel:+41123456789" className="text-muted-foreground hover:text-accent transition-colors">
-                    +41 12 345 67 89
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-accent/10 p-3 rounded-lg mr-4">
                   <MapPin className="h-6 w-6 text-accent" />
                 </div>
                 <div>

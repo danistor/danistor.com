@@ -87,7 +87,7 @@ export const projectsData: ProjectDataType[] = [
     id: "qualipet-website",
     titleKey: "portfolio.qualipet.title",
     categoryKey: "portfolio.qualipet.category",
-    tags: ["PHP", "Recommendation Engine", "Rest API"],
+    tags: ["AI", "Recommendation Engine", "Adobe Commerce", "Rest API"],
     image: "/images/project-qualipet-website.webp",
     imageMobile: "/images/project-qualipet-website-mobile.webp",
     descriptionKey: "portfolio.qualipet.description",

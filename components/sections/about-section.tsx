@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import Link from "next/link"
 import { motion, useInView } from "framer-motion"
-import { Download, Check } from "lucide-react"
+import { Download, Check, ArrowRight, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { useTranslation } from "@/hooks/use-translation"
@@ -26,14 +26,14 @@ export function AboutSection() {
             <div className="aspect-square bg-slate-200 rounded-lg overflow-hidden shadow-sm border border-border">
               <img
                 src="/placeholder.svg?height=600&width=600"
-                alt="Dan Nistor, Full-Stack Developer"
+                alt={t("about.imageAlt")}
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-md border border-border">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-accent rounded-full animate-pulse-mint" />
-                <span className="text-sm font-medium">{t("about.available")}</span>
+                <span className="text-sm font-medium">{t("about.availableStatus")}</span>
               </div>
             </div>
           </motion.div>
@@ -43,63 +43,95 @@ export function AboutSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20">{t("sections.about")}</Badge>
+            <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20">{t("about.badge")}</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">{t("about.heading")}</h2>
-            <p className="text-muted-foreground mb-6">{t("about.paragraph1")}</p>
-            <p className="text-muted-foreground mb-8">{t("about.paragraph2")}</p>
+            <p className="text-muted-foreground mb-4" dangerouslySetInnerHTML={{ __html: t("about.paragraph1") }} />
+            <p className="text-muted-foreground mb-8" dangerouslySetInnerHTML={{ __html: t("about.paragraph2") }} />
 
-            <div className="grid grid-cols-2 gap-4 mb-8">
+            <div className="mb-8 border-l-4 border-accent pl-4 py-2 bg-accent/5 rounded-r-md">
+              <h4 className="font-medium text-foreground">{t("about.approachTitle")}</h4>
+              <ul className="mt-2 space-y-2">
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">{t("about.approach1")}</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">{t("about.approach2")}</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">{t("about.approach3")}</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">{t("about.approach4")}</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">{t("about.approach5")}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="grid grid-cols-2 gap-6 mb-8">
               <div>
-                <h4 className="font-medium text-foreground mb-2">{t("about.skills")}</h4>
+                <h4 className="font-medium text-foreground mb-3 flex items-center">
+                  <span className="bg-accent/10 p-1 rounded mr-2">
+                    <ArrowRight className="h-4 w-4 text-accent" />
+                  </span>
+                  {t("about.expertiseTitle")}
+                </h4>
                 <ul className="space-y-1">
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">React & TypeScript</span>
+                    <span className="text-muted-foreground text-sm">{t("about.expertise1")}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">React Router & Next.js</span>
+                    <span className="text-muted-foreground text-sm">{t("about.expertise2")}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">Node.js & Express</span>
+                    <span className="text-muted-foreground text-sm">{t("about.expertise3")}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">PHP & Laravel</span>
+                    <span className="text-muted-foreground text-sm">{t("about.expertise4")}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">MySQL & PostgreSQL</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">Tailwind CSS & Shadcn UI</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">Cloud Services</span>
+                    <span className="text-muted-foreground text-sm">{t("about.expertise5")}</span>
                   </li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium text-foreground mb-2">{t("about.languages")}</h4>
+                <h4 className="font-medium text-foreground mb-3 flex items-center">
+                  <span className="bg-accent/10 p-1 rounded mr-2">
+                    <ArrowRight className="h-4 w-4 text-accent" />
+                  </span>
+                  {t("about.servicesTitle")}
+                </h4>
                 <ul className="space-y-1">
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.english")}</span>
+                    <span className="text-muted-foreground text-sm">{t("about.service1")}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.german")}</span>
+                    <span className="text-muted-foreground text-sm">{t("about.service2")}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.french")}</span>
+                    <span className="text-muted-foreground text-sm">{t("about.service3")}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.italian")}</span>
+                    <span className="text-muted-foreground text-sm">{t("about.service4")}</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="h-4 w-4 text-accent mr-2" />
+                    <span className="text-muted-foreground text-sm">{t("about.service5")}</span>
                   </li>
                 </ul>
               </div>
@@ -107,13 +139,12 @@ export function AboutSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-accent hover:bg-accent/90 text-white" size="lg" asChild>
-                <a href="#" download>
-                  <Download className="h-4 w-4 mr-2" />
-                  {t("cta.downloadCV")}
-                </a>
+                <Link href="#contact">
+                  <span>{t("about.ctaConsultation")}</span>
+                </Link>
               </Button>
               <Button variant="outline" size="lg" className="hover:bg-accent/10" asChild>
-                <Link href="#contact">{t("cta.contactMe")}</Link>
+                <Link href="#portfolio">{t("about.ctaPortfolio")}</Link>
               </Button>
             </div>
           </motion.div>
