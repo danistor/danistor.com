@@ -52,7 +52,7 @@ export const en = {
   services: {
     heading: "Expert Solutions for Your Digital Needs",
     subheading:
-      "I offer comprehensive development services tailored to help Swiss businesses thrive in the digital landscape.",
+      "I offer comprehensive development services tailored to help Swiss and European businesses thrive in the digital landscape.",
     webDev: {
       title: "Web Application Development",
       description:
@@ -113,6 +113,39 @@ export const en = {
         code: "Code optimization",
         caching: "Caching",
         infrastructure: "Infrastructure optimization",
+      },
+    },
+    multilingualSolutions: {
+      title: "Multilingual Solutions",
+      description:
+        "Fully localized digital experiences that engage users across Switzerland and Europe in their native languages.",
+      features: {
+        localization: "Content localization",
+        translation: "Translation management",
+        regional: "Regional preference adaptation",
+        seo: "Multilingual SEO optimization",
+      },
+    },
+    europeanPayment: {
+      title: "European Payment Integration",
+      description:
+        "Seamless integration of preferred Swiss and European payment methods, ensuring a smooth checkout experience for local customers.",
+      features: {
+        methods: "Local payment methods (TWINT, Byjuno, etc.)",
+        compliance: "PSD2 & SCA compliance",
+        currencies: "Multi-currency support (CHF, EUR)",
+        security: "Enhanced transaction security",
+      },
+    },
+    dataCompliance: {
+      title: "Data Privacy & Compliance",
+      description:
+        "Ensure your digital solutions comply with stringent Swiss and EU data protection regulations while maintaining optimal user experience.",
+      features: {
+        gdpr: "GDPR compliance implementation",
+        swiss: "Swiss data protection standards",
+        hosting: "Swiss & EU compliant hosting",
+        audits: "Privacy compliance audits",
       },
     },
     maintenanceSupport: {
@@ -427,6 +460,40 @@ export const en = {
       experience: "Enhanced user experience",
       conversion: "Improved conversion rates",
       scalable: "Scalable and future-proof solutions",
+      localMarket: "Better engagement with Swiss and European markets",
+      compliance: "Full compliance with Swiss and EU regulations"
+    },
+    serviceBenefits: {
+      "web-development": {
+        benefit1: "Faster time-to-market with custom web solutions",
+        benefit2: "Increased business agility with scalable architecture",
+        benefit3: "Reduced technical debt with modern development practices"
+      },
+      "ecommerce": {
+        benefit1: "Higher conversion rates with optimized checkout flows",
+        benefit2: "Increased average order value with cross-selling features",
+        benefit3: "Lower cart abandonment with streamlined user experience"
+      },
+      "multilingual-solutions": {
+        benefit1: "Expanded market reach across all Swiss language regions",
+        benefit2: "Improved customer loyalty with culturally relevant experiences",
+        benefit3: "Enhanced SEO performance for multiple language markets"
+      },
+      "european-payment": {
+        benefit1: "Increased sales with preferred local payment methods",
+        benefit2: "Reduced payment friction for Swiss and European customers",
+        benefit3: "Lower transaction costs with optimized payment routing"
+      },
+      "data-compliance": {
+        benefit1: "Reduced legal risks with compliant data handling",
+        benefit2: "Enhanced customer trust with transparent privacy practices",
+        benefit3: "Future-proof systems aligned with evolving regulations"
+      },
+      "maintenance-support": {
+        benefit1: "Minimized downtime with proactive monitoring",
+        benefit2: "Reduced security vulnerabilities with regular updates",
+        benefit3: "Continuous improvement based on performance analytics"
+      }
     },
     close: "Close",
     requestQuote: "Request a Quote",

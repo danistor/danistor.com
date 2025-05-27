@@ -33,6 +33,16 @@ export function ServiceDialog({ service, formType }: ServiceDialogProps) {
     return null
   }
 
+  const isEuropeanSpecificService = [
+    'multilingual-solutions',
+    'european-payment',
+    'data-compliance'
+  ].includes(service.id)
+
+  // Get service-specific benefits if they exist
+  const serviceKey = `serviceDialog.serviceBenefits.${service.id}.benefit1`
+  const hasServiceSpecificBenefits = t(serviceKey) !== serviceKey
+
   return (
     <>
       <DialogHeader>
@@ -52,30 +62,77 @@ export function ServiceDialog({ service, formType }: ServiceDialogProps) {
         </ul>
         <h4 className="font-medium text-foreground">{t('serviceDialog.benefits')}</h4>
         <ul className="space-y-2">
-          <li className="flex items-start">
-            <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
-            <span className="text-muted-foreground">
-              {t('serviceDialog.benefitsList.efficiency')}
-            </span>
-          </li>
-          <li className="flex items-start">
-            <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
-            <span className="text-muted-foreground">
-              {t('serviceDialog.benefitsList.experience')}
-            </span>
-          </li>
-          <li className="flex items-start">
-            <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
-            <span className="text-muted-foreground">
-              {t('serviceDialog.benefitsList.conversion')}
-            </span>
-          </li>
-          <li className="flex items-start">
-            <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
-            <span className="text-muted-foreground">
-              {t('serviceDialog.benefitsList.scalable')}
-            </span>
-          </li>
+          {/* Service-specific benefits */}
+          {hasServiceSpecificBenefits && (
+            <>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">
+                  {t(`serviceDialog.serviceBenefits.${service.id}.benefit1`)}
+                </span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">
+                  {t(`serviceDialog.serviceBenefits.${service.id}.benefit2`)}
+                </span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">
+                  {t(`serviceDialog.serviceBenefits.${service.id}.benefit3`)}
+                </span>
+              </li>
+            </>
+          )}
+
+          {/* Common benefits only if no service-specific benefits */}
+          {!hasServiceSpecificBenefits && (
+            <>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">
+                  {t('serviceDialog.benefitsList.efficiency')}
+                </span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">
+                  {t('serviceDialog.benefitsList.experience')}
+                </span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">
+                  {t('serviceDialog.benefitsList.conversion')}
+                </span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">
+                  {t('serviceDialog.benefitsList.scalable')}
+                </span>
+              </li>
+            </>
+          )}
+
+          {/* European-specific benefits */}
+          {isEuropeanSpecificService && (
+            <>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">
+                  {t('serviceDialog.benefitsList.localMarket')}
+                </span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">
+                  {t('serviceDialog.benefitsList.compliance')}
+                </span>
+              </li>
+            </>
+          )}
         </ul>
       </div>
       <DialogFooter className="mt-6">

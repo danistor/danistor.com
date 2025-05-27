@@ -142,7 +142,7 @@ export const fr = {
   },
   services: {
     heading: "Solutions expertes pour vos besoins numériques",
-    subheading: "Je propose des services de développement complets adaptés pour aider les entreprises suisses à prospérer dans le paysage numérique.",
+    subheading: "J'offre des services de développement complets adaptés pour aider les entreprises suisses et européennes à prospérer dans le paysage numérique.",
     webDev: {
       title: "Développement d'applications web",
       description: "Développement de bout en bout d'applications web évolutives et performantes adaptées à vos besoins commerciaux.",
@@ -166,7 +166,7 @@ export const fr = {
       title: "Solutions E-commerce",
       description: "Plateformes e-commerce personnalisées avec traitement des paiements fluide, gestion des stocks et optimisation de l'expérience utilisateur.",
       features: {
-        payment: "Intégration de passerelle de paiement",
+        payment: "Intégration de passerelles de paiement",
         inventory: "Systèmes d'inventaire",
         analytics: "Analyse client",
         mobile: "Optimisation mobile",
@@ -199,9 +199,39 @@ export const fr = {
         infrastructure: "Optimisation de l'infrastructure",
       },
     },
+    multilingualSolutions: {
+      title: "Solutions multilingues",
+      description: "Expériences numériques entièrement localisées qui engagent les utilisateurs en Suisse et en Europe dans leur langue maternelle.",
+      features: {
+        localization: "Localisation de contenu",
+        translation: "Gestion des traductions",
+        regional: "Adaptation aux préférences régionales",
+        seo: "Optimisation SEO multilingue",
+      },
+    },
+    europeanPayment: {
+      title: "Intégration de paiement européen",
+      description: "Intégration fluide des méthodes de paiement préférées en Suisse et en Europe, assurant une expérience de paiement optimale pour les clients locaux.",
+      features: {
+        methods: "Méthodes de paiement locales (TWINT, Byjuno, etc.)",
+        compliance: "Conformité PSD2 & SCA",
+        currencies: "Support multi-devises (CHF, EUR)",
+        security: "Sécurité de transaction renforcée",
+      },
+    },
+    dataCompliance: {
+      title: "Confidentialité des données & Conformité",
+      description: "Assurez-vous que vos solutions numériques sont conformes aux réglementations strictes de protection des données suisses et européennes tout en maintenant une expérience utilisateur optimale.",
+      features: {
+        gdpr: "Mise en œuvre de la conformité RGPD",
+        swiss: "Normes suisses de protection des données",
+        hosting: "Hébergement conforme aux normes suisses et européennes",
+        audits: "Audits de conformité en matière de confidentialité",
+      },
+    },
     maintenanceSupport: {
       title: "Maintenance & Support",
-      description: "La maintenance et le support se concentrent sur l'assurance que le site web ou l'application est toujours à jour et fonctionne correctement.",
+      description: "La maintenance et le support se concentrent sur la garantie que le site web ou l'application est toujours à jour et fonctionne correctement.",
       features: {
         support: "Support",
         updates: "Mises à jour",
@@ -294,16 +324,45 @@ export const fr = {
     },
   },
   about: {
-    heading: "Développeur Full-Stack basé à Zurich",
-    paragraph1: "Avec plus de 10 ans d'expérience dans le développement de logiciels, je me spécialise dans la création de solutions numériques personnalisées qui aident les entreprises suisses à prospérer dans le marché concurrentiel d'aujourd'hui.",
-    paragraph2: "Mon approche combine l'expertise technique avec une compréhension approfondie des besoins commerciaux, me permettant de fournir des solutions qui non seulement sont esthétiques mais génèrent également des résultats mesurables.",
-    available: "Disponible pour de nouveaux projets",
-    skills: "Compétences techniques",
-    languages: "Langues",
-    english: "Anglais (Courant)",
-    german: "Allemand (Base)",
-    french: "Français (Courant)",
-    italian: "Italien (Courant)",
+    imageAlt: "Dan Nistor, Ingénieur de Solutions",
+    availableStatus: "Disponible pour consultations",
+    badge: "Ingénieur de Solutions",
+    heading: "Transformer les défis techniques en solutions d'affaires",
+    paragraph1: "Avec <span class=\"font-semibold text-foreground\">plus de 10 ans d'expérience</span> en tant qu'Ingénieur de Solutions et Développeur Full-Stack, je suis spécialisé dans la transformation des défis d'entreprise en solutions numériques évolutives et performantes.",
+    paragraph2: "Mon approche combine précision technique et compréhension des enjeux commerciaux, garantissant des solutions à la fois techniquement excellentes et alignées avec vos objectifs.",
+    approachTitle: "Approche collaborative:",
+    approach1: "Conception complète de solutions du concept initial à l'implémentation",
+    approach2: "Expertise technique qui se traduit en valeur commerciale concrète",
+    approach3: "Historique avéré de livraison de projets complexes dans les délais",
+    approach4: "Livraison fiable avec attention portée à la qualité et à la durabilité",
+    approach5: "Développement axé sur la confidentialité avec expertise en conformité européenne",
+    expertiseTitle: "Expertise Technique",
+    expertise1: "JavaScript & Écosystème React",
+    expertise2: "PHP & Frameworks Modernes",
+    expertise3: "MySQL & Architecture de Base de Données",
+    expertise4: "Infrastructure Cloud & DevOps",
+    expertise5: "Intégration IA & Automatisation Intelligente",
+    servicesTitle: "Services",
+    service1: "Architecture de Solutions",
+    service2: "Développement d'Applications Sur Mesure",
+    service3: "Modernisation de Systèmes Existants",
+    service4: "Consultation Technique",
+    service5: "Transformation Numérique Durable",
+    ctaConsultation: "Planifier une consultation",
+    ctaPortfolio: "Voir mon portfolio de projets",
+    certificationsTitle: "Certifications & Normes",
+    certification1: "ISO 27001",
+    certification2: "Conformité RGPD",
+    certification3: "AWS Certified Solutions Architect",
+    certification4: "Gestion de Projet Agile",
+    stackTitle: "Stack Technologique",
+    processTitle: "Comment je travaille avec les clients",
+    processStep1Title: "Découverte & Analyse",
+    processStep1Text: "Comprendre vos besoins commerciaux et définir des objectifs clairs pour votre projet.",
+    processStep2Title: "Planification Stratégique",
+    processStep2Text: "Création d'une approche sur mesure avec calendrier, livrables et indicateurs de succès.",
+    processStep3Title: "Développement Itératif",
+    processStep3Text: "Mise en œuvre collaborative avec des révisions régulières pour assurer l'alignement avec vos objectifs.",
   },
   blog: {
     heading: "Derniers aperçus & articles",
@@ -400,6 +459,40 @@ export const fr = {
       experience: "Expérience utilisateur améliorée",
       conversion: "Taux de conversion améliorés",
       scalable: "Solutions évolutives et pérennes",
+      localMarket: "Meilleur engagement avec les marchés suisses et européens",
+      compliance: "Conformité totale avec les réglementations suisses et européennes"
+    },
+    serviceBenefits: {
+      "web-development": {
+        benefit1: "Mise sur le marché plus rapide avec des solutions web personnalisées",
+        benefit2: "Agilité commerciale accrue grâce à une architecture évolutive",
+        benefit3: "Dette technique réduite avec des pratiques de développement modernes"
+      },
+      "ecommerce": {
+        benefit1: "Taux de conversion plus élevés avec des processus de paiement optimisés",
+        benefit2: "Valeur moyenne des commandes augmentée avec des fonctionnalités de vente croisée",
+        benefit3: "Réduction des abandons de panier grâce à une expérience utilisateur fluide"
+      },
+      "multilingual-solutions": {
+        benefit1: "Portée de marché élargie dans toutes les régions linguistiques suisses",
+        benefit2: "Fidélisation client améliorée avec des expériences culturellement pertinentes",
+        benefit3: "Performance SEO renforcée pour les marchés multilingues"
+      },
+      "european-payment": {
+        benefit1: "Ventes accrues avec les méthodes de paiement locales préférées",
+        benefit2: "Réduction des frictions de paiement pour les clients suisses et européens",
+        benefit3: "Coûts de transaction réduits grâce à un routage de paiement optimisé"
+      },
+      "data-compliance": {
+        benefit1: "Risques juridiques réduits avec une gestion des données conforme",
+        benefit2: "Confiance client renforcée avec des pratiques de confidentialité transparentes",
+        benefit3: "Systèmes pérennes alignés sur l'évolution des réglementations"
+      },
+      "maintenance-support": {
+        benefit1: "Temps d'arrêt minimisés grâce à une surveillance proactive",
+        benefit2: "Vulnérabilités de sécurité réduites avec des mises à jour régulières",
+        benefit3: "Amélioration continue basée sur l'analyse des performances"
+      }
     },
     close: "Fermer",
     requestQuote: "Demander un devis",

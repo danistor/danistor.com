@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { Globe, Layers, Smartphone, Server, Check, Database, BarChart, RefreshCw, Code } from "lucide-react"
+import { Layers, Check, RefreshCw, Code, Shield, Globe2, CreditCard } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
@@ -28,17 +28,6 @@ export function ServicesSection() {
       ],
     },
     {
-      id: "responsive-design",
-      title: t("services.responsiveDesign.title"),
-      icon: <Smartphone className="h-10 w-10 text-accent" />,
-      description: t("services.responsiveDesign.description"),
-      features: [
-        t("services.responsiveDesign.features.mobile"),
-        t("services.responsiveDesign.features.responsive"),
-        t("services.responsiveDesign.features.seo"),
-      ],
-    },
-    {
       id: "ecommerce",
       title: t("services.ecommerce.title"),
       icon: <Layers className="h-10 w-10 text-accent" />,
@@ -51,36 +40,39 @@ export function ServicesSection() {
       ],
     },
     {
-      id: "frontend-development",
-      title: t("services.frontendDevelopment.title"),
-      icon: <Globe className="h-10 w-10 text-accent" />,
-      description: t("services.frontendDevelopment.description"),
+      id: "multilingual-solutions",
+      title: t("services.multilingualSolutions.title"),
+      icon: <Globe2 className="h-10 w-10 text-accent" />,
+      description: t("services.multilingualSolutions.description"),
       features: [
-        t("services.frontendDevelopment.features.responsive"),
-        t("services.frontendDevelopment.features.animations"),
-        t("services.frontendDevelopment.features.navigation"),
+        t("services.multilingualSolutions.features.localization"),
+        t("services.multilingualSolutions.features.translation"),
+        t("services.multilingualSolutions.features.regional"),
+        t("services.multilingualSolutions.features.seo"),
       ],
     },
     {
-      id: "backend-development",
-      title: t("services.backendDevelopment.title"),
-      icon: <Database className="h-10 w-10 text-accent" />,
-      description: t("services.backendDevelopment.description"),
+      id: "european-payment",
+      title: t("services.europeanPayment.title"),
+      icon: <CreditCard className="h-10 w-10 text-accent" />,
+      description: t("services.europeanPayment.description"),
       features: [
-        t("services.backendDevelopment.features.api"),
-        t("services.backendDevelopment.features.database"),
-        t("services.backendDevelopment.features.security"),
+        t("services.europeanPayment.features.methods"),
+        t("services.europeanPayment.features.compliance"),
+        t("services.europeanPayment.features.currencies"),
+        t("services.europeanPayment.features.security"),
       ],
     },
     {
-      id: "performance-optimization",
-      title: t("services.performanceOptimization.title"),
-      icon: <BarChart className="h-10 w-10 text-accent" />,
-      description: t("services.performanceOptimization.description"),
+      id: "data-compliance",
+      title: t("services.dataCompliance.title"),
+      icon: <Shield className="h-10 w-10 text-accent" />,
+      description: t("services.dataCompliance.description"),
       features: [
-        t("services.performanceOptimization.features.code"),
-        t("services.performanceOptimization.features.caching"),
-        t("services.performanceOptimization.features.infrastructure"),
+        t("services.dataCompliance.features.gdpr"),
+        t("services.dataCompliance.features.swiss"),
+        t("services.dataCompliance.features.hosting"),
+        t("services.dataCompliance.features.audits"),
       ],
     },
     {
@@ -105,7 +97,7 @@ export function ServicesSection() {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{t("services.subheading")}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.id}

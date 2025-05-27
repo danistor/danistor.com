@@ -142,15 +142,15 @@ export const it = {
   },
   services: {
     heading: "Soluzioni esperte per le tue esigenze digitali",
-    subheading: "Offro servizi di sviluppo completi su misura per aiutare le aziende svizzere a prosperare nel panorama digitale.",
+    subheading: "Offro servizi di sviluppo completi su misura per aiutare le aziende svizzere ed europee a prosperare nel panorama digitale.",
     webDev: {
-      title: "Sviluppo applicazioni web",
-      description: "Sviluppo end-to-end di applicazioni web scalabili e performanti su misura per le tue esigenze aziendali.",
+      title: "Sviluppo di applicazioni web",
+      description: "Sviluppo end-to-end di applicazioni web scalabili e ad alte prestazioni su misura per le tue esigenze aziendali.",
       features: {
         responsive: "Design responsive",
         api: "Integrazione API",
-        database: "Architettura database",
-        cloud: "Deployment cloud",
+        database: "Architettura del database",
+        cloud: "Implementazione cloud",
       },
     },
     responsiveDesign: {
@@ -164,7 +164,7 @@ export const it = {
     },
     ecommerce: {
       title: "Soluzioni E-commerce",
-      description: "Piattaforme e-commerce personalizzate con elaborazione pagamenti fluida, gestione inventario e ottimizzazione esperienza utente.",
+      description: "Piattaforme e-commerce personalizzate con elaborazione dei pagamenti senza problemi, gestione dell'inventario e ottimizzazione dell'esperienza utente.",
       features: {
         payment: "Integrazione gateway di pagamento",
         inventory: "Sistemi di inventario",
@@ -199,9 +199,39 @@ export const it = {
         infrastructure: "Ottimizzazione infrastruttura",
       },
     },
+    multilingualSolutions: {
+      title: "Soluzioni multilingue",
+      description: "Esperienze digitali completamente localizzate che coinvolgono gli utenti in Svizzera e in Europa nella loro lingua madre.",
+      features: {
+        localization: "Localizzazione dei contenuti",
+        translation: "Gestione delle traduzioni",
+        regional: "Adattamento alle preferenze regionali",
+        seo: "Ottimizzazione SEO multilingue",
+      },
+    },
+    europeanPayment: {
+      title: "Integrazione pagamenti europei",
+      description: "Integrazione perfetta dei metodi di pagamento preferiti in Svizzera e in Europa, garantendo un'esperienza di checkout fluida per i clienti locali.",
+      features: {
+        methods: "Metodi di pagamento locali (TWINT, Byjuno, ecc.)",
+        compliance: "Conformità PSD2 e SCA",
+        currencies: "Supporto multi-valuta (CHF, EUR)",
+        security: "Sicurezza delle transazioni avanzata",
+      },
+    },
+    dataCompliance: {
+      title: "Privacy dei dati e conformità",
+      description: "Assicurati che le tue soluzioni digitali siano conformi alle severe normative svizzere ed europee sulla protezione dei dati, mantenendo un'esperienza utente ottimale.",
+      features: {
+        gdpr: "Implementazione della conformità GDPR",
+        swiss: "Standard svizzeri di protezione dei dati",
+        hosting: "Hosting conforme alle normative svizzere ed europee",
+        audits: "Audit di conformità sulla privacy",
+      },
+    },
     maintenanceSupport: {
-      title: "Manutenzione & Supporto",
-      description: "La manutenzione e il supporto si concentrano sull'assicurarsi che il sito web o l'applicazione sia sempre aggiornato e funzioni correttamente.",
+      title: "Manutenzione e supporto",
+      description: "La manutenzione e il supporto si concentrano sull'assicurare che il sito web o l'applicazione sia sempre aggiornato e funzioni correttamente.",
       features: {
         support: "Supporto",
         updates: "Aggiornamenti",
@@ -294,9 +324,45 @@ export const it = {
     },
   },
   about: {
-    heading: "Sviluppatore Full-Stack basato a Zurigo",
-    paragraph1: "Con oltre 10 anni di esperienza nello sviluppo software, mi specializzo nella creazione di soluzioni digitali personalizzate che aiutano le aziende svizzere a prosperare nel mercato competitivo di oggi.",
-    paragraph2: "Il mio approccio combina l'esperienza tecnica con una profonda comprensione delle esigenze aziendali, permettendomi di fornire soluzioni che non solo sono esteticamente gradevoli ma generano anche risultati misurabili.",
+    imageAlt: "Dan Nistor, Ingegnere di Soluzioni",
+    availableStatus: "Disponibile per consulenze",
+    badge: "Ingegnere di Soluzioni",
+    heading: "Trasformare le sfide tecniche in soluzioni aziendali",
+    paragraph1: "Con <span class=\"font-semibold text-foreground\">oltre 10 anni di esperienza</span> come Ingegnere di Soluzioni e Sviluppatore Full-Stack, sono specializzato nella trasformazione delle sfide aziendali in soluzioni digitali scalabili e ad alte prestazioni.",
+    paragraph2: "Il mio approccio combina precisione tecnica e comprensione del business, garantendo soluzioni tecnicamente eccellenti e allineate con i tuoi obiettivi.",
+    approachTitle: "Approccio collaborativo:",
+    approach1: "Progettazione completa delle soluzioni dal concetto iniziale all'implementazione",
+    approach2: "Competenza tecnica che si traduce in valore aziendale concreto",
+    approach3: "Comprovata esperienza nella consegna puntuale di progetti complessi",
+    approach4: "Consegna affidabile con attenzione alla qualità e sostenibilità",
+    approach5: "Sviluppo orientato alla privacy con esperienza in conformità europea",
+    expertiseTitle: "Competenze Tecniche",
+    expertise1: "JavaScript & Ecosistema React",
+    expertise2: "PHP & Framework Moderni",
+    expertise3: "MySQL & Architettura Database",
+    expertise4: "Infrastruttura Cloud & DevOps",
+    expertise5: "Integrazione IA & Automazione Intelligente",
+    servicesTitle: "Servizi",
+    service1: "Architettura delle Soluzioni",
+    service2: "Sviluppo di Applicazioni Personalizzate",
+    service3: "Modernizzazione di Sistemi Esistenti",
+    service4: "Consulenza Tecnica",
+    service5: "Trasformazione Digitale Sostenibile",
+    ctaConsultation: "Prenota una consulenza",
+    ctaPortfolio: "Visualizza il portfolio progetti",
+    certificationsTitle: "Certificazioni & Standard",
+    certification1: "ISO 27001",
+    certification2: "Conformità GDPR",
+    certification3: "AWS Certified Solutions Architect",
+    certification4: "Project Management Agile",
+    stackTitle: "Stack Tecnologico",
+    processTitle: "Come lavoro con i clienti",
+    processStep1Title: "Scoperta & Analisi",
+    processStep1Text: "Comprendere le tue esigenze aziendali e definire obiettivi chiari per il tuo progetto.",
+    processStep2Title: "Pianificazione Strategica",
+    processStep2Text: "Creazione di un approccio personalizzato con tempistiche, deliverable e metriche di successo.",
+    processStep3Title: "Sviluppo Iterativo",
+    processStep3Text: "Implementazione collaborativa con revisioni regolari per garantire l'allineamento con i tuoi obiettivi.",
     available: "Disponibile per nuovi progetti",
     skills: "Competenze tecniche",
     languages: "Lingue",
@@ -392,17 +458,51 @@ export const it = {
     },
   },
   serviceDialog: {
-    description: "Dettagli completi su questo servizio e come può beneficiare la tua azienda.",
-    features: "Funzionalità chiave:",
+    description: "Dettagli completi su questo servizio e come può avvantaggiare la tua azienda.",
+    features: "Caratteristiche principali:",
     benefits: "Vantaggi:",
     benefitsList: {
-      efficiency: "Efficienza operativa aumentata",
-      experience: "Esperienza utente migliorata",
-      conversion: "Tassi di conversione migliorati",
-      scalable: "Soluzioni scalabili e future-proof",
+      efficiency: "Maggiore efficienza operativa",
+      experience: "Migliore esperienza utente",
+      conversion: "Migliori tassi di conversione",
+      scalable: "Soluzioni scalabili e a prova di futuro",
+      localMarket: "Migliore coinvolgimento con i mercati svizzeri ed europei",
+      compliance: "Piena conformità con le normative svizzere ed europee"
+    },
+    serviceBenefits: {
+      "web-development": {
+        benefit1: "Tempi di commercializzazione più rapidi con soluzioni web personalizzate",
+        benefit2: "Maggiore agilità aziendale con architettura scalabile",
+        benefit3: "Riduzione del debito tecnico con pratiche di sviluppo moderne"
+      },
+      "ecommerce": {
+        benefit1: "Tassi di conversione più elevati con flussi di checkout ottimizzati",
+        benefit2: "Aumento del valore medio degli ordini con funzionalità di cross-selling",
+        benefit3: "Minore abbandono del carrello con esperienza utente semplificata"
+      },
+      "multilingual-solutions": {
+        benefit1: "Espansione della portata di mercato in tutte le regioni linguistiche svizzere",
+        benefit2: "Miglioramento della fedeltà dei clienti con esperienze culturalmente rilevanti",
+        benefit3: "Prestazioni SEO migliorate per mercati multilingue"
+      },
+      "european-payment": {
+        benefit1: "Aumento delle vendite con metodi di pagamento locali preferiti",
+        benefit2: "Riduzione dell'attrito nei pagamenti per clienti svizzeri ed europei",
+        benefit3: "Costi di transazione inferiori con routing dei pagamenti ottimizzato"
+      },
+      "data-compliance": {
+        benefit1: "Riduzione dei rischi legali con gestione dei dati conforme",
+        benefit2: "Maggiore fiducia dei clienti con pratiche di privacy trasparenti",
+        benefit3: "Sistemi a prova di futuro allineati con l'evoluzione delle normative"
+      },
+      "maintenance-support": {
+        benefit1: "Tempi di inattività ridotti al minimo con monitoraggio proattivo",
+        benefit2: "Riduzione delle vulnerabilità di sicurezza con aggiornamenti regolari",
+        benefit3: "Miglioramento continuo basato sull'analisi delle prestazioni"
+      }
     },
     close: "Chiudi",
-    requestQuote: "Richiedi preventivo",
+    requestQuote: "Richiedi un preventivo",
   },
   projectDialog: {
     overview: "Panoramica progetto",

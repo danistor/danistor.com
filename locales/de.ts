@@ -142,7 +142,7 @@ export const de = {
   },
   services: {
     heading: "Expertenlösungen für Ihre digitalen Bedürfnisse",
-    subheading: "Ich biete umfassende Entwicklungsdienstleistungen, die darauf ausgerichtet sind, Schweizer Unternehmen im digitalen Umfeld zu unterstützen.",
+    subheading: "Ich biete umfassende Entwicklungsdienstleistungen, die darauf ausgerichtet sind, Schweizer und europäische Unternehmen im digitalen Umfeld zu unterstützen.",
     webDev: {
       title: "Web-Anwendungsentwicklung",
       description: "End-to-End-Entwicklung skalierbarer, leistungsstarker Webanwendungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind.",
@@ -170,6 +170,36 @@ export const de = {
         inventory: "Bestandssysteme",
         analytics: "Kundenanalyse",
         mobile: "Mobile Optimierung",
+      },
+    },
+    multilingualSolutions: {
+      title: "Mehrsprachige Lösungen",
+      description: "Vollständig lokalisierte digitale Erlebnisse, die Benutzer in der Schweiz und Europa in ihrer Muttersprache ansprechen.",
+      features: {
+        localization: "Inhaltslokalisierung",
+        translation: "Übersetzungsmanagement",
+        regional: "Anpassung an regionale Präferenzen",
+        seo: "Mehrsprachige SEO-Optimierung",
+      },
+    },
+    europeanPayment: {
+      title: "Europäische Zahlungsintegration",
+      description: "Nahtlose Integration bevorzugter Schweizer und europäischer Zahlungsmethoden für ein reibungsloses Checkout-Erlebnis für lokale Kunden.",
+      features: {
+        methods: "Lokale Zahlungsmethoden (TWINT, Byjuno, usw.)",
+        compliance: "PSD2 & SCA-Konformität",
+        currencies: "Multi-Währungs-Unterstützung (CHF, EUR)",
+        security: "Verbesserte Transaktionssicherheit",
+      },
+    },
+    dataCompliance: {
+      title: "Datenschutz & Compliance",
+      description: "Stellen Sie sicher, dass Ihre digitalen Lösungen den strengen Schweizer und EU-Datenschutzbestimmungen entsprechen und gleichzeitig eine optimale Benutzererfahrung bieten.",
+      features: {
+        gdpr: "DSGVO-Compliance-Implementierung",
+        swiss: "Schweizer Datenschutzstandards",
+        hosting: "Schweizer & EU-konformes Hosting",
+        audits: "Datenschutz-Compliance-Audits",
       },
     },
     frontendDevelopment: {
@@ -294,9 +324,45 @@ export const de = {
     },
   },
   about: {
-    heading: "Full-Stack Entwickler in Zürich",
-    paragraph1: "Mit über 10 Jahren Erfahrung in der Softwareentwicklung spezialisiere ich mich auf die Erstellung maßgeschneiderter digitaler Lösungen, die Schweizer Unternehmen in der heutigen wettbewerbsintensiven Marktumgebung unterstützen.",
-    paragraph2: "Mein Ansatz kombiniert technisches Fachwissen mit einem tiefen Verständnis für Geschäftsanforderungen, was es mir ermöglicht, Lösungen zu liefern, die nicht nur gut aussehen, sondern auch messbare Ergebnisse erzielen.",
+    imageAlt: "Dan Nistor, Lösungsingenieur",
+    availableStatus: "Verfügbar für Beratungen",
+    badge: "Lösungsingenieur",
+    heading: "Technische Herausforderungen in Geschäftslösungen umwandeln",
+    paragraph1: "Mit <span class=\"font-semibold text-foreground\">über 10 Jahren Erfahrung</span> als Lösungsingenieur und Full-Stack-Entwickler bin ich darauf spezialisiert, Geschäftsherausforderungen in skalierbare, leistungsstarke digitale Lösungen zu transformieren.",
+    paragraph2: "Mein Ansatz verbindet technische Präzision mit Geschäftsverständnis und stellt sicher, dass Lösungen sowohl technisch exzellent als auch an Ihren Zielen ausgerichtet sind.",
+    approachTitle: "Kollaborativer Ansatz:",
+    approach1: "Umfassendes Lösungsdesign vom ersten Konzept bis zur Implementierung",
+    approach2: "Technisches Fachwissen, das sich in praktischen Geschäftswert übersetzt",
+    approach3: "Nachgewiesene Erfolgsgeschichte bei der termingerechten Lieferung komplexer Projekte",
+    approach4: "Zuverlässige Lieferung mit Fokus auf Qualität und Nachhaltigkeit",
+    approach5: "Datenschutzorientierte Entwicklung mit europäischer Compliance-Expertise",
+    expertiseTitle: "Technische Expertise",
+    expertise1: "JavaScript & React-Ökosystem",
+    expertise2: "PHP & Moderne Frameworks",
+    expertise3: "MySQL & Datenbankarchitektur",
+    expertise4: "Cloud-Infrastruktur & DevOps",
+    expertise5: "KI-Integration & Intelligente Automatisierung",
+    servicesTitle: "Dienstleistungen",
+    service1: "Lösungsarchitektur",
+    service2: "Individuelle Anwendungsentwicklung",
+    service3: "Modernisierung bestehender Systeme",
+    service4: "Technische Beratung",
+    service5: "Nachhaltige digitale Transformation",
+    ctaConsultation: "Beratungstermin vereinbaren",
+    ctaPortfolio: "Projektportfolio ansehen",
+    certificationsTitle: "Zertifizierungen & Standards",
+    certification1: "ISO 27001",
+    certification2: "DSGVO-konform",
+    certification3: "AWS Certified Solutions Architect",
+    certification4: "Agiles Projektmanagement",
+    stackTitle: "Technologie-Stack",
+    processTitle: "Wie ich mit Kunden arbeite",
+    processStep1Title: "Entdeckung & Analyse",
+    processStep1Text: "Verstehen Ihrer Geschäftsanforderungen und Definition klarer Ziele für Ihr Projekt.",
+    processStep2Title: "Strategische Planung",
+    processStep2Text: "Erstellung eines maßgeschneiderten Ansatzes mit Zeitplan, Lieferobjekten und Erfolgskennzahlen.",
+    processStep3Title: "Iterative Entwicklung",
+    processStep3Text: "Kollaborative Umsetzung mit regelmäßigen Überprüfungen zur Sicherstellung der Übereinstimmung mit Ihren Zielen.",
     available: "Verfügbar für neue Projekte",
     skills: "Technische Fähigkeiten",
     languages: "Sprachen",
@@ -392,7 +458,7 @@ export const de = {
     },
   },
   serviceDialog: {
-    description: "Umfassende Details zu diesem Service und wie er Ihrem Unternehmen nützen kann.",
+    description: "Umfassende Details zu diesem Service und wie er Ihrem Unternehmen nutzen kann.",
     features: "Hauptfunktionen:",
     benefits: "Vorteile:",
     benefitsList: {
@@ -400,6 +466,40 @@ export const de = {
       experience: "Verbesserte Benutzererfahrung",
       conversion: "Verbesserte Konversionsraten",
       scalable: "Skalierbare und zukunftssichere Lösungen",
+      localMarket: "Besseres Engagement mit Schweizer und europäischen Märkten",
+      compliance: "Vollständige Einhaltung Schweizer und EU-Vorschriften"
+    },
+    serviceBenefits: {
+      "web-development": {
+        benefit1: "Schnellere Markteinführung mit maßgeschneiderten Web-Lösungen",
+        benefit2: "Erhöhte Geschäftsagilität mit skalierbarer Architektur",
+        benefit3: "Reduzierte technische Schulden mit modernen Entwicklungspraktiken"
+      },
+      "ecommerce": {
+        benefit1: "Höhere Konversionsraten mit optimierten Checkout-Abläufen",
+        benefit2: "Erhöhter durchschnittlicher Bestellwert mit Cross-Selling-Funktionen",
+        benefit3: "Geringere Warenkorbabbruchrate durch optimierte Benutzererfahrung"
+      },
+      "multilingual-solutions": {
+        benefit1: "Erweiterte Marktreichweite in allen Schweizer Sprachregionen",
+        benefit2: "Verbesserte Kundenbindung mit kulturell relevanten Erlebnissen",
+        benefit3: "Verbesserte SEO-Leistung für mehrsprachige Märkte"
+      },
+      "european-payment": {
+        benefit1: "Gesteigerte Verkäufe mit bevorzugten lokalen Zahlungsmethoden",
+        benefit2: "Reduzierte Zahlungsreibung für Schweizer und europäische Kunden",
+        benefit3: "Niedrigere Transaktionskosten durch optimiertes Zahlungsrouting"
+      },
+      "data-compliance": {
+        benefit1: "Reduzierte rechtliche Risiken durch konforme Datenverarbeitung",
+        benefit2: "Gestärktes Kundenvertrauen durch transparente Datenschutzpraktiken",
+        benefit3: "Zukunftssichere Systeme im Einklang mit sich entwickelnden Vorschriften"
+      },
+      "maintenance-support": {
+        benefit1: "Minimierte Ausfallzeiten durch proaktive Überwachung",
+        benefit2: "Reduzierte Sicherheitslücken durch regelmäßige Updates",
+        benefit3: "Kontinuierliche Verbesserung basierend auf Leistungsanalysen"
+      }
     },
     close: "Schließen",
     requestQuote: "Angebot anfordern",
