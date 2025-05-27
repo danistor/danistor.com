@@ -123,7 +123,7 @@ export function ServicesSection() {
                     {t("cta.learnMore")}
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="sm:max-w-[500px]">
+                <DialogContent>
                   <ServiceDialog service={service} />
                 </DialogContent>
               </Dialog>
@@ -138,7 +138,7 @@ export function ServicesSection() {
                 {t("cta.discussProject")}
               </Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[500px]">
+            <DialogContent>
               <ServiceDialog formType="general" />
             </DialogContent>
           </Dialog>
