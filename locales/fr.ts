@@ -303,7 +303,7 @@ export const fr = {
   },
   testimonials: {
     heading: "Ce que disent les clients",
-    subheading: "Écoutez les entreprises suisses qui ont transformé leur présence numérique avec mes solutions.",
+    subheading: "Découvrez comment des entreprises suisses ont transformé leur présence digitale grâce à mes solutions.",
     jenny: {
       name: "Jenny Sella",
       company: "Bithy",
@@ -317,7 +317,7 @@ export const fr = {
     markus: {
       name: "Markus Berger",
       company: "SwissTech Solutions",
-      text: "Nous avions besoin d'un développeur capable de gérer les défis frontend et backend pour notre système de gestion interne. L'expertise full-stack fournie était exceptionnelle - architecture propre, interfaces intuitives et systèmes backend robustes qui s'intégraient parfaitement à notre infrastructure existante. La productivité de notre équipe s'est améliorée de 35% en quelques semaines après la mise en œuvre.",
+      text: "Nous avions besoin d'un développeur capable de gérer les défis frontend et backend pour notre système de gestion interne. L'expertise full-stack fournie était exceptionnelle – architecture propre, interfaces intuitives et systèmes backend robustes qui s'intégraient parfaitement à notre infrastructure existante. La productivité de notre équipe s'est améliorée de 35% en quelques semaines après la mise en œuvre.",
     },
     laura: {
       name: "Laura Meier",

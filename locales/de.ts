@@ -303,7 +303,7 @@ export const de = {
   },
   testimonials: {
     heading: "Was Kunden sagen",
-    subheading: "Hören Sie von Schweizer Unternehmen, die ihre digitale Präsenz mit meinen Lösungen transformiert haben.",
+    subheading: "Erfahrungen von Schweizer Unternehmen, die ihre digitale Präsenz mit meinen Lösungen transformiert haben.",
     jenny: {
       name: "Jenny Sella",
       company: "Bithy",
@@ -312,12 +312,12 @@ export const de = {
     daniela: {
       name: "Daniela Filipescu",
       company: "Ristorante Crosare",
-      text: "Unser Restaurant brauchte mehr als nur eine Website. Wir brauchten eine digitale Strategie, die Kunden durch unsere Türen bringen würde. Die gelieferte Komplettlösung sieht nicht nur schön aus, sondern hat unsere Online-Reservierungen um 30% erhöht und unsere Betriebskosten erheblich gesenkt. Das Online-Buchungssystem für Sonderveranstaltungen war ein Wendepunkt für unser Unternehmen.",
+      text: "Unser Restaurant brauchte mehr als nur eine Website. Wir brauchten eine digitale Strategie, die Kunden durch unsere Türen bringt. Die gelieferte Komplettlösung sieht nicht nur schön aus, sondern hat unsere Online-Reservierungen um 30% erhöht und unsere Betriebskosten erheblich gesenkt. Das Online-Buchungssystem für Sonderveranstaltungen war ein Wendepunkt für unser Unternehmen.",
     },
     markus: {
       name: "Markus Berger",
       company: "SwissTech Solutions",
-      text: "Wir brauchten einen Entwickler, der sowohl Frontend- als auch Backend-Herausforderungen für unser internes Managementsystem bewältigen konnte. Die gelieferte Full-Stack-Expertise war außergewöhnlich - saubere Architektur, intuitive Schnittstellen und robuste Backend-Systeme, die sich nahtlos in unsere bestehende Infrastruktur integrierten. Die Produktivität unseres Teams verbesserte sich innerhalb von Wochen nach der Implementierung um 35%.",
+      text: "Wir brauchten einen Entwickler, der sowohl Frontend- als auch Backend-Herausforderungen für unser internes Managementsystem bewältigen konnte. Die gelieferte Full-Stack-Expertise war außergewöhnlich – saubere Architektur, intuitive Schnittstellen und robuste Backend-Systeme, die sich nahtlos in unsere bestehende Infrastruktur integrierten. Die Produktivität unseres Teams verbesserte sich innerhalb von Wochen nach der Implementierung um 35%.",
     },
     laura: {
       name: "Laura Meier",
