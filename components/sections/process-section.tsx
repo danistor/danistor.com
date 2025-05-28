@@ -84,6 +84,7 @@ export function ProcessSection() {
           t("process.discovery.activities.consultation"),
           t("process.discovery.activities.research"),
           t("process.discovery.activities.identification"),
+          t("process.discovery.activities.compliance"),
           t("process.discovery.activities.definition"),
         ],
         deliverables: [
@@ -102,9 +103,9 @@ export function ProcessSection() {
         description: t("process.design.description"),
         activities: [
           t("process.design.activities.concepts"),
-          t("process.design.activities.prototypes"),
-          t("process.design.activities.optimization"),
-          t("process.design.activities.accessibility"),
+          t("process.design.activities.ux"),
+          t("process.design.activities.multilingual"),
+          t("process.design.activities.sustainability"),
         ],
         deliverables: [
           t("process.design.deliverables.mockups"),
@@ -122,9 +123,9 @@ export function ProcessSection() {
         description: t("process.development.description"),
         activities: [
           t("process.development.activities.development"),
-          t("process.development.activities.database"),
+          t("process.development.activities.ai"),
           t("process.development.activities.integration"),
-          t("process.development.activities.reviews"),
+          t("process.development.activities.security"),
         ],
         deliverables: [
           t("process.development.deliverables.code"),
@@ -142,9 +143,9 @@ export function ProcessSection() {
         description: t("process.testing.description"),
         activities: [
           t("process.testing.activities.testing"),
+          t("process.testing.activities.accessibility"),
           t("process.testing.activities.optimization"),
-          t("process.testing.activities.deployment"),
-          t("process.testing.activities.training"),
+          t("process.testing.activities.compliance"),
         ],
         deliverables: [
           t("process.testing.deliverables.application"),
@@ -162,9 +163,9 @@ export function ProcessSection() {
         description: t("process.support.description"),
         activities: [
           t("process.support.activities.monitoring"),
-          t("process.support.activities.maintenance"),
-          t("process.support.activities.analysis"),
-          t("process.support.activities.recommendations"),
+          t("process.support.activities.security"),
+          t("process.support.activities.improvements"),
+          t("process.support.activities.remote"),
         ],
         deliverables: [
           t("process.support.deliverables.reports"),

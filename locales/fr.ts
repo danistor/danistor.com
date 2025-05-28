@@ -46,19 +46,20 @@ export const fr = {
   },
   process: {
     heading: "Comment je travaille",
-    subheading: "Une méthodologie complète conçue pour fournir des résultats exceptionnels à chaque étape de votre projet.",
+    subheading: "Une méthodologie complète et tournée vers l'avenir pour les entreprises suisses et européennes.",
     activities: "Activités clés",
     deliverables: "Livrables",
     previousPhase: "Phase précédente",
     nextPhase: "Phase suivante",
     discovery: {
       title: "Découverte & Planification",
-      description: "Chaque projet réussi commence par une compréhension approfondie de vos objectifs commerciaux, de votre public cible et de vos exigences spécifiques.",
+      description: "Consultation approfondie pour comprendre votre vision, vos objectifs commerciaux et votre public cible. Recherche de votre secteur, de la concurrence et des tendances du marché. Identification des indicateurs clés de performance et des critères de succès. Évaluation de la résidence des données, de la confidentialité et des besoins de conformité (RGPD, droit suisse, eIDAS 2.0). Définition du périmètre du projet, des livrables et des pratiques numériques durables.",
       activities: {
-        consultation: "Consultation approfondie pour comprendre votre vision",
-        research: "Recherche sur votre secteur et vos concurrents",
-        identification: "Identification des indicateurs clés de performance",
-        definition: "Définition du périmètre du projet et des livrables"
+        consultation: "Consultation approfondie pour comprendre votre vision et vos objectifs commerciaux",
+        research: "Recherche de votre secteur, de la concurrence et des tendances du marché",
+        identification: "Identification des indicateurs clés de performance et des critères de succès",
+        compliance: "Évaluation de la résidence des données, de la confidentialité et des besoins de conformité (RGPD, droit suisse, eIDAS 2.0)",
+        definition: "Définition du périmètre du projet, des livrables et des pratiques numériques durables"
       },
       deliverables: {
         brief: "Cahier des charges détaillé",
@@ -69,70 +70,70 @@ export const fr = {
     },
     design: {
       title: "Design & Prototypage",
-      description: "Traduction des exigences en concepts visuels qui s'alignent avec votre marque et offrent une expérience utilisateur exceptionnelle.",
+      description: "Création de concepts visuels et de prototypes interactifs adaptés à votre marque. Optimisation de l'expérience utilisateur avec un accent sur l'accessibilité (EN 301 549, WCAG 2.2+). Considérations multilingues et de localisation pour les publics suisses et européens. Design pour la durabilité numérique et l'efficacité énergétique.",
       activities: {
-        concepts: "Création de concepts de design visuel",
-        prototypes: "Développement de prototypes interactifs",
-        optimization: "Optimisation de l'expérience utilisateur",
-        accessibility: "Considérations d'accessibilité"
+        concepts: "Création de concepts de design visuel et de prototypes interactifs",
+        ux: "Optimisation de l'expérience utilisateur avec accessibilité (EN 301 549, WCAG 2.2+)",
+        multilingual: "Considérations multilingues et de localisation",
+        sustainability: "Design pour la durabilité numérique et l'efficacité énergétique"
       },
       deliverables: {
-        mockups: "Maquettes de design visuel",
+        mockups: "Maquettes de design",
         prototype: "Prototype interactif",
         documentation: "Documentation du système de design",
         assets: "Bibliothèque d'assets"
       }
     },
     development: {
-      title: "Développement & Implémentation",
-      description: "Construction de votre solution en utilisant des technologies modernes et les meilleures pratiques, avec un accent sur la performance, l'évolutivité et la maintenabilité.",
+      title: "Développement & Intégration",
+      description: "Développement de bout en bout avec des technologies modernes et sécurisées (React, PHP, Cloud, IA). Mise en œuvre de fonctionnalités basées sur l'IA (personnalisation, chatbots, analytique) et automatisation. Intégration de systèmes de paiement européens, d'identité numérique (eIDAS 2.0) et de services tiers. Programmation sécurisée, audits réguliers de sécurité et hébergement des données en Suisse/UE.",
       activities: {
-        development: "Développement frontend et backend",
-        database: "Architecture et implémentation de la base de données",
-        integration: "Intégration avec des services tiers",
-        reviews: "Revues de code et tests réguliers"
+        development: "Développement frontend et backend avec des technologies modernes et sécurisées",
+        ai: "Mise en œuvre de fonctionnalités basées sur l'IA et automatisation",
+        integration: "Intégration de systèmes de paiement européens, d'identité numérique (eIDAS 2.0) et de services tiers",
+        security: "Programmation sécurisée, audits réguliers de sécurité et hébergement des données en Suisse/UE"
       },
       deliverables: {
-        code: "Code propre et bien documenté",
-        application: "Application fonctionnelle répondant aux exigences",
+        code: "Code prêt pour la production",
+        application: "Application déployée",
         documentation: "Documentation technique",
-        reports: "Rapports de test"
+        reports: "Rapports de conformité et de sécurité"
       }
     },
     testing: {
-      title: "Tests & Déploiement",
-      description: "Assurer un processus de déploiement fluide et optimiser les performances pour la meilleure expérience utilisateur possible.",
+      title: "Tests, Lancement & Optimisation",
+      description: "Tests complets de la fonctionnalité, des performances et de la sécurité. Audits d'accessibilité et de sécurité selon les normes suisses/UE. Optimisation des performances pour un fonctionnement durable et une expérience utilisateur rapide. Derniers contrôles de conformité et de résidence des données avant le lancement.",
       activities: {
-        testing: "Tests complets avant lancement",
-        optimization: "Optimisation des performances",
-        deployment: "Déploiement en environnement de production",
-        training: "Transfert de connaissances et formation"
+        testing: "Tests complets de la fonctionnalité, des performances et de la sécurité",
+        accessibility: "Audits d'accessibilité et de sécurité (normes suisses/UE)",
+        optimization: "Optimisation des performances pour un fonctionnement durable",
+        compliance: "Derniers contrôles de conformité et de résidence des données avant le lancement"
       },
       deliverables: {
-        application: "Application déployée",
-        benchmark: "Rapport de benchmark des performances",
+        application: "Application optimisée en production",
+        benchmark: "Rapports de performance et d'audit",
         documentation: "Documentation utilisateur",
         training: "Matériel de formation"
       }
     },
     support: {
-      title: "Support & Croissance",
-      description: "Fournir un support continu et identifier les opportunités d'amélioration et de croissance continues.",
+      title: "Maintenance & Support",
+      description: "Mises à jour continues, surveillance et support pour les normes numériques européennes en évolution. Surveillance proactive de la sécurité et mises à jour régulières de conformité. Améliorations continues des performances et audits de durabilité. Support à distance, multilingue, pour les clients en Suisse et en Europe.",
       activities: {
-        monitoring: "Surveillance des performances de l'application",
-        maintenance: "Maintenance et mises à jour régulières",
-        analysis: "Analyse du comportement et des retours utilisateurs",
-        recommendations: "Recommandations d'améliorations"
+        monitoring: "Mises à jour continues, surveillance et support pour les normes numériques européennes en évolution",
+        security: "Surveillance proactive de la sécurité et mises à jour régulières de conformité",
+        improvements: "Améliorations continues des performances et audits de durabilité",
+        remote: "Support à distance, multilingue, pour les clients en Suisse et en Europe"
       },
       deliverables: {
-        reports: "Rapports de performance réguliers",
+        reports: "Rapports de support et de mise à jour",
         documentation: "Documentation de maintenance",
-        strategy: "Recommandations de stratégie de croissance",
+        strategy: "Certificats de conformité et revues de performance",
         support: "Support technique continu"
       }
     },
-    readyHeading: "Prêt à commencer?",
-    readyDescription: "Travaillons ensemble pour donner vie à votre vision grâce à ce processus éprouvé et simple.",
+    readyHeading: "Ce qui me distingue",
+    readyDescription: "Focalisation suisse & européenne : compréhension approfondie des réglementations locales, des langues et de la culture d'entreprise. Confidentialité & conformité : développement privacy-first avec expertise RGPD, droit suisse et eIDAS 2.0. Durabilité : engagement pour un hébergement vert et des solutions économes en énergie. IA & innovation : intégration des dernières tendances en IA et automatisation pour des produits numériques plus intelligents. Collaboration à distance : communication transparente et gestion de projet sans frontières.",
     startButton: "Démarrer votre projet",
   },
   stats: {

@@ -162,19 +162,20 @@ export const en = {
   },
   process: {
     heading: "How I Work",
-    subheading: "A comprehensive methodology designed to deliver exceptional results at every stage of your project.",
+    subheading: "A comprehensive, future-ready methodology for Swiss and European businesses.",
     activities: "Key Activities",
     deliverables: "Deliverables",
     previousPhase: "Previous Phase",
     nextPhase: "Next Phase",
     discovery: {
       title: "Discovery & Planning",
-      description: "Every successful project starts with a thorough understanding of your business goals, target audience, and specific requirements.",
+      description: "In-depth consultation to understand your vision, business goals, and target audience. Research of your industry, competitors, and market trends. Identification of key performance indicators and success metrics. Assessment of data residency, privacy, and compliance needs (GDPR, Swiss law, eIDAS 2.0 readiness). Definition of project scope, deliverables, and sustainable digital practices.",
       activities: {
-        consultation: "In-depth consultation to understand your vision",
-        research: "Research of your industry and competitors",
-        identification: "Identification of key performance indicators",
-        definition: "Definition of project scope and deliverables"
+        consultation: "In-depth consultation to understand your vision and business goals",
+        research: "Research of your industry, competitors, and market trends",
+        identification: "Identification of key performance indicators and success metrics",
+        compliance: "Assessment of data residency, privacy, and compliance needs (GDPR, Swiss law, eIDAS 2.0 readiness)",
+        definition: "Definition of project scope, deliverables, and sustainable digital practices"
       },
       deliverables: {
         brief: "Detailed project brief",
@@ -185,70 +186,70 @@ export const en = {
     },
     design: {
       title: "Design & Prototyping",
-      description: "Translating requirements into visual concepts that align with your brand and provide an exceptional user experience.",
+      description: "Creation of visual concepts and interactive prototypes tailored to your brand. User experience optimization with a focus on accessibility (EN 301 549, WCAG 2.2+). Multilingual and localization considerations for Swiss and European audiences. Design for digital sustainability and energy efficiency.",
       activities: {
-        concepts: "Creation of visual design concepts",
-        prototypes: "Development of interactive prototypes",
-        optimization: "User experience optimization",
-        accessibility: "Accessibility considerations"
+        concepts: "Creation of visual design concepts and interactive prototypes",
+        ux: "User experience optimization with accessibility (EN 301 549, WCAG 2.2+)",
+        multilingual: "Multilingual and localization considerations",
+        sustainability: "Design for digital sustainability and energy efficiency"
       },
       deliverables: {
-        mockups: "Visual design mockups",
+        mockups: "Design mockups",
         prototype: "Interactive prototype",
         documentation: "Design system documentation",
         assets: "Asset library"
       }
     },
     development: {
-      title: "Development & Implementation",
-      description: "Building your solution using modern technologies and best practices, with a focus on performance, scalability, and maintainability.",
+      title: "Development & Integration",
+      description: "End-to-end development using modern, secure technologies (React, PHP, Cloud, AI). Implementation of AI-driven features (personalization, chatbots, analytics) and automation where beneficial. Integration of European payment systems, digital identity (eIDAS 2.0), and third-party services. Secure coding practices, regular security reviews, and data sovereignty (Swiss/EU hosting).",
       activities: {
-        development: "Frontend and backend development",
-        database: "Database architecture and implementation",
-        integration: "Integration with third-party services",
-        reviews: "Regular code reviews and testing"
+        development: "Frontend and backend development with modern, secure technologies",
+        ai: "Implementation of AI-driven features and automation",
+        integration: "Integration of European payment systems, digital identity (eIDAS 2.0), and third-party services",
+        security: "Secure coding practices, regular security reviews, and data sovereignty (Swiss/EU hosting)"
       },
       deliverables: {
-        code: "Clean, well-documented code",
-        application: "Functional application meeting requirements",
+        code: "Production-ready code",
+        application: "Deployed application",
         documentation: "Technical documentation",
-        reports: "Testing reports"
+        reports: "Compliance and security reports"
       }
     },
     testing: {
-      title: "Testing & Deployment",
-      description: "Ensuring a smooth deployment process and optimizing performance for the best possible user experience.",
+      title: "Testing, Launch & Optimization",
+      description: "Comprehensive testing for functionality, performance, and security. Accessibility and security audits to meet Swiss/EU standards. Performance optimization for eco-friendly operation and fast user experience. Final data sovereignty and compliance checks before launch.",
       activities: {
-        testing: "Comprehensive pre-launch testing",
-        optimization: "Performance optimization",
-        deployment: "Deployment to production environment",
-        training: "Knowledge transfer and training"
+        testing: "Comprehensive testing for functionality, performance, and security",
+        accessibility: "Accessibility and security audits (Swiss/EU standards)",
+        optimization: "Performance optimization for eco-friendly operation",
+        compliance: "Final data sovereignty and compliance checks before launch"
       },
       deliverables: {
-        application: "Deployed application",
-        benchmark: "Performance benchmark report",
+        application: "Optimized live application",
+        benchmark: "Performance and audit reports",
         documentation: "User documentation",
         training: "Training materials"
       }
     },
     support: {
-      title: "Support & Growth",
-      description: "Providing ongoing support and identifying opportunities for continuous improvement and growth.",
+      title: "Maintenance & Support",
+      description: "Ongoing updates, monitoring, and support for evolving European digital standards. Proactive security monitoring and regular compliance updates. Continuous performance improvements and sustainability reviews. Remote-first, multilingual support for clients across Switzerland and Europe.",
       activities: {
-        monitoring: "Monitoring of application performance",
-        maintenance: "Regular maintenance and updates",
-        analysis: "Analysis of user behavior and feedback",
-        recommendations: "Recommendations for enhancements"
+        monitoring: "Ongoing updates, monitoring, and support for evolving European digital standards",
+        security: "Proactive security monitoring and regular compliance updates",
+        improvements: "Continuous performance improvements and sustainability reviews",
+        remote: "Remote-first, multilingual support for clients across Switzerland and Europe"
       },
       deliverables: {
-        reports: "Regular performance reports",
+        reports: "Support and update reports",
         documentation: "Maintenance documentation",
-        strategy: "Growth strategy recommendations",
+        strategy: "Compliance certificates and performance reviews",
         support: "Ongoing technical support"
       }
     },
-    readyHeading: "Ready to get started?",
-    readyDescription: "Let's work together to bring your vision to life with this proven, straightforward process.",
+    readyHeading: "What Sets Me Apart",
+    readyDescription: "Swiss & European Focus: Deep understanding of local regulations, languages, and business culture. Privacy & Compliance: Privacy-first development with GDPR, Swiss law, and eIDAS 2.0 expertise. Sustainability: Commitment to green hosting and energy-efficient solutions. AI & Innovation: Integration of the latest AI and automation trends for smarter digital products. Remote Collaboration: Seamless, transparent communication and project management across borders.",
     startButton: "Start Your Project",
   },
   portfolio: {
