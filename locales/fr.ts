@@ -145,7 +145,7 @@ export const fr = {
     heading: "Solutions expertes pour vos besoins numériques",
     subheading: "J'offre des services de développement complets adaptés pour aider les entreprises suisses et européennes à prospérer dans le paysage numérique.",
     webDev: {
-      title: "Développement d'applications web",
+      title: "Développement d'applications web personnalisées",
       description: "Développement de bout en bout d'applications web évolutives et performantes adaptées à vos besoins commerciaux.",
       features: {
         responsive: "Design responsive",
@@ -303,25 +303,25 @@ export const fr = {
   testimonials: {
     heading: "Ce que disent les clients",
     subheading: "Écoutez les entreprises suisses qui ont transformé leur présence numérique avec mes solutions.",
+    jenny: {
+      name: "Jenny Sella",
+      company: "Bithy",
+      text: "Le lancement de notre marque de compléments alimentaires en ligne semblait écrasant jusqu'à ce que nous trouvions ce développeur. La plateforme e-commerce livrée a dépassé toutes les attentes avec des performances ultra-rapides et une expérience mobile fluide. Nos taux de conversion sont 40% au-dessus de la moyenne du secteur, impactant directement notre résultat net. Un véritable partenaire digital qui comprend la croissance des entreprises.",
+    },
+    daniela: {
+      name: "Daniela Filipescu",
+      company: "Ristorante Crosare",
+      text: "Notre restaurant avait besoin de plus qu'un simple site web. Nous avions besoin d'une stratégie digitale qui amènerait les clients à notre porte. La solution complète livrée est non seulement belle mais a augmenté nos réservations en ligne de 30% et réduit considérablement nos coûts opérationnels. Le système de réservation en ligne pour les événements spéciaux a été un véritable changement de donne pour notre entreprise.",
+    },
     markus: {
-      name: "Markus Weber",
-      company: "FinTech Solutions AG, Zurich",
-      text: "Travailler avec Dan a transformé notre plateforme financière. L'expertise technique et l'attention aux détails ont entraîné une augmentation de 40% de l'engagement utilisateur et une amélioration significative de nos taux de conversion.",
+      name: "Markus Berger",
+      company: "SwissTech Solutions",
+      text: "Nous avions besoin d'un développeur capable de gérer les défis frontend et backend pour notre système de gestion interne. L'expertise full-stack fournie était exceptionnelle - architecture propre, interfaces intuitives et systèmes backend robustes qui s'intégraient parfaitement à notre infrastructure existante. La productivité de notre équipe s'est améliorée de 35% en quelques semaines après la mise en œuvre.",
     },
     laura: {
       name: "Laura Meier",
-      company: "Swiss Innovation Group",
-      text: "Un talent exceptionnel qui a livré notre projet en avance sur le calendrier et a dépassé toutes les attentes. Le design responsive fonctionne parfaitement sur tous les appareils, et les fonctionnalités personnalisées nous ont donné un avantage concurrentiel.",
-    },
-    thomas: {
-      name: "Thomas Brunner",
-      company: "Alpine Tech Ventures",
-      text: "Le développeur le plus fiable avec lequel nous avons travaillé. De la conception initiale au déploiement final, chaque étape a été gérée avec professionnalisme et excellence technique. Notre taux de conversion e-commerce a augmenté de 35%.",
-    },
-    daniela: {
-      name: "Daniela Bopp",
-      company: "Swiss Innovation Group",
-      text: "La capacité de Dan à traduire des exigences complexes en solutions élégantes est remarquable. Notre projet de tableau de bord a été livré à temps et nos utilisateurs adorent l'interface intuitive.",
+      company: "Alpine Financial Services",
+      text: "Trouver un développeur qui comprend vraiment à la fois les exigences techniques et les objectifs commerciaux est rare. Le portail client personnalisé développé pour notre société de services financiers équilibre parfaitement sécurité, conformité et expérience utilisateur. Le design responsive fonctionne parfaitement sur tous les appareils, et le système d'authentification offre la sécurité que notre industrie exige sans compromettre la facilité d'utilisation.",
     },
   },
   about: {
@@ -351,19 +351,6 @@ export const fr = {
     service5: "Transformation Numérique Durable",
     ctaConsultation: "Planifier une consultation",
     ctaPortfolio: "Voir mon portfolio de projets",
-    certificationsTitle: "Certifications & Normes",
-    certification1: "ISO 27001",
-    certification2: "Conformité RGPD",
-    certification3: "AWS Certified Solutions Architect",
-    certification4: "Gestion de Projet Agile",
-    stackTitle: "Stack Technologique",
-    processTitle: "Comment je travaille avec les clients",
-    processStep1Title: "Découverte & Analyse",
-    processStep1Text: "Comprendre vos besoins commerciaux et définir des objectifs clairs pour votre projet.",
-    processStep2Title: "Planification Stratégique",
-    processStep2Text: "Création d'une approche sur mesure avec calendrier, livrables et indicateurs de succès.",
-    processStep3Title: "Développement Itératif",
-    processStep3Text: "Mise en œuvre collaborative avec des révisions régulières pour assurer l'alignement avec vos objectifs.",
   },
   blog: {
     heading: "Derniers aperçus & articles",

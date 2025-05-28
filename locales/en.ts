@@ -55,7 +55,7 @@ export const en = {
     subheading:
       "I offer comprehensive development services tailored to help Swiss and European businesses thrive in the digital landscape.",
     webDev: {
-      title: "Web Application Development",
+      title: "Custom Web Application Development",
       description:
         "End-to-end development of scalable, high-performance web applications tailored to your business needs.",
       features: {
