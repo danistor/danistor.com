@@ -39,9 +39,8 @@ export const de = {
     trustedBy: "Vertraut von führenden Schweizer Unternehmen",
     features: {
       fastDelivery: "Schnelle Lieferung",
-      cleanCode: "Sauberer Code",
-      secureSolutions: "Sichere Lösungen",
-      multilingualSolutions: "Mehrsprachige Lösungen"
+      multilingualSolutions: "Mehrsprachige Lösungen",
+      secureSolutions: "Sichere Lösungen"
     }
   },
   process: {
@@ -151,8 +150,8 @@ export const de = {
       features: {
         responsive: "Responsive Design",
         api: "API-Integration",
-        database: "Datenbankarchitektur",
-        cloud: "Cloud-Bereitstellung",
+        collaboration: "Direkte Zusammenarbeit während der Entwicklung",
+        reliable: "Zuverlässige Lieferung mit Fokus auf Qualität",
       },
     },
     responsiveDesign: {
@@ -169,9 +168,29 @@ export const de = {
       description: "Maßgeschneiderte E-Commerce-Plattformen mit nahtloser Zahlungsabwicklung, Bestandsverwaltung und Benutzererfahrungsoptimierung.",
       features: {
         payment: "Zahlungsgateway-Integration",
-        inventory: "Bestandssysteme",
-        analytics: "Kundenanalyse",
-        mobile: "Mobile Optimierung",
+        recommendations: "KI-gestützte Produktempfehlungen für höheren Bestellwert",
+        compliance: "DSGVO-konforme Kundendatenverwaltung",
+        optimization: "Konversionsraten- und Benutzererfahrungsoptimierung",
+      },
+    },
+    fullStackDevelopment: {
+      title: "End-to-End Technische Partnerschaft",
+      description: "Dedizierte technische Partnerschaft, die sowohl Frontend- als auch Backend-Entwicklung abdeckt. Ein Entwickler, eine kohärente Vision, keine Kommunikationslücken.",
+      features: {
+        frontend: "Modernes React/Next.js-Frontend mit optimierter UI/UX",
+        backend: "Robuste Backend-Systeme mit skalierbarer Architektur",
+        communication: "Klare, fachsprachenfreie Kommunikation zu technischen Themen",
+        adaptation: "Flexible Anpassung an sich entwickelnde Projektanforderungen",
+      },
+    },
+    europeanGoToMarketSolutions: {
+      title: "Schweizer & EU-Marktexpansion",
+      description: "Lösungen für Unternehmen, die in europäische Märkte eintreten und expandieren. Behandlung von Lokalisierungs-, Compliance- und kulturellen Anpassungsbedürfnissen.",
+      features: {
+        multilingual: "Mehrsprachige Inhaltssysteme mit regionaler Ausrichtung",
+        accessibility: "EAA 2025 Barrierefreiheitsimplementierung",
+        dataPrivacy: "DSGVO & Schweizer FADP Datenschutz-Frameworks",
+        cultural: "Kulturelle Anpassung für Schweizer und EU-Publikum",
       },
     },
     multilingualSolutions: {
@@ -226,18 +245,19 @@ export const de = {
       title: "Leistungsoptimierung",
       description: "Leistungsoptimierung konzentriert sich auf die Verbesserung der Geschwindigkeit und Effizienz der Website oder Anwendung.",
       features: {
-        code: "Code-Optimierung",
-        caching: "Caching",
-        infrastructure: "Infrastrukturoptimierung",
+        coreWebVitals: "Core Web Vitals Verbesserung (LCP, INP, CLS)",
+        mobile: "Mobile Erfahrungsoptimierung für europäische Nutzer",
+        reporting: "Klare Berichterstattung über Leistungsverbesserungen"
       },
     },
     maintenanceSupport: {
       title: "Wartung & Support",
       description: "Wartung und Support konzentrieren sich darauf, sicherzustellen, dass die Website oder Anwendung immer auf dem neuesten Stand ist und ordnungsgemäß funktioniert.",
       features: {
-        support: "Support",
-        updates: "Updates",
-        improvements: "Verbesserungen",
+        security: "Proaktive Sicherheitsüberwachung und Updates",
+        performance: "Regelmäßige Leistungsüberprüfungen und Verbesserungen",
+        guidance: "Technische Beratung für zukünftige digitale Strategien",
+        support: "Mehrsprachiger Support für die Schweiz und Europa",
       },
     },
   },
@@ -476,6 +496,21 @@ export const de = {
         benefit1: "Reduzierte rechtliche Risiken durch konforme Datenverarbeitung",
         benefit2: "Gestärktes Kundenvertrauen durch transparente Datenschutzpraktiken",
         benefit3: "Zukunftssichere Systeme im Einklang mit sich entwickelnden Vorschriften"
+      },
+      "full-stack-development": {
+        benefit1: "Kohärente und integrierte Anwendungsarchitektur",
+        benefit2: "Effizienter Entwicklungslebenszyklus mit einem einzigen Ansprechpartner",
+        benefit3: "Vielseitige Lösungen, anpassbar an verschiedene Projektanforderungen"
+      },
+      "european-go-to-market-solutions": {
+        benefit1: "Nahtloser Eintritt und Expansion in diverse europäische Märkte",
+        benefit2: "Verbessertes Nutzerengagement durch lokalisierte und barrierefreie Erlebnisse",
+        benefit3: "Vollständige regulatorische Konformität, Minimierung von Risiken und Aufbau von Vertrauen in ganz Europa"
+      },
+      "performance-optimization": {
+        benefit1: "Verbesserte Suchmaschinenrankings und Sichtbarkeit",
+        benefit2: "Erhöhte Benutzerzufriedenheit und niedrigere Absprungraten",
+        benefit3: "Höhere Konversionsraten und besseres ROI bei digitalen Investitionen"
       },
       "maintenance-support": {
         benefit1: "Minimierte Ausfallzeiten durch proaktive Überwachung",

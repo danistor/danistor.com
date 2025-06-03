@@ -39,9 +39,8 @@ export const en = {
     trustedBy: "Trusted by leading Swiss companies",
     features: {
       fastDelivery: "Agile Delivery",
-      aiPowered: "AI-Enhanced Solutions",
-      secureCompliant: "Secure & Compliant (EAA/GDPR)",
-      euroCentric: "Europe-Focused Expertise"
+      multilingualSolutions: "Multilingual Solutions",
+      secureSolutions: "Secure Solutions"
     }
   },
   stats: {
@@ -99,8 +98,7 @@ export const en = {
       features: {
         coreWebVitals: "Core Web Vitals enhancement (LCP, INP, CLS)",
         mobile: "Mobile experience optimization for European users",
-        reporting: "Clear reporting on performance improvements",
-        seo: "SEO and conversion rate enhancement",
+        reporting: "Clear reporting on performance improvements"
       },
     },
     maintenanceSupport: {
