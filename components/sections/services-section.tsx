@@ -23,8 +23,8 @@ export function ServicesSection() {
       features: [
         t("services.webDev.features.responsive"),
         t("services.webDev.features.api"),
-        t("services.webDev.features.database"),
-        t("services.webDev.features.cloud"),
+        t("services.webDev.features.collaboration"),
+        t("services.webDev.features.reliable"),
       ],
     },
     {
@@ -34,8 +34,8 @@ export function ServicesSection() {
       description: t("services.ecommerce.description"),
       features: [
         t("services.ecommerce.features.payment"),
-        t("services.ecommerce.features.inventory"),
-        t("services.ecommerce.features.personalization"),
+        t("services.ecommerce.features.recommendations"),
+        t("services.ecommerce.features.compliance"),
         t("services.ecommerce.features.optimization"),
       ],
     },
@@ -47,8 +47,20 @@ export function ServicesSection() {
       features: [
         t("services.fullStackDevelopment.features.frontend"),
         t("services.fullStackDevelopment.features.backend"),
-        t("services.fullStackDevelopment.features.database"),
-        t("services.fullStackDevelopment.features.integration"),
+        t("services.fullStackDevelopment.features.communication"),
+        t("services.fullStackDevelopment.features.adaptation"),
+      ],
+    },
+    {
+      id: "european-go-to-market-solutions",
+      title: t("services.europeanGoToMarketSolutions.title"),
+      icon: <Globe2 className="h-10 w-10 text-accent" />,
+      description: t("services.europeanGoToMarketSolutions.description"),
+      features: [
+        t("services.europeanGoToMarketSolutions.features.multilingual"),
+        t("services.europeanGoToMarketSolutions.features.accessibility"),
+        t("services.europeanGoToMarketSolutions.features.dataPrivacy"),
+        t("services.europeanGoToMarketSolutions.features.cultural"),
       ],
     },
     {
@@ -58,21 +70,8 @@ export function ServicesSection() {
       description: t("services.performanceOptimization.description"),
       features: [
         t("services.performanceOptimization.features.coreWebVitals"),
-        t("services.performanceOptimization.features.loadSpeed"),
-        t("services.performanceOptimization.features.uxImprovement"),
-        t("services.performanceOptimization.features.seoConversion"),
-      ],
-    },
-    {
-      id: "european-go-to-market-solutions",
-      title: t("services.europeanGoToMarketSolutions.title"),
-      icon: <Globe2 className="h-10 w-10 text-accent" />,
-      description: t("services.europeanGoToMarketSolutions.description"),
-      features: [
-        t("services.europeanGoToMarketSolutions.features.localization"),
-        t("services.europeanGoToMarketSolutions.features.multilingualSeo"),
-        t("services.europeanGoToMarketSolutions.features.accessibilityCompliance"),
-        t("services.europeanGoToMarketSolutions.features.dataPrivacyFrameworks"),
+        t("services.performanceOptimization.features.mobile"),
+        t("services.performanceOptimization.features.reporting"),
       ],
     },
     {
@@ -81,10 +80,10 @@ export function ServicesSection() {
       icon: <RefreshCw className="h-10 w-10 text-accent" />,
       description: t("services.maintenanceSupport.description"),
       features: [
-        t("services.maintenanceSupport.features.monitoring"),
-        t("services.maintenanceSupport.features.updates"),
-        t("services.maintenanceSupport.features.adaptation"),
-        t("services.maintenanceSupport.features.optimization"),
+        t("services.maintenanceSupport.features.security"),
+        t("services.maintenanceSupport.features.performance"),
+        t("services.maintenanceSupport.features.guidance"),
+        t("services.maintenanceSupport.features.support"),
       ],
     },
   ]

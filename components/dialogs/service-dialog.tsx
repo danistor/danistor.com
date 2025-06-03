@@ -34,6 +34,7 @@ export function ServiceDialog({ service, formType }: ServiceDialogProps) {
   }
 
   const isEuropeanSpecificService = [
+    'european-go-to-market-solutions',
     'multilingual-solutions',
     'european-payment',
     'data-compliance'

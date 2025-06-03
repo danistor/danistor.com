@@ -52,82 +52,65 @@ export const en = {
   },
   services: {
     heading: "Expert Solutions for Your Digital Needs",
-    subheading:
-      "I offer future-focused development services, including AI integration and accessibility compliance (EAA 2025), designed to help Swiss and European businesses excel in the evolving digital landscape.",
+    subheading: "Digital solutions, including AI integration and accessibility compliance (EAA 2025), delivered with precision and expertise for Swiss and EU businesses.",
     webDev: {
-      title: "AI-Powered & Accessible Web Application Development",
-      description:
-        "End-to-end development of scalable, high-performance, and accessible (EAA 2025 compliant) web applications, enhanced with AI capabilities to meet your specific European market needs.",
+      title: "Swiss-Built Web Applications",
+      description: "Accessible, AI-enhanced web solutions built for businesses in Switzerland and Europe. Focus on clean code, great performance, and full EAA/GDPR compliance.",
       features: {
-        responsive: "Accessible & Responsive Design (WCAG 2.2 AA)",
-        api: "Secure API & Headless CMS Integration",
-        database: "Optimized & Compliant Database Architecture",
-        cloud: "Sustainable Cloud & Edge Deployment",
-      },
-    },
-    responsiveDesign: {
-      title: "Responsive Design",
-      description:
-        "Mobile-first websites that provide an optimal viewing experience across all devices and screen sizes.",
-      features: {
-        mobile: "Mobile optimization",
-        responsive: "Responsive design",
-        seo: "SEO",
+        responsive: "Accessible designs meeting WCAG 2.2 AA standards",
+        api: "Secure API integrations with Swiss-grade security",
+        collaboration: "Direct collaboration throughout development",
+        reliable: "Reliable delivery with attention to quality",
       },
     },
     ecommerce: {
-      title: "Advanced E-commerce Solutions for Europe",
-      description:
-        "Custom e-commerce platforms tailored for the European market, focusing on conversion optimization, AI-driven personalization, secure payment integration (multi-currency), and customer retention strategies. Includes compliance with EU consumer rights and accessibility standards.",
+      title: "E-commerce Solutions",
+      description: "E-commerce platforms optimized for Swiss and European consumers. Each system balances secure payments, personalization and compliance.",
       features: {
-        payment: "Secure European Payment Gateway Integration (Multi-currency)",
-        inventory: "Scalable Inventory & Order Management Systems",
-        personalization: "AI-Powered Personalization & Recommendation Engines",
-        optimization: "Conversion Rate & User Experience Optimization (CRO)",
+        payment: "Multi-currency payment systems for pan-European sales",
+        recommendations: "AI-powered product recommendations driving higher AOV",
+        compliance: "GDPR-compliant customer data handling",
+        optimization: "Conversion rate & user experience optimization",
       },
     },
     fullStackDevelopment: {
-      title: "Full-Stack Development Expertise",
-      description:
-        "Comprehensive development services covering both front-end and back-end. From intuitive user interfaces to robust server-side logic and APIs, I build complete, seamless digital experiences.",
+      title: "End-to-End Technical Partnership",
+      description: "Dedicated technical partnership covering both frontend and backend development. One developer, one cohesive vision, zero communication gaps.",
       features: {
-        frontend: "Modern Frontend (React, Next.js, UI/UX principles)",
-        backend: "Robust Backend (Node.js, PHP, API Development)",
-        database: "Database Design & Management (SQL, NoSQL)",
-        integration: "Third-Party Service & API Integration",
-      },
-    },
-    performanceOptimization: {
-      title: "Advanced Performance & UX Optimization",
-      description:
-        "Boost user engagement, SEO rankings, and conversion rates with comprehensive performance optimization. Focusing on Core Web Vitals, load speed, and overall user experience to ensure your digital platform excels for European audiences.",
-      features: {
-        coreWebVitals: "Core Web Vitals Enhancement (LCP, INP, CLS)",
-        loadSpeed: "Load Speed Optimization & Resource Minification",
-        uxImprovement: "User Experience (UX) & Interaction Flow Tuning",
-        seoConversion: "Impact Analysis on SEO & Conversion Rates",
+        frontend: "Modern React/Next.js frontend with optimized UI/UX",
+        backend: "Robust backend systems with scalable architecture",
+        communication: "Clear, jargon-free communication on technical matters",
+        adaptation: "Flexible adaptation to evolving project requirements",
       },
     },
     europeanGoToMarketSolutions: {
-      title: "Comprehensive European Market Solutions",
-      description:
-        "Successfully launch and expand in the diverse European market with solutions covering multilingual localization, pan-European payment integration, EAA 2025 accessibility, and full data privacy compliance (GDPR, Swiss FADP).",
+      title: "Swiss & EU Market Expansion",
+      description: "Solutions for businesses entering and expanding across European markets. Addressing localization, compliance, and cultural adaptation needs.",
       features: {
-        localization: "Full Content Localization & Cultural Adaptation",
-        multilingualSeo: "Multilingual SEO & Regional Targeting",
-        accessibilityCompliance: "EAA 2025 Accessibility Implementation (WCAG 2.2 AA)",
-        dataPrivacyFrameworks: "GDPR & Swiss FADP Data Privacy Frameworks",
+        multilingual: "Multilingual content systems with regional targeting",
+        accessibility: "EAA 2025 accessibility implementation",
+        dataPrivacy: "GDPR & Swiss FADP data compliance frameworks",
+        cultural: "Cultural adaptation for Swiss and EU audiences",
+      },
+    },
+    performanceOptimization: {
+      title: "Swiss-Standard Performance",
+      description: "Transformation of sluggish websites into lightning-fast experiences. Optimization focused on Core Web Vitals, user experience, and conversion improvement.",
+      features: {
+        coreWebVitals: "Core Web Vitals enhancement (LCP, INP, CLS)",
+        mobile: "Mobile experience optimization for European users",
+        reporting: "Clear reporting on performance improvements",
+        seo: "SEO and conversion rate enhancement",
       },
     },
     maintenanceSupport: {
-      title: "Proactive Maintenance & Evolution",
-      description:
-        "Ongoing support and proactive maintenance to ensure your digital assets remain robust, secure, and aligned with evolving Swiss/European business needs and technological advancements. Focus on long-term performance and adaptability.",
+      title: "Ongoing Partnership & Evolution",
+      description: "Reliable, responsive support after launch. Maintenance ensuring digital assets remain secure, compliant, and evolving with business needs.",
       features: {
-        monitoring: "Continuous Performance & Security Monitoring",
-        updates: "Proactive Platform & Feature Updates",
-        adaptation: "Adaptation to Changing Market/Tech Landscape",
-        optimization: "Iterative Optimization & Enhancements",
+        security: "Proactive security monitoring and updates",
+        performance: "Regular performance reviews and improvements",
+        guidance: "Technical guidance for future digital strategy",
+        support: "Multilingual support across Switzerland and Europe",
       },
     },
   },
