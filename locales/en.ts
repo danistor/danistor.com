@@ -35,13 +35,13 @@ export const en = {
     title: "Full-Stack Developer & Solutions Engineer",
     subtitle: "Building exceptional digital experiences",
     description:
-      "I create custom digital solutions that help businesses increase revenue, optimize operations, and deliver exceptional user experiences with full regulatory compliance across Switzerland and beyond.",
+      "I engineer future-ready digital solutions leveraging AI and sustainable practices, helping Swiss and European businesses boost revenue, optimize operations, and deliver exceptional, accessible user experiences in full compliance with EU and Swiss regulations (including GDPR & EAA 2025).",
     trustedBy: "Trusted by leading Swiss companies",
     features: {
-      fastDelivery: "Fast Delivery",
-      cleanCode: "Clean Code",
-      secureSolutions: "Secure Solutions",
-      multilingualSolutions: "Multilingual Solutions"
+      fastDelivery: "Agile Delivery",
+      aiPowered: "AI-Enhanced Solutions",
+      secureCompliant: "Secure & Compliant (EAA/GDPR)",
+      euroCentric: "Europe-Focused Expertise"
     }
   },
   stats: {
@@ -53,16 +53,16 @@ export const en = {
   services: {
     heading: "Expert Solutions for Your Digital Needs",
     subheading:
-      "I offer comprehensive development services tailored to help Swiss and European businesses thrive in the digital landscape.",
+      "I offer future-focused development services, including AI integration and accessibility compliance (EAA 2025), designed to help Swiss and European businesses excel in the evolving digital landscape.",
     webDev: {
-      title: "Custom Web Application Development",
+      title: "AI-Powered & Accessible Web Application Development",
       description:
-        "End-to-end development of scalable, high-performance web applications tailored to your business needs.",
+        "End-to-end development of scalable, high-performance, and accessible (EAA 2025 compliant) web applications, enhanced with AI capabilities to meet your specific European market needs.",
       features: {
-        responsive: "Responsive design",
-        api: "API integration",
-        database: "Database architecture",
-        cloud: "Cloud deployment",
+        responsive: "Accessible & Responsive Design (WCAG 2.2 AA)",
+        api: "Secure API & Headless CMS Integration",
+        database: "Optimized & Compliant Database Architecture",
+        cloud: "Sustainable Cloud & Edge Deployment",
       },
     },
     responsiveDesign: {
@@ -76,100 +76,71 @@ export const en = {
       },
     },
     ecommerce: {
-      title: "E-commerce Solutions",
+      title: "Advanced E-commerce Solutions for Europe",
       description:
-        "Custom e-commerce platforms with seamless payment processing, inventory management, and user experience optimization.",
+        "Custom e-commerce platforms tailored for the European market, focusing on conversion optimization, AI-driven personalization, secure payment integration (multi-currency), and customer retention strategies. Includes compliance with EU consumer rights and accessibility standards.",
       features: {
-        payment: "Payment gateway integration",
-        inventory: "Inventory systems",
-        analytics: "Customer analytics",
-        mobile: "Mobile optimization",
+        payment: "Secure European Payment Gateway Integration (Multi-currency)",
+        inventory: "Scalable Inventory & Order Management Systems",
+        personalization: "AI-Powered Personalization & Recommendation Engines",
+        optimization: "Conversion Rate & User Experience Optimization (CRO)",
       },
     },
-    frontendDevelopment: {
-      title: "Frontend Development",
+    fullStackDevelopment: {
+      title: "Full-Stack Development Expertise",
       description:
-        "Frontend development focuses on creating a user-friendly interface that allows users to interact with the website or application.",
+        "Comprehensive development services covering both front-end and back-end. From intuitive user interfaces to robust server-side logic and APIs, I build complete, seamless digital experiences.",
       features: {
-        responsive: "Responsive design",
-        animations: "Animations",
-        navigation: "Navigation",
-      },
-    },
-    backendDevelopment: {
-      title: "Backend Development",
-      description:
-        "Backend development focuses on creating a secure and scalable infrastructure that allows the website or application to function properly.",
-      features: {
-        api: "API development",
-        database: "Database architecture",
-        security: "Security",
+        frontend: "Modern Frontend (React, Next.js, UI/UX principles)",
+        backend: "Robust Backend (Node.js, PHP, API Development)",
+        database: "Database Design & Management (SQL, NoSQL)",
+        integration: "Third-Party Service & API Integration",
       },
     },
     performanceOptimization: {
-      title: "Performance Optimization",
+      title: "Advanced Performance & UX Optimization",
       description:
-        "Performance optimization focuses on improving the speed and efficiency of the website or application.",
+        "Boost user engagement, SEO rankings, and conversion rates with comprehensive performance optimization. Focusing on Core Web Vitals, load speed, and overall user experience to ensure your digital platform excels for European audiences.",
       features: {
-        code: "Code optimization",
-        caching: "Caching",
-        infrastructure: "Infrastructure optimization",
+        coreWebVitals: "Core Web Vitals Enhancement (LCP, INP, CLS)",
+        loadSpeed: "Load Speed Optimization & Resource Minification",
+        uxImprovement: "User Experience (UX) & Interaction Flow Tuning",
+        seoConversion: "Impact Analysis on SEO & Conversion Rates",
       },
     },
-    multilingualSolutions: {
-      title: "Multilingual Solutions",
+    europeanGoToMarketSolutions: {
+      title: "Comprehensive European Market Solutions",
       description:
-        "Fully localized digital experiences that engage users across Switzerland and Europe in their native languages.",
+        "Successfully launch and expand in the diverse European market with solutions covering multilingual localization, pan-European payment integration, EAA 2025 accessibility, and full data privacy compliance (GDPR, Swiss FADP).",
       features: {
-        localization: "Content localization",
-        translation: "Translation management",
-        regional: "Regional preference adaptation",
-        seo: "Multilingual SEO optimization",
-      },
-    },
-    europeanPayment: {
-      title: "European Payment Integration",
-      description:
-        "Seamless integration of preferred Swiss and European payment methods, ensuring a smooth checkout experience for local customers.",
-      features: {
-        methods: "Local payment methods (TWINT, Byjuno, etc.)",
-        compliance: "PSD2 & SCA compliance",
-        currencies: "Multi-currency support (CHF, EUR)",
-        security: "Enhanced transaction security",
-      },
-    },
-    dataCompliance: {
-      title: "Data Privacy & Compliance",
-      description:
-        "Ensure your digital solutions comply with stringent Swiss and EU data protection regulations while maintaining optimal user experience.",
-      features: {
-        gdpr: "GDPR compliance implementation",
-        swiss: "Swiss data protection standards",
-        hosting: "Swiss & EU compliant hosting",
-        audits: "Privacy compliance audits",
+        localization: "Full Content Localization & Cultural Adaptation",
+        multilingualSeo: "Multilingual SEO & Regional Targeting",
+        accessibilityCompliance: "EAA 2025 Accessibility Implementation (WCAG 2.2 AA)",
+        dataPrivacyFrameworks: "GDPR & Swiss FADP Data Privacy Frameworks",
       },
     },
     maintenanceSupport: {
-      title: "Maintenance & Support",
+      title: "Proactive Maintenance & Evolution",
       description:
-        "Maintenance and support focuses on ensuring the website or application is always up to date and functioning properly.",
+        "Ongoing support and proactive maintenance to ensure your digital assets remain robust, secure, and aligned with evolving Swiss/European business needs and technological advancements. Focus on long-term performance and adaptability.",
       features: {
-        support: "Support",
-        updates: "Updates",
-        improvements: "Improvements",
+        monitoring: "Continuous Performance & Security Monitoring",
+        updates: "Proactive Platform & Feature Updates",
+        adaptation: "Adaptation to Changing Market/Tech Landscape",
+        optimization: "Iterative Optimization & Enhancements",
       },
     },
   },
   process: {
     heading: "How I Work",
-    subheading: "A comprehensive, future-ready methodology for Swiss and European businesses.",
+    subheading: "My agile, transparent process emphasizes AI-integration, sustainability, and full compliance (GDPR, EAA 2025) for Swiss and European businesses.",
     activities: "Key Activities",
     deliverables: "Deliverables",
     previousPhase: "Previous Phase",
     nextPhase: "Next Phase",
     discovery: {
       title: "Discovery & Planning",
-      description: "In-depth consultation to understand your vision, business goals, and target audience. Research of your industry, competitors, and market trends. Identification of key performance indicators and success metrics. Assessment of data residency, privacy, and compliance needs (GDPR, Swiss law, eIDAS 2.0 readiness). Definition of project scope, deliverables, and sustainable digital practices.",
+      description: "In-depth consultation to understand your vision, business goals, and target European audience. Research of your industry, competitors, and 2025 market trends. Identification of KPIs and success metrics. Crucially, assessment of accessibility (EAA 2025 / WCAG 2.2 AA), data residency, privacy (GDPR, Swiss FADP), and compliance needs (e.g., eIDAS 2.0). Definition of project scope, deliverables, and sustainable digital practices.",
       activities: {
         consultation: "In-depth consultation to understand your vision and business goals",
         research: "Research of your industry, competitors, and market trends",
@@ -186,7 +157,7 @@ export const en = {
     },
     design: {
       title: "Design & Prototyping",
-      description: "Creation of visual concepts and interactive prototypes tailored to your brand. User experience optimization with a focus on accessibility (EN 301 549, WCAG 2.2+). Multilingual and localization considerations for Swiss and European audiences. Design for digital sustainability and energy efficiency.",
+      description: "Creation of visual concepts and interactive prototypes tailored to your brand. User experience optimization with a core focus on inclusive design and accessibility (EAA 2025, EN 301 549, WCAG 2.2 AA). Multilingual and localization strategies for diverse European audiences. Design for digital sustainability, low-carbon UX, and energy efficiency.",
       activities: {
         concepts: "Creation of visual design concepts and interactive prototypes",
         ux: "User experience optimization with accessibility (EN 301 549, WCAG 2.2+)",
@@ -202,11 +173,11 @@ export const en = {
     },
     development: {
       title: "Development & Integration",
-      description: "End-to-end development using modern, secure technologies (React, PHP, Cloud, AI). Implementation of AI-driven features (personalization, chatbots, analytics) and automation where beneficial. Integration of European payment systems, digital identity (eIDAS 2.0), and third-party services. Secure coding practices, regular security reviews, and data sovereignty (Swiss/EU hosting).",
+      description: "End-to-end development using modern, secure technologies (React, Node.js, Headless CMS, Cloud, AI). Proactive integration of AI-driven features (e.g., generative AI content tools, predictive analytics, intelligent automation). Integration of European payment systems, digital identity (eIDAS 2025), and third-party services. DevSecOps principles applied throughout: secure coding, vulnerability management, regular security reviews, and data sovereignty (Swiss/EU hosting).",
       activities: {
         development: "Frontend and backend development with modern, secure technologies",
         ai: "Implementation of AI-driven features and automation",
-        integration: "Integration of European payment systems, digital identity (eIDAS 2.0), and third-party services",
+        integration: "Integration of European payment systems, digital identity (eIDAS 2025), and third-party services",
         security: "Secure coding practices, regular security reviews, and data sovereignty (Swiss/EU hosting)"
       },
       deliverables: {
@@ -218,7 +189,7 @@ export const en = {
     },
     testing: {
       title: "Testing, Launch & Optimization",
-      description: "Comprehensive testing for functionality, performance, and security. Accessibility and security audits to meet Swiss/EU standards. Performance optimization for eco-friendly operation and fast user experience. Final data sovereignty and compliance checks before launch.",
+      description: "Comprehensive testing: functionality, Core Web Vitals, performance, and security. Rigorous accessibility audits against EAA 2025 / WCAG 2.2 AA criteria. Security audits (e.g., OWASP Top 10) to meet Swiss/EU standards. Performance optimization for eco-friendly operation and exceptional user experience. Final data sovereignty and compliance checks (GDPR, EAA) before launch.",
       activities: {
         testing: "Comprehensive testing for functionality, performance, and security",
         accessibility: "Accessibility and security audits (Swiss/EU standards)",
@@ -302,7 +273,7 @@ export const en = {
     qualipet: {
       title: "Qualipet Product Recommendation Engine",
       category: "E-Commerce",
-      description: "A sophisticated recommendation engine for Switzerland's largest pet supplies retailer, enhancing the online shopping experience.",
+      description: "A sophisticated recommendation engine for Switzerland\'s largest pet supplies retailer, enhancing the online shopping experience.",
       challenge: "Qualipet needed to improve their online sales by implementing personalized product recommendations based on customer behavior and preferences.",
       solution: "I integrated a custom recommendation engine using PHP that analyzes purchase history, browsing patterns, and pet profiles to suggest relevant products.",
       results: {
@@ -341,26 +312,26 @@ export const en = {
     availableStatus: "Available for consultations",
     badge: "Solution Engineer",
     heading: "Transforming Technical Challenges Into Business Solutions",
-    paragraph1: "With <span class=\"font-semibold text-foreground\">over 10 years of experience</span> as a Solution Engineer and Full-Stack Developer, I specialize in transforming business challenges into scalable, high-performance digital solutions.",
-    paragraph2: "My approach combines technical precision with business understanding, ensuring solutions that are both technically excellent and aligned with your objectives.",
+    paragraph1: "With <span class=\"font-semibold text-foreground\">over 10 years of experience</span> as a Solution Engineer and Full-Stack Developer based in Switzerland, I specialize in transforming business challenges into scalable, AI-enhanced, and compliant (EAA 2025, GDPR) digital solutions for the European market.",
+    paragraph2: "My approach combines technical precision with a deep understanding of European business needs and 2025 digital trends, ensuring solutions are technically excellent, strategically aligned, and future-proof.",
     approachTitle: "Collaborative approach:",
     approach1: "Comprehensive solution design from initial concept to implementation",
     approach2: "Technical expertise that translates to practical business value",
     approach3: "Proven track record of delivering complex projects on time",
     approach4: "Reliable delivery with attention to quality and sustainability",
-    approach5: "Privacy-first development with European compliance expertise",
+    approach5: "Privacy & Accessibility by Design, with European compliance expertise (GDPR, EAA 2025)",
     expertiseTitle: "Technical Expertise",
     expertise1: "JavaScript & React Ecosystem",
     expertise2: "PHP & Modern Frameworks",
     expertise3: "MySQL & Database Architecture",
     expertise4: "Cloud Infrastructure & DevOps",
-    expertise5: "AI Integration & Intelligent Automation",
+    expertise5: "AI-Driven Solutions & Intelligent Automation (e.g., Generative AI, Machine Learning)",
     servicesTitle: "Services",
     service1: "Solution Architecture",
     service2: "Custom Application Development",
     service3: "Legacy System Modernization",
     service4: "Technical Consultation",
-    service5: "Sustainable Digital Transformation",
+    service5: "Accessible & Sustainable Digital Transformation (EAA Ready)",
     ctaConsultation: "Schedule a Consultation",
     ctaPortfolio: "View My Work",
   },
@@ -368,7 +339,7 @@ export const en = {
     heading: "Latest Insights & Articles",
     subheading: "Stay updated with the latest trends, tips, and insights in web development and digital strategy.",
     post1: {
-      title: "What's New in Next.js 15: Features You Need to Know",
+      title: "What\'s New in Next.js 15: Features You Need to Know",
       excerpt:
         "Explore the latest features and improvements in Next.js 15 and how they can enhance your web development projects.",
     },
@@ -384,7 +355,7 @@ export const en = {
     },
   },
   contact: {
-    heading: "Let's Discuss Your Project",
+    heading: "Let\'s Discuss Your Project",
     subheading: "Ready to transform your digital presence? Get in touch to discuss how I can help your business grow.",
     email: "Email",
     phone: "Phone",
@@ -395,7 +366,7 @@ export const en = {
   },
   newsletter: {
     heading: "Stay Updated with the Latest Tech Insights",
-    subheading: "Subscribe to my newsletter for tips, trends, and insights on web development and digital strategy.",
+    subheading: "Subscribe for insights on AI in web dev, European digital compliance (EAA, GDPR), 2025 tech trends, and sustainable solutions for businesses in Switzerland & Europe.",
     placeholder: "Your email address",
     subscribe: "Subscribe",
     submitting: "Subscribing...",
@@ -424,7 +395,7 @@ export const en = {
     cancel: "Cancel",
     success: {
       title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you within 24 hours.",
+      description: "Thank you for your message. I\'ll get back to you within 24 hours.",
     },
     projectTypes: {
       web: "Web Application",
@@ -441,8 +412,8 @@ export const en = {
       description: "Fill out the form below to discuss your project and receive a custom quote.",
     },
     project: {
-      title: "Let's Discuss Your Project",
-      description: "Fill out the form below and I'll get back to you within 24 hours.",
+      title: "Let\'s Discuss Your Project",
+      description: "Fill out the form below and I\'ll get back to you within 24 hours.",
     },
     general: {
       title: "Get in Touch",
@@ -450,7 +421,7 @@ export const en = {
     },
     contact: {
       title: "Send Me a Message",
-      description: "I'll get back to you as soon as possible.",
+      description: "I\'ll get back to you as soon as possible.",
     },
   },
   serviceDialog: {
@@ -472,29 +443,29 @@ export const en = {
         benefit3: "Reduced technical debt with modern development practices"
       },
       "ecommerce": {
-        benefit1: "Higher conversion rates with optimized checkout flows",
-        benefit2: "Increased average order value with cross-selling features",
-        benefit3: "Lower cart abandonment with streamlined user experience"
+        benefit1: "Higher conversion rates with optimized European checkout flows & AI personalization",
+        benefit2: "Increased average order value with targeted cross-selling/upselling",
+        benefit3: "Enhanced customer loyalty through superior UX and retention strategies"
       },
-      "multilingual-solutions": {
-        benefit1: "Expanded market reach across all Swiss language regions",
-        benefit2: "Improved customer loyalty with culturally relevant experiences",
-        benefit3: "Enhanced SEO performance for multiple language markets"
+      "full-stack-development": {
+        benefit1: "Cohesive and integrated application architecture",
+        benefit2: "Efficient development lifecycle with a single point of contact",
+        benefit3: "Versatile solutions adaptable to diverse project requirements"
       },
-      "european-payment": {
-        benefit1: "Increased sales with preferred local payment methods",
-        benefit2: "Reduced payment friction for Swiss and European customers",
-        benefit3: "Lower transaction costs with optimized payment routing"
-      },
-      "data-compliance": {
-        benefit1: "Reduced legal risks with compliant data handling",
-        benefit2: "Enhanced customer trust with transparent privacy practices",
-        benefit3: "Future-proof systems aligned with evolving regulations"
+      "european-go-to-market-solutions": {
+        benefit1: "Seamless entry and expansion into diverse European markets",
+        benefit2: "Enhanced user engagement through localized and accessible experiences",
+        benefit3: "Full regulatory compliance, minimizing risks and building trust across Europe"
       },
       "maintenance-support": {
-        benefit1: "Minimized downtime with proactive monitoring",
-        benefit2: "Reduced security vulnerabilities with regular updates",
-        benefit3: "Continuous improvement based on performance analytics"
+        benefit1: "Minimized downtime with proactive monitoring and rapid response",
+        benefit2: "Reduced operational risks with up-to-date security and compliance",
+        benefit3: "Continuous business value through iterative improvements and adaptation"
+      },
+      "performance-optimization": {
+        benefit1: "Improved search engine rankings and visibility",
+        benefit2: "Enhanced user satisfaction and lower bounce rates",
+        benefit3: "Higher conversion rates and better ROI on digital investments"
       }
     },
     close: "Close",
@@ -515,7 +486,7 @@ export const en = {
   },
   footer: {
     description:
-      "Full-stack developer specializing in creating custom digital solutions for Swiss businesses. Based in Zurich, Switzerland.",
+      "Zurich-based Full-Stack Developer & Solution Engineer crafting AI-enhanced, accessible (EAA 2025), and compliant digital solutions for Swiss and European businesses.",
     quickLinks: "Quick Links",
     contact: "Contact",
     rights: "All rights reserved.",

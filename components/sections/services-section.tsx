@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { Layers, Check, RefreshCw, Code, Shield, Globe2, CreditCard } from "lucide-react"
+import { Layers, Check, RefreshCw, Code, Globe2, Terminal, Gauge } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
@@ -35,44 +35,44 @@ export function ServicesSection() {
       features: [
         t("services.ecommerce.features.payment"),
         t("services.ecommerce.features.inventory"),
-        t("services.ecommerce.features.analytics"),
-        t("services.ecommerce.features.mobile"),
+        t("services.ecommerce.features.personalization"),
+        t("services.ecommerce.features.optimization"),
       ],
     },
     {
-      id: "multilingual-solutions",
-      title: t("services.multilingualSolutions.title"),
+      id: "full-stack-development",
+      title: t("services.fullStackDevelopment.title"),
+      icon: <Terminal className="h-10 w-10 text-accent" />,
+      description: t("services.fullStackDevelopment.description"),
+      features: [
+        t("services.fullStackDevelopment.features.frontend"),
+        t("services.fullStackDevelopment.features.backend"),
+        t("services.fullStackDevelopment.features.database"),
+        t("services.fullStackDevelopment.features.integration"),
+      ],
+    },
+    {
+      id: "performance-optimization",
+      title: t("services.performanceOptimization.title"),
+      icon: <Gauge className="h-10 w-10 text-accent" />,
+      description: t("services.performanceOptimization.description"),
+      features: [
+        t("services.performanceOptimization.features.coreWebVitals"),
+        t("services.performanceOptimization.features.loadSpeed"),
+        t("services.performanceOptimization.features.uxImprovement"),
+        t("services.performanceOptimization.features.seoConversion"),
+      ],
+    },
+    {
+      id: "european-go-to-market-solutions",
+      title: t("services.europeanGoToMarketSolutions.title"),
       icon: <Globe2 className="h-10 w-10 text-accent" />,
-      description: t("services.multilingualSolutions.description"),
+      description: t("services.europeanGoToMarketSolutions.description"),
       features: [
-        t("services.multilingualSolutions.features.localization"),
-        t("services.multilingualSolutions.features.translation"),
-        t("services.multilingualSolutions.features.regional"),
-        t("services.multilingualSolutions.features.seo"),
-      ],
-    },
-    {
-      id: "european-payment",
-      title: t("services.europeanPayment.title"),
-      icon: <CreditCard className="h-10 w-10 text-accent" />,
-      description: t("services.europeanPayment.description"),
-      features: [
-        t("services.europeanPayment.features.methods"),
-        t("services.europeanPayment.features.compliance"),
-        t("services.europeanPayment.features.currencies"),
-        t("services.europeanPayment.features.security"),
-      ],
-    },
-    {
-      id: "data-compliance",
-      title: t("services.dataCompliance.title"),
-      icon: <Shield className="h-10 w-10 text-accent" />,
-      description: t("services.dataCompliance.description"),
-      features: [
-        t("services.dataCompliance.features.gdpr"),
-        t("services.dataCompliance.features.swiss"),
-        t("services.dataCompliance.features.hosting"),
-        t("services.dataCompliance.features.audits"),
+        t("services.europeanGoToMarketSolutions.features.localization"),
+        t("services.europeanGoToMarketSolutions.features.multilingualSeo"),
+        t("services.europeanGoToMarketSolutions.features.accessibilityCompliance"),
+        t("services.europeanGoToMarketSolutions.features.dataPrivacyFrameworks"),
       ],
     },
     {
@@ -81,9 +81,10 @@ export function ServicesSection() {
       icon: <RefreshCw className="h-10 w-10 text-accent" />,
       description: t("services.maintenanceSupport.description"),
       features: [
-        t("services.maintenanceSupport.features.support"),
+        t("services.maintenanceSupport.features.monitoring"),
         t("services.maintenanceSupport.features.updates"),
-        t("services.maintenanceSupport.features.improvements"),
+        t("services.maintenanceSupport.features.adaptation"),
+        t("services.maintenanceSupport.features.optimization"),
       ],
     },
   ]
