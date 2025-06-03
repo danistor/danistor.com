@@ -105,22 +105,24 @@ export function ServicesSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border"
+              className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border flex flex-col h-full"
             >
-              <div className="mb-6 p-3 rounded-lg bg-accent/10 inline-block">{service.icon}</div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3>
-              <p className="text-muted-foreground mb-6">{service.description}</p>
-              <ul className="space-y-2">
-                {service.features.map((feature, i) => (
-                  <li key={i} className="flex items-start">
-                    <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground text-sm">{feature}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="flex-grow">
+                <div className="mb-6 p-3 rounded-lg bg-accent/10 inline-block">{service.icon}</div>
+                <h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3>
+                <p className="text-muted-foreground mb-6">{service.description}</p>
+                <ul className="space-y-2 mb-6">
+                  {service.features.map((feature, i) => (
+                    <li key={i} className="flex items-start">
+                      <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline" size="lg" className="mt-6 w-full hover:bg-accent/10">
+                  <Button variant="outline" size="lg" className="w-full hover:bg-accent/10">
                     {t("cta.learnMore")}
                   </Button>
                 </DialogTrigger>
