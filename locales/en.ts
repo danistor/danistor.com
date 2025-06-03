@@ -35,7 +35,7 @@ export const en = {
     title: "Full-Stack Developer & Solutions Engineer",
     subtitle: "Building exceptional digital experiences",
     description:
-      "I engineer future-ready digital solutions leveraging AI and sustainable practices, helping Swiss and European businesses boost revenue, optimize operations, and deliver exceptional, accessible user experiences in full compliance with EU and Swiss regulations (including GDPR & EAA 2025).",
+      "I engineer future-ready digital solutions leveraging AI and sustainable practices, helping Swiss and European businesses boost revenue, optimize operations and deliver exceptional, accessible user experiences in full compliance with EU and Swiss regulations (including GDPR & EAA 2025).",
     trustedBy: "Trusted by leading Swiss companies",
     features: {
       fastDelivery: "Agile Delivery",
@@ -55,7 +55,7 @@ export const en = {
     subheading: "Digital solutions, including AI integration and accessibility compliance (EAA 2025), delivered with precision and expertise for Swiss and EU businesses.",
     webDev: {
       title: "Swiss-Built Web Applications",
-      description: "Accessible, AI-enhanced web solutions built for businesses in Switzerland and Europe. Focus on clean code, great performance, and full EAA/GDPR compliance.",
+      description: "Accessible, AI-enhanced web solutions built for businesses in Switzerland and Europe. Focus on clean code, great performance and full EAA/GDPR compliance.",
       features: {
         responsive: "Accessible designs meeting WCAG 2.2 AA standards",
         api: "Secure API integrations with Swiss-grade security",
@@ -85,7 +85,7 @@ export const en = {
     },
     europeanGoToMarketSolutions: {
       title: "Swiss & EU Market Expansion",
-      description: "Solutions for businesses entering and expanding across European markets. Addressing localization, compliance, and cultural adaptation needs.",
+      description: "Solutions for businesses entering and expanding across European markets. Addressing localization, compliance and cultural adaptation needs.",
       features: {
         multilingual: "Multilingual content systems with regional targeting",
         accessibility: "EAA 2025 accessibility implementation",
@@ -95,7 +95,7 @@ export const en = {
     },
     performanceOptimization: {
       title: "Swiss-Standard Performance",
-      description: "Transformation of sluggish websites into lightning-fast experiences. Optimization focused on Core Web Vitals, user experience, and conversion improvement.",
+      description: "Transformation of sluggish websites into lightning-fast experiences. Optimization focused on Core Web Vitals, user experience and conversion improvement.",
       features: {
         coreWebVitals: "Core Web Vitals enhancement (LCP, INP, CLS)",
         mobile: "Mobile experience optimization for European users",
@@ -105,7 +105,7 @@ export const en = {
     },
     maintenanceSupport: {
       title: "Ongoing Partnership & Evolution",
-      description: "Reliable, responsive support after launch. Maintenance ensuring digital assets remain secure, compliant, and evolving with business needs.",
+      description: "Reliable, responsive support after launch. Maintenance ensuring digital assets remain secure, compliant and evolving with business needs.",
       features: {
         security: "Proactive security monitoring and updates",
         performance: "Regular performance reviews and improvements",
@@ -115,21 +115,21 @@ export const en = {
     },
   },
   process: {
-    heading: "How I Work",
-    subheading: "My agile, transparent process emphasizes AI-integration, sustainability, and full compliance (GDPR, EAA 2025) for Swiss and European businesses.",
+    heading: "Work Process",
+    subheading: "An agile, transparent process emphasizing AI-integration, sustainability and full compliance for Swiss and European businesses.",
     activities: "Key Activities",
     deliverables: "Deliverables",
     previousPhase: "Previous Phase",
     nextPhase: "Next Phase",
     discovery: {
       title: "Discovery & Planning",
-      description: "In-depth consultation to understand your vision, business goals, and target European audience. Research of your industry, competitors, and 2025 market trends. Identification of KPIs and success metrics. Crucially, assessment of accessibility (EAA 2025 / WCAG 2.2 AA), data residency, privacy (GDPR, Swiss FADP), and compliance needs (e.g., eIDAS 2.0). Definition of project scope, deliverables, and sustainable digital practices.",
+      description: "In-depth consultation to understand your vision, business goals and target European audience. Research of your industry, competitors and 2025 market trends. Identification of KPIs and success metrics. Crucially, assessment of accessibility (EAA 2025 / WCAG 2.2 AA), data residency and privacy (GDPR, Swiss FADP). Definition of project scope, deliverables and sustainable digital practices.",
       activities: {
         consultation: "In-depth consultation to understand your vision and business goals",
-        research: "Research of your industry, competitors, and market trends",
+        research: "Research of your industry, competitors and market trends",
         identification: "Identification of key performance indicators and success metrics",
-        compliance: "Assessment of data residency, privacy, and compliance needs (GDPR, Swiss law, eIDAS 2.0 readiness)",
-        definition: "Definition of project scope, deliverables, and sustainable digital practices"
+        compliance: "Assessment of data residency, privacy and compliance needs",
+        definition: "Definition of project scope, deliverables and sustainable digital practices"
       },
       deliverables: {
         brief: "Detailed project brief",
@@ -140,10 +140,10 @@ export const en = {
     },
     design: {
       title: "Design & Prototyping",
-      description: "Creation of visual concepts and interactive prototypes tailored to your brand. User experience optimization with a core focus on inclusive design and accessibility (EAA 2025, EN 301 549, WCAG 2.2 AA). Multilingual and localization strategies for diverse European audiences. Design for digital sustainability, low-carbon UX, and energy efficiency.",
+      description: "Creation of visual concepts and interactive prototypes tailored to your brand. User experience optimization with a core focus on inclusive design and accessibility (EAA 2025, WCAG 2.2 AA). Multilingual and localization strategies for diverse European audiences. Design for digital sustainability, low-carbon UX and energy efficiency.",
       activities: {
         concepts: "Creation of visual design concepts and interactive prototypes",
-        ux: "User experience optimization with accessibility (EN 301 549, WCAG 2.2+)",
+        ux: "User experience optimization with accessibility",
         multilingual: "Multilingual and localization considerations",
         sustainability: "Design for digital sustainability and energy efficiency"
       },
@@ -156,12 +156,12 @@ export const en = {
     },
     development: {
       title: "Development & Integration",
-      description: "End-to-end development using modern, secure technologies (React, Node.js, Headless CMS, Cloud, AI). Proactive integration of AI-driven features (e.g., generative AI content tools, predictive analytics, intelligent automation). Integration of European payment systems, digital identity (eIDAS 2025), and third-party services. DevSecOps principles applied throughout: secure coding, vulnerability management, regular security reviews, and data sovereignty (Swiss/EU hosting).",
+      description: "End-to-end development using modern, secure technologies (React, Node.js, Headless CMS, Cloud, AI). Proactive integration of AI-driven features (e.g., generative AI content tools, predictive analytics, intelligent automation). Integration of European payment systems and third-party services. DevSecOps principles applied throughout: secure coding, vulnerability management, regular security reviews and data sovereignty (Swiss/EU hosting).",
       activities: {
         development: "Frontend and backend development with modern, secure technologies",
         ai: "Implementation of AI-driven features and automation",
-        integration: "Integration of European payment systems, digital identity (eIDAS 2025), and third-party services",
-        security: "Secure coding practices, regular security reviews, and data sovereignty (Swiss/EU hosting)"
+        integration: "Integration of European payment systems and third-party services",
+        security: "Secure coding practices, regular security reviews and data sovereignty"
       },
       deliverables: {
         code: "Production-ready code",
@@ -172,9 +172,9 @@ export const en = {
     },
     testing: {
       title: "Testing, Launch & Optimization",
-      description: "Comprehensive testing: functionality, Core Web Vitals, performance, and security. Rigorous accessibility audits against EAA 2025 / WCAG 2.2 AA criteria. Security audits (e.g., OWASP Top 10) to meet Swiss/EU standards. Performance optimization for eco-friendly operation and exceptional user experience. Final data sovereignty and compliance checks (GDPR, EAA) before launch.",
+      description: "Comprehensive testing: functionality, Core Web Vitals, performance and security. Rigorous accessibility audits against EAA 2025 / WCAG 2.2 AA criteria. Security audits to meet Swiss/EU standards. Performance optimization for eco-friendly operation and exceptional user experience. Final data sovereignty and compliance checks (GDPR, EAA) before launch.",
       activities: {
-        testing: "Comprehensive testing for functionality, performance, and security",
+        testing: "Comprehensive testing for functionality, performance and security",
         accessibility: "Accessibility and security audits (Swiss/EU standards)",
         optimization: "Performance optimization for eco-friendly operation",
         compliance: "Final data sovereignty and compliance checks before launch"
@@ -188,9 +188,9 @@ export const en = {
     },
     support: {
       title: "Maintenance & Support",
-      description: "Ongoing updates, monitoring, and support for evolving European digital standards. Proactive security monitoring and regular compliance updates. Continuous performance improvements and sustainability reviews. Remote-first, multilingual support for clients across Switzerland and Europe.",
+      description: "Ongoing updates, monitoring and support for evolving European digital standards. Proactive security monitoring and regular compliance updates. Continuous performance improvements and sustainability reviews. Remote-first, multilingual support for clients across Switzerland and Europe.",
       activities: {
-        monitoring: "Ongoing updates, monitoring, and support for evolving European digital standards",
+        monitoring: "Ongoing updates, monitoring and support for evolving European digital standards",
         security: "Proactive security monitoring and regular compliance updates",
         improvements: "Continuous performance improvements and sustainability reviews",
         remote: "Remote-first, multilingual support for clients across Switzerland and Europe"
@@ -202,8 +202,8 @@ export const en = {
         support: "Ongoing technical support"
       }
     },
-    readyHeading: "What Sets Me Apart",
-    readyDescription: "Swiss & European Focus: Deep understanding of local regulations, languages, and business culture. Privacy & Compliance: Privacy-first development with GDPR, Swiss law, and eIDAS 2.0 expertise. Sustainability: Commitment to green hosting and energy-efficient solutions. AI & Innovation: Integration of the latest AI and automation trends for smarter digital products. Remote Collaboration: Seamless, transparent communication and project management across borders.",
+    readyHeading: "What Sets This Approach Apart",
+    readyDescription: "Swiss & European Focus: Deep understanding of local regulations, languages and business culture. Privacy & Compliance: Privacy-first development with GDPR and FADP. Sustainability: Commitment to green hosting and energy-efficient solutions. AI & Innovation: Integration of the latest AI and automation trends for smarter digital products. Remote Collaboration: Seamless, transparent communication and project management across borders.",
     startButton: "Start Your Project",
   },
   portfolio: {
@@ -220,7 +220,7 @@ export const en = {
       category: "E-Commerce",
       description: "A complete e-commerce solution for a Swiss supplements brand, built on Shopify with custom design and extensive optimizations.",
       challenge: "Bithy needed a comprehensive digital presence to launch their supplements brand, requiring end-to-end development from design to deployment with exceptional performance.",
-      solution: "I delivered a full-service solution including custom design, frontend and backend development, performance optimization, and Core Web Vitals enhancement on the Shopify platform.",
+      solution: "I delivered a full-service solution including custom design, frontend and backend development, performance optimization and Core Web Vitals enhancement on the Shopify platform.",
       results: {
         performance: "Achieved 85+ scores in Core Web Vitals with optimized loading and interaction times",
         conversion: "E-commerce conversion rate of 4.2%, exceeding industry average by 40%",
@@ -245,8 +245,8 @@ export const en = {
       title: "Ristorante Crosare Website",
       category: "Restaurant Website",
       description: "A modern, responsive website for a fine Italian restaurant with online reservation system and menu management.",
-      challenge: "The restaurant needed a complete digital presence to showcase their culinary offerings, facilitate reservations, and build their brand online.",
-      solution: "I delivered a full-service solution including design, frontend and backend development, and social media strategy to kickstart their digital presence.",
+      challenge: "The restaurant needed a complete digital presence to showcase their culinary offerings, facilitate reservations and build their brand online.",
+      solution: "I delivered a full-service solution including design, frontend and backend development and social media strategy to kickstart their digital presence.",
       results: {
         sales: "30% increase in online reservations within the first three months",
         efficiency: "Digital menu updates reduced printing costs by 75% annually",
@@ -258,7 +258,7 @@ export const en = {
       category: "E-Commerce",
       description: "A sophisticated recommendation engine for Switzerland\'s largest pet supplies retailer, enhancing the online shopping experience.",
       challenge: "Qualipet needed to improve their online sales by implementing personalized product recommendations based on customer behavior and preferences.",
-      solution: "I integrated a custom recommendation engine using PHP that analyzes purchase history, browsing patterns, and pet profiles to suggest relevant products.",
+      solution: "I integrated a custom recommendation engine using PHP that analyzes purchase history, browsing patterns and pet profiles to suggest relevant products.",
       results: {
         sales: "Increased average order value by 23%",
         conversion: "Improved conversion rate by 18% through personalized recommendations",
@@ -282,12 +282,12 @@ export const en = {
     markus: {
       name: "Markus Berger",
       company: "SwissTech Solutions",
-      text: "We needed a developer who could handle both frontend and backend challenges for our internal management system. The full-stack expertise delivered was exceptional - clean architecture, intuitive interfaces, and robust backend systems that integrated seamlessly with our existing infrastructure. Our team productivity improved by 35% within weeks of implementation.",
+      text: "We needed a developer who could handle both frontend and backend challenges for our internal management system. The full-stack expertise delivered was exceptional - clean architecture, intuitive interfaces and robust backend systems that integrated seamlessly with our existing infrastructure. Our team productivity improved by 35% within weeks of implementation.",
     },
     laura: {
       name: "Laura Meier",
       company: "Alpine Financial Services",
-      text: "Finding a developer who truly understands both technical requirements and business objectives is rare. The custom client portal developed for our financial services firm perfectly balances security, compliance, and user experience. The responsive design works flawlessly across all devices, and the authentication system provides the security our industry demands without compromising usability.",
+      text: "Finding a developer who truly understands both technical requirements and business objectives is rare. The custom client portal developed for our financial services firm perfectly balances security, compliance and user experience. The responsive design works flawlessly across all devices and the authentication system provides the security our industry demands without compromising usability.",
     },
   },
   about: {
@@ -295,8 +295,8 @@ export const en = {
     availableStatus: "Available for consultations",
     badge: "Solution Engineer",
     heading: "Transforming Technical Challenges Into Business Solutions",
-    paragraph1: "With <span class=\"font-semibold text-foreground\">over 10 years of experience</span> as a Solution Engineer and Full-Stack Developer based in Switzerland, I specialize in transforming business challenges into scalable, AI-enhanced, and compliant (EAA 2025, GDPR) digital solutions for the European market.",
-    paragraph2: "My approach combines technical precision with a deep understanding of European business needs and 2025 digital trends, ensuring solutions are technically excellent, strategically aligned, and future-proof.",
+    paragraph1: "With <span class=\"font-semibold text-foreground\">over 10 years of experience</span> as a Solution Engineer and Full-Stack Developer based in Switzerland, I specialize in transforming business challenges into scalable, AI-enhanced and compliant (EAA 2025, GDPR) digital solutions for the European market.",
+    paragraph2: "My approach combines technical precision with a deep understanding of European business needs and 2025 digital trends, ensuring solutions are technically excellent, strategically aligned and future-proof.",
     approachTitle: "Collaborative approach:",
     approach1: "Comprehensive solution design from initial concept to implementation",
     approach2: "Technical expertise that translates to practical business value",
@@ -320,7 +320,7 @@ export const en = {
   },
   blog: {
     heading: "Latest Insights & Articles",
-    subheading: "Stay updated with the latest trends, tips, and insights in web development and digital strategy.",
+    subheading: "Stay updated with the latest trends, tips and insights in web development and digital strategy.",
     post1: {
       title: "What\'s New in Next.js 15: Features You Need to Know",
       excerpt:
@@ -349,7 +349,7 @@ export const en = {
   },
   newsletter: {
     heading: "Stay Updated with the Latest Tech Insights",
-    subheading: "Subscribe for insights on AI in web dev, European digital compliance (EAA, GDPR), 2025 tech trends, and sustainable solutions for businesses in Switzerland & Europe.",
+    subheading: "Subscribe for insights on AI in web dev, European digital compliance (EAA, GDPR), 2025 tech trends and sustainable solutions for businesses in Switzerland & Europe.",
     placeholder: "Your email address",
     subscribe: "Subscribe",
     submitting: "Subscribing...",
@@ -469,7 +469,7 @@ export const en = {
   },
   footer: {
     description:
-      "Zurich-based Full-Stack Developer & Solution Engineer crafting AI-enhanced, accessible (EAA 2025), and compliant digital solutions for Swiss and European businesses.",
+      "Zurich-based Full-Stack Developer & Solution Engineer crafting AI-enhanced, accessible (EAA 2025) and compliant digital solutions for Swiss and European businesses.",
     quickLinks: "Quick Links",
     contact: "Contact",
     rights: "All rights reserved.",
