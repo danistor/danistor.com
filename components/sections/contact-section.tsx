@@ -25,7 +25,8 @@ export function ContactSection() {
           >
             <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20">{t("sections.contact")}</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">{t("contact.heading")}</h2>
-            <p className="text-muted-foreground mb-8">{t("contact.subheading")}</p>
+            <p className="text-muted-foreground mb-8">{t("contact.subheading1")}</p>
+            <p className="text-muted-foreground mb-8">{t("contact.subheading2")}</p>
 
             <div className="space-y-6 mb-8">
               <div className="flex items-start">

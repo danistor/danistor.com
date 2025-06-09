@@ -54,9 +54,9 @@ export function HeroSection() {
                   <MapPin className="h-3 w-3 mr-1" /> {t("hero.location")}
                 </Badge>
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
                 {t("hero.title")}
-                <span className="block text-accent">{t("hero.subtitle")}</span>
+                {/* <span className="block text-accent">{t("hero.subtitle")}</span> */}
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">{t("hero.description")}</p>
 

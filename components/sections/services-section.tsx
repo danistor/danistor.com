@@ -39,30 +39,30 @@ export function ServicesSection() {
         t("services.ecommerce.features.optimization"),
       ],
     },
-    {
-      id: "full-stack-development",
-      title: t("services.fullStackDevelopment.title"),
-      icon: <Terminal className="h-10 w-10 text-accent" />,
-      description: t("services.fullStackDevelopment.description"),
-      features: [
-        t("services.fullStackDevelopment.features.frontend"),
-        t("services.fullStackDevelopment.features.backend"),
-        t("services.fullStackDevelopment.features.communication"),
-        t("services.fullStackDevelopment.features.adaptation"),
-      ],
-    },
-    {
-      id: "european-go-to-market-solutions",
-      title: t("services.europeanGoToMarketSolutions.title"),
-      icon: <Globe2 className="h-10 w-10 text-accent" />,
-      description: t("services.europeanGoToMarketSolutions.description"),
-      features: [
-        t("services.europeanGoToMarketSolutions.features.multilingual"),
-        t("services.europeanGoToMarketSolutions.features.accessibility"),
-        t("services.europeanGoToMarketSolutions.features.dataPrivacy"),
-        t("services.europeanGoToMarketSolutions.features.cultural"),
-      ],
-    },
+    // {
+    //   id: "full-stack-development",
+    //   title: t("services.fullStackDevelopment.title"),
+    //   icon: <Terminal className="h-10 w-10 text-accent" />,
+    //   description: t("services.fullStackDevelopment.description"),
+    //   features: [
+    //     t("services.fullStackDevelopment.features.frontend"),
+    //     t("services.fullStackDevelopment.features.backend"),
+    //     t("services.fullStackDevelopment.features.communication"),
+    //     t("services.fullStackDevelopment.features.adaptation"),
+    //   ],
+    // },
+    // {
+    //   id: "european-go-to-market-solutions",
+    //   title: t("services.europeanGoToMarketSolutions.title"),
+    //   icon: <Globe2 className="h-10 w-10 text-accent" />,
+    //   description: t("services.europeanGoToMarketSolutions.description"),
+    //   features: [
+    //     t("services.europeanGoToMarketSolutions.features.multilingual"),
+    //     t("services.europeanGoToMarketSolutions.features.accessibility"),
+    //     t("services.europeanGoToMarketSolutions.features.dataPrivacy"),
+    //     t("services.europeanGoToMarketSolutions.features.cultural"),
+    //   ],
+    // },
     {
       id: "performance-optimization",
       title: t("services.performanceOptimization.title"),
@@ -74,18 +74,18 @@ export function ServicesSection() {
         t("services.performanceOptimization.features.reporting"),
       ],
     },
-    {
-      id: "maintenance-support",
-      title: t("services.maintenanceSupport.title"),
-      icon: <RefreshCw className="h-10 w-10 text-accent" />,
-      description: t("services.maintenanceSupport.description"),
-      features: [
-        t("services.maintenanceSupport.features.security"),
-        t("services.maintenanceSupport.features.performance"),
-        t("services.maintenanceSupport.features.guidance"),
-        t("services.maintenanceSupport.features.support"),
-      ],
-    },
+    // {
+    //   id: "maintenance-support",
+    //   title: t("services.maintenanceSupport.title"),
+    //   icon: <RefreshCw className="h-10 w-10 text-accent" />,
+    //   description: t("services.maintenanceSupport.description"),
+    //   features: [
+    //     t("services.maintenanceSupport.features.security"),
+    //     t("services.maintenanceSupport.features.performance"),
+    //     t("services.maintenanceSupport.features.guidance"),
+    //     t("services.maintenanceSupport.features.support"),
+    //   ],
+    // },
   ]
 
   return (
