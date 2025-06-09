@@ -43,9 +43,55 @@ export const fr = {
       secureSolutions: "Solutions sécurisées"
     }
   },
+  packages: {
+    heading: "Solutions sur mesure pour vos besoins métier spécifiques",
+    subheading: "Forfaits à portée fixe conçus pour offrir une valeur maximale dans un délai prévisible. Idéal pour les projets avec des objectifs clairs et des exigences définies.",
+    table: {
+      package: "Forfait",
+      scope: "Portée",
+      timeline: "Chronologie",
+      idealFor: "Idéal pour",
+    },
+    webAppMvp: {
+      name: "MVP d'application Web",
+      scope: "Fonctionnalités de base, 3-5 fonctionnalités, tableau de bord de base",
+      timeline: "4-6 semaines",
+      idealFor: "Tester de nouvelles idées commerciales",
+    },
+    businessSystem: {
+      name: "Système d'entreprise",
+      scope: "Automatisation complète du flux de travail, gestion des utilisateurs, rapports",
+      timeline: "8-12 semaines",
+      idealFor: "Remplacer les processus manuels",
+    },
+    ecommerceLaunch: {
+      name: "Lancement e-commerce",
+      scope: "Boutique en ligne complète, intégration des paiements, panneau d'administration",
+      timeline: "6-10 semaines",
+      idealFor: "Vendeurs en ligne pour la première fois",
+    },
+    enterpriseApplication: {
+      name: "Application d'entreprise",
+      scope: "Système multi-utilisateurs complexe, intégrations d'API, fonctionnalités avancées",
+      timeline: "12-20 semaines",
+      idealFor: "Entreprises établies en pleine croissance",
+    },
+    systemModernization: {
+      name: "Modernisation du système",
+      scope: "Mise à niveau du système existant, migration des données, optimisation des performances",
+      timeline: "8-16 semaines",
+      idealFor: "Systèmes obsolètes qui vous freinent",
+    },
+    growthOptimization: {
+      name: "Optimisation de la croissance",
+      scope: "Améliorations des conversions, réglage des performances, corrections de l'expérience utilisateur",
+      timeline: "2-4 semaines",
+      idealFor: "Systèmes existants sous-performants",
+    },
+  },
   process: {
-    heading: "Comment je travaille",
-    subheading: "Une méthodologie complète et tournée vers l'avenir pour les entreprises suisses et européennes.",
+    heading: "Processus de travail",
+    subheading: "Un processus agile et transparent mettant l'accent sur l'intégration de l'IA, la durabilité et la pleine conformité pour les entreprises suisses et européennes.",
     activities: "Activités clés",
     deliverables: "Livrables",
     previousPhase: "Phase précédente",

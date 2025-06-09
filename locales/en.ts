@@ -24,6 +24,7 @@ export const en = {
   sections: {
     about: "About Me",
     services: "Services I Offer",
+    packages: "Packages",
     portfolio: "Portfolio",
     testimonials: "Testimonials",
     process: "My Process",
@@ -109,6 +110,52 @@ export const en = {
         guidance: "Technical guidance for future digital strategy",
         support: "Multilingual support across Switzerland and Europe",
       },
+    },
+  },
+  packages: {
+    heading: "Tailored Solutions for Your Specific Business Needs",
+    subheading: "Fixed-scope packages designed to deliver maximum value in a predictable timeframe. Ideal for projects with clear goals and defined requirements.",
+    table: {
+      package: "Package",
+      scope: "Scope",
+      timeline: "Timeline",
+      idealFor: "Ideal For",
+    },
+    webAppMvp: {
+      name: "Web App MVP",
+      scope: "Core functionality, 3-5 features, basic dashboard",
+      timeline: "4-6 weeks",
+      idealFor: "Testing new business ideas",
+    },
+    businessSystem: {
+      name: "Business System",
+      scope: "Full workflow automation, user management, reporting",
+      timeline: "8-12 weeks",
+      idealFor: "Replacing manual processes",
+    },
+    ecommerceLaunch: {
+      name: "E-commerce Launch",
+      scope: "Complete online store, payment integration, admin panel",
+      timeline: "6-10 weeks",
+      idealFor: "First-time online sellers",
+    },
+    enterpriseApplication: {
+      name: "Enterprise Application",
+      scope: "Complex multi-user system, API integrations, advanced features",
+      timeline: "12-20 weeks",
+      idealFor: "Established businesses scaling",
+    },
+    systemModernization: {
+      name: "System Modernization",
+      scope: "Legacy system upgrade, data migration, performance optimization",
+      timeline: "8-16 weeks",
+      idealFor: "Outdated systems holding you back",
+    },
+    growthOptimization: {
+      name: "Growth Optimization",
+      scope: "Conversion improvements, performance tuning, user experience fixes",
+      timeline: "2-4 weeks",
+      idealFor: "Existing systems underperforming",
     },
   },
   process: {
@@ -269,7 +316,7 @@ export const en = {
     jenny: {
       name: "Jenny Sella",
       company: "Bithy",
-      text: "Launching our supplements brand online seemed overwhelming until we found this developer. The e-commerce platform delivered exceeded all expectations with lightning-fast performance and a seamless mobile experience. Our conversion rates are 40% above industry average, directly impacting our bottom line. A true digital partner who understands business growth.",
+      text: "We went from losing money on traffic to our highest revenue months ever. The new system pays for itself every 21 days.",
     },
     daniela: {
       name: "Daniela Filipescu",

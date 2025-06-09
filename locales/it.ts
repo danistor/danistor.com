@@ -43,9 +43,55 @@ export const it = {
       secureSolutions: "Soluzioni sicure"
     }
   },
+  packages: {
+    heading: "Soluzioni su misura per le vostre specifiche esigenze aziendali",
+    subheading: "Pacchetti a scopo fisso progettatiเพื่อ offrire il massimo valore in un arco di tempo prevedibile. Ideale per progetti con obiettivi chiari e requisiti definiti.",
+    table: {
+      package: "Pacchetto",
+      scope: "Scopo",
+      timeline: "Tempistica",
+      idealFor: "Ideale per",
+    },
+    webAppMvp: {
+      name: "MVP di applicazione Web",
+      scope: "Funzionalità di base, 3-5 funzionalità, dashboard di base",
+      timeline: "4-6 settimane",
+      idealFor: "Testare nuove idee di business",
+    },
+    businessSystem: {
+      name: "Sistema aziendale",
+      scope: "Automazione completa del flusso di lavoro, gestione degli utenti, reporting",
+      timeline: "8-12 settimane",
+      idealFor: "Sostituzione di processi manuali",
+    },
+    ecommerceLaunch: {
+      name: "Lancio e-commerce",
+      scope: "Negozio online completo, integrazione dei pagamenti, pannello di amministrazione",
+      timeline: "6-10 settimane",
+      idealFor: "Venditori online per la prima volta",
+    },
+    enterpriseApplication: {
+      name: "Applicazione aziendale",
+      scope: "Sistema multiutente complesso, integrazioni API, funzionalità avanzate",
+      timeline: "12-20 settimane",
+      idealFor: "Aziende consolidate in crescita",
+    },
+    systemModernization: {
+      name: "Modernizzazione del sistema",
+      scope: "Aggiornamento del sistema legacy, migrazione dei dati, ottimizzazione delle prestazioni",
+      timeline: "8-16 settimane",
+      idealFor: "Sistemi obsoleti che vi frenano",
+    },
+    growthOptimization: {
+      name: "Ottimizzazione della crescita",
+      scope: "Miglioramenti delle conversioni, ottimizzazione delle prestazioni, correzioni dell'esperienza utente",
+      timeline: "2-4 settimane",
+      idealFor: "Sistemi esistenti con prestazioni inferiori",
+    },
+  },
   process: {
-    heading: "Come lavoro",
-    subheading: "Una metodologia completa e orientata al futuro per aziende svizzere ed europee.",
+    heading: "Processo di lavoro",
+    subheading: "Un processo agile e trasparente che enfatizza l'integrazione dell'IA, la sostenibilità e la piena conformità per le aziende svizzere ed europee.",
     activities: "Attività principali",
     deliverables: "Consegne",
     previousPhase: "Fase precedente",

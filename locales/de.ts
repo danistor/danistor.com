@@ -43,9 +43,55 @@ export const de = {
       secureSolutions: "Sichere Lösungen"
     }
   },
+  packages: {
+    heading: "Maßgeschneiderte Lösungen für Ihre spezifischen Geschäftsanforderungen",
+    subheading: "Festpreis-Pakete, die darauf ausgelegt sind, maximalen Wert in einem vorhersehbaren Zeitrahmen zu liefern. Ideal für Projekte mit klaren Zielen und definierten Anforderungen.",
+    table: {
+      package: "Paket",
+      scope: "Umfang",
+      timeline: "Zeitplan",
+      idealFor: "Ideal für",
+    },
+    webAppMvp: {
+      name: "Web-App-MVP",
+      scope: "Kernfunktionalität, 3-5 Funktionen, grundlegendes Dashboard",
+      timeline: "4-6 Wochen",
+      idealFor: "Testen neuer Geschäftsideen",
+    },
+    businessSystem: {
+      name: "Geschäftssystem",
+      scope: "Vollständige Workflow-Automatisierung, Benutzerverwaltung, Berichterstattung",
+      timeline: "8-12 Wochen",
+      idealFor: "Ersetzen manueller Prozesse",
+    },
+    ecommerceLaunch: {
+      name: "E-Commerce-Start",
+      scope: "Kompletter Online-Shop, Zahlungsintegration, Admin-Panel",
+      timeline: "6-10 Wochen",
+      idealFor: "Erstmalige Online-Verkäufer",
+    },
+    enterpriseApplication: {
+      name: "Unternehmensanwendung",
+      scope: "Komplexes Mehrbenutzersystem, API-Integrationen, erweiterte Funktionen",
+      timeline: "12-20 Wochen",
+      idealFor: "Etablierte Unternehmen im Wachstum",
+    },
+    systemModernization: {
+      name: "Systemmodernisierung",
+      scope: "Upgrade eines Altsystems, Datenmigration, Leistungsoptimierung",
+      timeline: "8-16 Wochen",
+      idealFor: "Veraltete Systeme, die Sie zurückhalten",
+    },
+    growthOptimization: {
+      name: "Wachstumsoptimierung",
+      scope: "Verbesserung der Konversionen, Leistungsoptimierung, Korrekturen der Benutzererfahrung",
+      timeline: "2-4 Wochen",
+      idealFor: "Bestehende Systeme mit unzureichender Leistung",
+    },
+  },
   process: {
-    heading: "Wie ich arbeite",
-    subheading: "Eine umfassende, zukunftsorientierte Methodik für Schweizer und europäische Unternehmen.",
+    heading: "Arbeitsprozess",
+    subheading: "Ein agiler, transparenter Prozess mit Schwerpunkt auf KI-Integration, Nachhaltigkeit und vollständiger Compliance für Schweizer und europäische Unternehmen.",
     activities: "Hauptaktivitäten",
     deliverables: "Lieferungen",
     previousPhase: "Vorherige Phase",

@@ -1,6 +1,7 @@
 import { MainLayout } from "@/components/layout/main-layout"
 import { HeroSection } from "@/components/sections/hero-section"
 import { ServicesSection } from "@/components/sections/services-section"
+import { PackagesSection } from "@/components/sections/packages-section"
 import { ProcessSection } from "@/components/sections/process-section"
 import { PortfolioSection } from "@/components/sections/portfolio-section"
 import { TestimonialsSection } from "@/components/sections/testimonials-section"
@@ -26,6 +27,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
       {/* <ClientsSection /> */}
       {/* <StatsSection /> */}
       <ServicesSection />
+      <PackagesSection />
       <ProcessSection />
       <PortfolioSection />
       <TestimonialsSection />
