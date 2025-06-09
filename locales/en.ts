@@ -314,12 +314,12 @@ export const en = {
     heading: "What Clients Say",
     subheading: "Hear from Swiss businesses that have transformed their digital presence with my solutions.",
     jenny: {
-      name: "Jenny Sella",
+      name: "Jenny Sella, Founder",
       company: "Bithy",
       text: "We went from losing money on traffic to our highest revenue months ever. The new system pays for itself every 21 days.",
     },
     daniela: {
-      name: "Daniela Filipescu",
+      name: "Daniela Filipescu, Co-Founder",
       company: "Ristorante Crosare",
       text: "Our restaurant needed more than just a website. We needed a digital strategy that would bring customers through our doors. The complete solution delivered not only looks beautiful but has increased our online reservations by 30% and significantly reduced our operational costs. The online booking system for special events has been a game-changer for our business.",
     },

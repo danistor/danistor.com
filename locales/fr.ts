@@ -24,6 +24,7 @@ export const fr = {
   sections: {
     about: "À propos",
     services: "Services",
+    packages: "Forfaits",
     portfolio: "Portfolio",
     testimonials: "Témoignages",
     process: "Mon processus",
@@ -436,9 +437,10 @@ export const fr = {
     },
   },
   contact: {
-    heading: "Discutons de votre projet",
-    subheading: "Prêt à transformer votre présence numérique ? Contactez-moi pour discuter de la façon dont je peux aider votre entreprise à croître.",
-    email: "Email",
+    heading: "Audit gratuit des processus métier",
+    subheading1: "J'examine comment vous gérez actuellement vos processus métier les plus chronophages et vous montre comment une application web sur mesure pourrait les optimiser.",
+    subheading2: "La plupart des audits révèlent un gain de temps de 10 à 20 heures par semaine dès le premier entretien.",
+    email: "E-mail",
     phone: "Téléphone",
     location: "Localisation",
     address: "Zurich, Suisse",

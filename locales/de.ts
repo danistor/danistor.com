@@ -24,6 +24,7 @@ export const de = {
   sections: {
     about: "Über mich",
     services: "Dienstleistungen",
+    packages: "Pakete",
     portfolio: "Portfolio",
     testimonials: "Referenzen",
     process: "Mein Prozess",
@@ -436,14 +437,15 @@ export const de = {
     },
   },
   contact: {
-    heading: "Lassen Sie uns über Ihr Projekt sprechen",
-    subheading: "Bereit, Ihre digitale Präsenz zu transformieren? Kontaktieren Sie mich, um zu besprechen, wie ich Ihrem Unternehmen beim Wachstum helfen kann.",
+    heading: "Kostenlose Geschäftsprozess-Analyse",
+    subheading1: "Ich analysiere, wie Sie derzeit Ihre zeitaufwändigsten Geschäftsprozesse abwickeln, und zeige Ihnen, wie eine individuelle Webanwendung diese optimieren könnte.",
+    subheading2: "Die meisten Analysen zeigen bereits im ersten Gespräch ein Einsparpotenzial von 10-20 Stunden pro Woche auf.",
     email: "E-Mail",
     phone: "Telefon",
     location: "Standort",
     address: "Zürich, Schweiz",
     followMe: "Folgen Sie mir",
-    formTitle: "Senden Sie mir eine Nachricht",
+    formTitle: "Nachricht senden",
   },
   newsletter: {
     heading: "Bleiben Sie mit den neuesten Tech-Einblicken auf dem Laufenden",

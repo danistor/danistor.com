@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import { motion, AnimatePresence, useInView } from 'framer-motion'
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
@@ -42,15 +42,6 @@ export function TestimonialsSection() {
       stars: 5,
     }
   ]
-
-  // Testimonial auto-rotation
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveTestimonial(prev => (prev + 1) % testimonials.length)
-    }, 12000)
-
-    return () => clearInterval(interval)
-  }, [testimonials.length])
 
   return (
     <section ref={ref} id="testimonials" className="py-16 md:py-24">

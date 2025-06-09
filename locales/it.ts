@@ -24,6 +24,7 @@ export const it = {
   sections: {
     about: "Chi sono",
     services: "Servizi",
+    packages: "Pacchetti",
     portfolio: "Portfolio",
     testimonials: "Testimonianze",
     process: "Il mio processo",
@@ -436,8 +437,9 @@ export const it = {
     },
   },
   contact: {
-    heading: "Parliamo del tuo progetto",
-    subheading: "Pronto a trasformare la tua presenza digitale? Contattami per discutere di come posso aiutare la tua azienda a crescere.",
+    heading: "Analisi gratuita dei processi aziendali",
+    subheading1: "Analizzerò come gestite attualmente i vostri processi aziendali più dispendiosi in termini di tempo e vi mostrerò come un'applicazione web personalizzata potrebbe ottimizzarli.",
+    subheading2: "La maggior parte delle analisi rivela un risparmio di 10-20 ore settimanali già dalla prima consulenza.",
     email: "Email",
     phone: "Telefono",
     location: "Località",
