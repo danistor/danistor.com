@@ -36,7 +36,7 @@ export const de = {
     location: "Zürich-basierter Tech-Partner, aktiv in ganz Europa.",
     title: "Ich helfe Schweizer und EU-Unternehmen, 20K+ mehr Umsatz durch maßgeschneiderte Webanwendungen zu generieren, die wirklich funktionieren",
     subtitle: "Untertitel",
-    description: "Ich verwandle komplexe Geschäftsideen in leistungsstarke Webanwendungen, die Ihr Team wirklich nutzt und Ihre Kunden lieben werden. Meine Kunden starten schneller, arbeiten effizienter und wachsen stärker mit maßgeschneiderten Lösungen, die echte Probleme lösen – und keine neuen schaffen.",
+    description: "Ich baue umsatzbereite, KI-gestützte Webplattformen. Konform, schnell und skalierbar. Von der Idee bis zum Launch in 4–6 Wochen. Sitz in Zürich. Lieferung in ganz Europa.",
     trustedBy: "Vertraut von führenden Schweizer Unternehmen",
     features: {
       fastDelivery: "13 Stunden wöchentlich gespart",
@@ -410,10 +410,9 @@ export const de = {
     },
     projectTypes: {
       web: "Webanwendung",
-      mobile: "Mobile App",
       ecommerce: "E-Commerce",
       enterprise: "Unternehmenssoftware",
-      other: "Sonstiges",
+      other: "Andere",
     },
     budgetOptions: {
       notSure: "Noch nicht sicher",

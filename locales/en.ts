@@ -12,7 +12,7 @@ export const en = {
   },
   cta: {
     getQuote: "Get a Free Quote",
-    startProject: "Start a Project",
+    startProject: "Start Your Project",
     viewWork: "See My Work",
     learnMore: "Learn More",
     discussProject: "Let\'s Discuss Your Project",
@@ -36,7 +36,7 @@ export const en = {
     location: "Zurich-based tech partner, shipping cross-Europe.",
     title: "I Help Swiss and EU Companies Generate 20K+ More Revenue Through Custom Web Applications That Actually Work",
     subtitle: "subtitle",
-    description: "I turn complex business ideas into powerful web applications that your team will actually use and your customers will love. My clients launch faster, operate smoother and scale bigger with custom-built solutions that solve real problems, not create new ones.",
+    description: "I build revenue-ready, AI-powered web platforms. Compliant, fast, and scalable. From idea to launch in 4–6 weeks. Zurich-based. Shipping across Europe.",
     trustedBy: "Trusted by leading Swiss companies",
     features: {
       fastDelivery: "13 Hours Saved Weekly",
@@ -413,7 +413,6 @@ export const en = {
     },
     projectTypes: {
       web: "Web Application",
-      mobile: "Mobile App",
       ecommerce: "E-commerce",
       enterprise: "Enterprise Software",
       other: "Other",

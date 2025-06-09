@@ -178,7 +178,6 @@ export function ContactForm({ formType }: ContactFormProps) {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="web">{t("form.projectTypes.web")}</SelectItem>
-                    <SelectItem value="mobile">{t("form.projectTypes.mobile")}</SelectItem>
                     <SelectItem value="ecommerce">{t("form.projectTypes.ecommerce")}</SelectItem>
                     <SelectItem value="enterprise">{t("form.projectTypes.enterprise")}</SelectItem>
                     <SelectItem value="other">{t("form.projectTypes.other")}</SelectItem>

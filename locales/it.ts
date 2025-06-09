@@ -36,7 +36,7 @@ export const it = {
     location: "Partner tecnologico a Zurigo, attivo in tutta Europa.",
     title: "Aiuto aziende svizzere ed europee a generare oltre 20K CHF di fatturato in più con applicazioni web su misura che funzionano davvero",
     subtitle: "sottotitolo",
-    description: "Trasformo idee di business complesse in potenti applicazioni web che il tuo team userà davvero e i tuoi clienti ameranno. I miei clienti lanciano più velocemente, lavorano meglio e crescono di più con soluzioni su misura che risolvono problemi reali, non ne creano di nuovi.",
+    description: "Costruisco piattaforme web pronte a generare ricavi, potenziate dall'IA. Conformi, veloci e scalabili. Dall'idea al lancio in 4-6 settimane. Basato a Zurigo. Operativo in tutta Europa.",
     trustedBy: "Scelto da aziende svizzere leader",
     features: {
       fastDelivery: "13 ore risparmiate ogni settimana",
@@ -410,7 +410,6 @@ export const it = {
     },
     projectTypes: {
       web: "Applicazione web",
-      mobile: "App mobile",
       ecommerce: "E-commerce",
       enterprise: "Software aziendale",
       other: "Altro",

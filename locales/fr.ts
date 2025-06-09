@@ -36,7 +36,7 @@ export const fr = {
     location: "Partenaire tech basé à Zurich, actif dans toute l'Europe.",
     title: "J'aide les entreprises suisses et européennes à générer 20K+ de chiffre d'affaires supplémentaire grâce à des applications web sur mesure qui fonctionnent vraiment",
     subtitle: "sous-titre",
-    description: "Je transforme des idées d'affaires complexes en applications web puissantes que votre équipe utilisera vraiment et que vos clients adoreront. Mes clients lancent plus vite, fonctionnent mieux et grandissent plus avec des solutions sur mesure qui résolvent de vrais problèmes, sans en créer de nouveaux.",
+    description: "Je construis des plateformes web prêtes à générer des revenus, propulsées par l'IA. Conformes, rapides et évolutives. De l'idée au lancement en 4 à 6 semaines. Basé à Zurich. Livraison dans toute l'Europe.",
     trustedBy: "Approuvé par des entreprises suisses leaders",
     features: {
       fastDelivery: "13 heures économisées chaque semaine",
@@ -410,7 +410,6 @@ export const fr = {
     },
     projectTypes: {
       web: "Application web",
-      mobile: "Application mobile",
       ecommerce: "E-commerce",
       enterprise: "Logiciel d'entreprise",
       other: "Autre",
