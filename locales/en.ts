@@ -123,7 +123,7 @@ export const en = {
       idealFor: "Ideal For",
     },
     webAppMvp: {
-      name: "Revenue Generator MVP",
+      name: "Revenue Generator",
       scope: "Core functionality, 3-5 features, basic dashboard",
       timeline: "3-4 weeks",
       idealFor: "Testing new business ideas",

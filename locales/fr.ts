@@ -20,11 +20,11 @@ export const fr = {
     readMore: "Lire la suite",
     viewAllPosts: "Voir tous les articles",
     contactMe: "Me contacter",
-    downloadCV: "Télécharger CV",
+    downloadCV: "Télécharger le CV",
   },
   sections: {
-    about: "À propos",
-    services: "Services",
+    about: "À propos de moi",
+    services: "Services proposés",
     packages: "Forfaits",
     portfolio: "Portfolio",
     testimonials: "Témoignages",
@@ -33,112 +33,174 @@ export const fr = {
     contact: "Contact",
   },
   hero: {
-    location: "Zurich, Suisse · Disponible dans toute l'Europe",
-    title: "Développeur Full-Stack & Ingénieur de Solutions",
-    subtitle: "Création d'expériences digitales exceptionnelles",
-    description:
-      "Je crée des solutions numériques sur mesure qui aident les entreprises à augmenter leurs revenus, optimiser leurs opérations et offrir des expériences utilisateur exceptionnelles avec une conformité réglementaire totale en Suisse et au-delà.",
-    trustedBy: "Approuvé par les entreprises suisses leaders",
+    location: "Partenaire tech basé à Zurich, actif dans toute l'Europe.",
+    title: "J'aide les entreprises suisses et européennes à générer 20K+ de chiffre d'affaires supplémentaire grâce à des applications web sur mesure qui fonctionnent vraiment",
+    subtitle: "sous-titre",
+    description: "Je transforme des idées d'affaires complexes en applications web puissantes que votre équipe utilisera vraiment et que vos clients adoreront. Mes clients lancent plus vite, fonctionnent mieux et grandissent plus avec des solutions sur mesure qui résolvent de vrais problèmes, sans en créer de nouveaux.",
+    trustedBy: "Approuvé par des entreprises suisses leaders",
     features: {
-      fastDelivery: "Livraison rapide",
-      multilingualSolutions: "Solutions multilingues",
-      secureSolutions: "Solutions sécurisées"
+      fastDelivery: "13 heures économisées chaque semaine",
+      multilingualSolutions: "ROI garanti à 150%",
+      secureSolutions: "Zéro lancement raté"
     }
   },
+  stats: {
+    yearsExperience: "Années d'expérience",
+    completedProjects: "Projets terminés",
+    happyClients: "Clients satisfaits",
+    satisfaction: "Satisfaction client",
+  },
+  services: {
+    heading: "Applications web sur mesure qui génèrent de vrais résultats",
+    subheading: "Je construis les outils digitaux qui font tourner votre entreprise. Des systèmes internes qui font gagner des heures de travail manuel aux apps orientées client qui génèrent du chiffre d'affaires.",
+    webDev: {
+      title: "Applications web business-critical",
+      description: "Des apps modernes qui gèrent vos processus les plus importants. Fiables et prêtes à évoluer.",
+      features: {
+        responsive: "Workflows personnalisés qui éliminent 5+ heures de travail manuel par semaine",
+        api: "Tableaux de bord en temps réel pour des insights business instantanés",
+        collaboration: "Interfaces intuitives que votre équipe adoptera vraiment",
+        reliable: "Architecture évolutive qui grandit avec votre entreprise",
+      },
+    },
+    ecommerce: {
+      title: "Systèmes e-commerce à haute conversion",
+      description: "Boutiques en ligne conçues pour maximiser les ventes avec un minimum d'effort.",
+      features: {
+        payment: "Checkout optimisé pour les clients suisses et européens",
+        recommendations: "Design mobile-first qui convertit sur tous les appareils",
+        compliance: "Gestion des stocks qui évite les désastres de survente",
+        optimization: "Systèmes de paiement fiables pour vos clients",
+      },
+    },
+    fullStackDevelopment: {
+      title: "Partenariat technique de bout en bout",
+      description: "Partenariat technique dédié sur le frontend et le backend. Un seul développeur, une vision cohérente, zéro malentendu.",
+      features: {
+        frontend: "Frontend moderne React/Next.js avec UI/UX optimisée",
+        backend: "Backend robuste avec architecture évolutive",
+        communication: "Communication claire et sans jargon technique",
+        adaptation: "Adaptation flexible aux besoins de projet évolutifs",
+      },
+    },
+    europeanGoToMarketSolutions: {
+      title: "Expansion sur les marchés suisses et européens",
+      description: "Solutions pour les entreprises qui entrent ou se développent sur les marchés européens. Localisation, conformité et adaptation culturelle.",
+      features: {
+        multilingual: "Systèmes de contenu multilingues avec ciblage régional",
+        accessibility: "Mise en œuvre de l'accessibilité EAA 2025",
+        dataPrivacy: "Cadres de conformité RGPD et Swiss FADP pour la confidentialité des données",
+        cultural: "Adaptation culturelle pour les publics suisses et européens",
+      },
+    },
+    performanceOptimization: {
+      title: "Performance standard suisse",
+      description: "Je transforme les sites lents en expériences ultra-rapides. Optimisation sur Core Web Vitals, UX et conversion.",
+      features: {
+        coreWebVitals: "Amélioration des Core Web Vitals (LCP, INP, CLS)",
+        mobile: "Optimisation mobile pour les utilisateurs européens",
+        reporting: "Rapports clairs sur les améliorations de performance"
+      },
+    },
+    maintenanceSupport: {
+      title: "Partenariat et évolution continue",
+      description: "Support fiable et réactif après le lancement. Maintenance pour sécurité, conformité et évolution continue.",
+      features: {
+        security: "Surveillance proactive de la sécurité et mises à jour",
+        performance: "Révisions et améliorations régulières des performances",
+        guidance: "Conseils techniques pour la stratégie digitale future",
+        support: "Support multilingue en Suisse et en Europe",
+      },
+    },
+  },
   packages: {
-    heading: "Solutions sur mesure pour vos besoins métier spécifiques",
-    subheading: "Forfaits à portée fixe conçus pour offrir une valeur maximale dans un délai prévisible. Idéal pour les projets avec des objectifs clairs et des exigences définies.",
+    heading: "Solutions sur mesure pour vos besoins spécifiques",
+    subheading: "Forfaits à périmètre fixe pour maximiser la valeur dans un délai prévisible. Idéal pour les projets avec des objectifs clairs et des exigences définies.",
     table: {
       package: "Forfait",
       scope: "Portée",
-      timeline: "Chronologie",
+      timeline: "Délais",
       idealFor: "Idéal pour",
     },
     webAppMvp: {
-      name: "MVP d'application Web",
-      scope: "Fonctionnalités de base, 3-5 fonctionnalités, tableau de bord de base",
-      timeline: "4-6 semaines",
-      idealFor: "Tester de nouvelles idées commerciales",
+      name: "Revenue Generator",
+      scope: "Fonctionnalité de base, 3-5 fonctionnalités, tableau de bord basique",
+      timeline: "3-4 semaines",
+      idealFor: "Tester de nouvelles idées business",
     },
     businessSystem: {
-      name: "Système d'entreprise",
-      scope: "Automatisation complète du flux de travail, gestion des utilisateurs, rapports",
-      timeline: "8-12 semaines",
-      idealFor: "Remplacer les processus manuels",
+      name: "Efficiency Engine",
+      scope: "Automatise 1 workflow critique. Gagne 5-10h/semaine. ROI en 60 jours",
+      timeline: "2-4 semaines",
+      idealFor: "Remplacer des processus manuels",
     },
     ecommerceLaunch: {
-      name: "Lancement e-commerce",
-      scope: "Boutique en ligne complète, intégration des paiements, panneau d'administration",
-      timeline: "6-10 semaines",
-      idealFor: "Vendeurs en ligne pour la première fois",
+      name: "Market-Ready E-commerce",
+      scope: "Optimisation du checkout pour marchés CH/EU. Intégration avec systèmes existants. Outils de suivi et optimisation du chiffre d'affaires",
+      timeline: "8-12 semaines",
+      idealFor: "Première expérience de vente en ligne",
     },
     enterpriseApplication: {
-      name: "Application d'entreprise",
-      scope: "Système multi-utilisateurs complexe, intégrations d'API, fonctionnalités avancées",
-      timeline: "12-20 semaines",
-      idealFor: "Entreprises établies en pleine croissance",
+      name: "Enterprise Transformer",
+      scope: "Système multi-utilisateurs complexe, intégrations API et flux de données",
+      timeline: "16-24 semaines",
+      idealFor: "Entreprises établies en croissance",
     },
     systemModernization: {
-      name: "Modernisation du système",
-      scope: "Mise à niveau du système existant, migration des données, optimisation des performances",
+      name: "System Modernization",
+      scope: "Mise à niveau de systèmes legacy, migration de données et optimisation des performances",
       timeline: "8-16 semaines",
       idealFor: "Systèmes obsolètes qui vous freinent",
-    },
-    growthOptimization: {
-      name: "Optimisation de la croissance",
-      scope: "Améliorations des conversions, réglage des performances, corrections de l'expérience utilisateur",
-      timeline: "2-4 semaines",
-      idealFor: "Systèmes existants sous-performants",
     },
   },
   process: {
     heading: "Processus de travail",
-    subheading: "Un processus agile et transparent mettant l'accent sur l'intégration de l'IA, la durabilité et la pleine conformité pour les entreprises suisses et européennes.",
+    subheading: "Un processus agile et transparent axé sur l'intégration de l'IA, la durabilité et la conformité pour les entreprises suisses et européennes.",
     activities: "Activités clés",
     deliverables: "Livrables",
     previousPhase: "Phase précédente",
     nextPhase: "Phase suivante",
     discovery: {
       title: "Découverte & Planification",
-      description: "Consultation approfondie pour comprendre votre vision, vos objectifs commerciaux et votre public cible. Recherche de votre secteur, de la concurrence et des tendances du marché. Identification des indicateurs clés de performance et des critères de succès. Évaluation de la résidence des données, de la confidentialité et des besoins de conformité (RGPD, droit suisse, eIDAS 2.0). Définition du périmètre du projet, des livrables et des pratiques numériques durables.",
+      description: "Consultation approfondie pour comprendre votre vision, vos objectifs business et votre public européen. Recherche sur votre secteur, vos concurrents et les tendances 2025. Identification des KPI et des critères de succès. Évaluation de l'accessibilité (EAA 2025 / WCAG 2.2 AA), de la résidence des données et de la confidentialité (RGPD, Swiss FADP). Définition du périmètre, des livrables et des pratiques digitales durables.",
       activities: {
-        consultation: "Consultation approfondie pour comprendre votre vision et vos objectifs commerciaux",
-        research: "Recherche de votre secteur, de la concurrence et des tendances du marché",
-        identification: "Identification des indicateurs clés de performance et des critères de succès",
-        compliance: "Évaluation de la résidence des données, de la confidentialité et des besoins de conformité (RGPD, droit suisse, eIDAS 2.0)",
-        definition: "Définition du périmètre du projet, des livrables et des pratiques numériques durables"
+        consultation: "Consultation approfondie sur votre vision et vos objectifs",
+        research: "Recherche sur votre secteur, vos concurrents et les tendances du marché",
+        identification: "Identification des KPI et des critères de succès",
+        compliance: "Évaluation de la résidence des données, de la confidentialité et de la conformité",
+        definition: "Définition du périmètre, des livrables et des pratiques digitales durables"
       },
       deliverables: {
-        brief: "Cahier des charges détaillé",
+        brief: "Brief de projet détaillé",
         requirements: "Document des exigences techniques",
-        timeline: "Calendrier du projet avec jalons",
+        timeline: "Planning de projet avec jalons",
         resources: "Plan d'allocation des ressources"
       }
     },
     design: {
       title: "Design & Prototypage",
-      description: "Création de concepts visuels et de prototypes interactifs adaptés à votre marque. Optimisation de l'expérience utilisateur avec un accent sur l'accessibilité (EN 301 549, WCAG 2.2+). Considérations multilingues et de localisation pour les publics suisses et européens. Design pour la durabilité numérique et l'efficacité énergétique.",
+      description: "Création de concepts visuels et de prototypes interactifs adaptés à votre marque. Optimisation UX avec un focus sur l'accessibilité (EAA 2025, WCAG 2.2 AA). Stratégies multilingues et de localisation pour des publics européens variés. Design durable, UX à faible impact et efficacité énergétique.",
       activities: {
-        concepts: "Création de concepts de design visuel et de prototypes interactifs",
-        ux: "Optimisation de l'expérience utilisateur avec accessibilité (EN 301 549, WCAG 2.2+)",
+        concepts: "Création de concepts visuels et de prototypes interactifs",
+        ux: "Optimisation UX avec accessibilité",
         multilingual: "Considérations multilingues et de localisation",
-        sustainability: "Design pour la durabilité numérique et l'efficacité énergétique"
+        sustainability: "Design pour la durabilité digitale et l'efficacité énergétique"
       },
       deliverables: {
         mockups: "Maquettes de design",
         prototype: "Prototype interactif",
-        documentation: "Documentation du système de design",
+        documentation: "Documentation du design system",
         assets: "Bibliothèque d'assets"
       }
     },
     development: {
       title: "Développement & Intégration",
-      description: "Développement de bout en bout avec des technologies modernes et sécurisées (React, PHP, Cloud, IA). Mise en œuvre de fonctionnalités basées sur l'IA (personnalisation, chatbots, analytique) et automatisation. Intégration de systèmes de paiement européens, d'identité numérique (eIDAS 2.0) et de services tiers. Programmation sécurisée, audits réguliers de sécurité et hébergement des données en Suisse/UE.",
+      description: "Développement de bout en bout avec des technologies modernes et sécurisées (React, Node.js, Headless CMS, Cloud, IA). Intégration proactive de fonctionnalités IA (ex. génération de contenu, analytics prédictif, automatisation intelligente). Intégration de systèmes de paiement européens et de services tiers. DevSecOps : code sécurisé, gestion des vulnérabilités, audits de sécurité et souveraineté des données (hébergement CH/EU).",
       activities: {
         development: "Développement frontend et backend avec des technologies modernes et sécurisées",
-        ai: "Mise en œuvre de fonctionnalités basées sur l'IA et automatisation",
-        integration: "Intégration de systèmes de paiement européens, d'identité numérique (eIDAS 2.0) et de services tiers",
-        security: "Programmation sécurisée, audits réguliers de sécurité et hébergement des données en Suisse/UE"
+        ai: "Implémentation de fonctionnalités IA et automatisation",
+        integration: "Intégration de systèmes de paiement européens et de services tiers",
+        security: "Développement sécurisé, audits de sécurité et souveraineté des données"
       },
       deliverables: {
         code: "Code prêt pour la production",
@@ -149,15 +211,15 @@ export const fr = {
     },
     testing: {
       title: "Tests, Lancement & Optimisation",
-      description: "Tests complets de la fonctionnalité, des performances et de la sécurité. Audits d'accessibilité et de sécurité selon les normes suisses/UE. Optimisation des performances pour un fonctionnement durable et une expérience utilisateur rapide. Derniers contrôles de conformité et de résidence des données avant le lancement.",
+      description: "Tests complets : fonctionnalité, Core Web Vitals, performance et sécurité. Audits d'accessibilité selon EAA 2025 / WCAG 2.2 AA. Audits de sécurité pour les standards CH/EU. Optimisation des performances pour un fonctionnement éco-responsable et une UX exceptionnelle. Derniers contrôles de souveraineté des données et de conformité (RGPD, EAA) avant lancement.",
       activities: {
-        testing: "Tests complets de la fonctionnalité, des performances et de la sécurité",
-        accessibility: "Audits d'accessibilité et de sécurité (normes suisses/UE)",
-        optimization: "Optimisation des performances pour un fonctionnement durable",
-        compliance: "Derniers contrôles de conformité et de résidence des données avant le lancement"
+        testing: "Tests complets de fonctionnalité, performance et sécurité",
+        accessibility: "Audits d'accessibilité et de sécurité (standards CH/EU)",
+        optimization: "Optimisation des performances pour un fonctionnement éco-responsable",
+        compliance: "Derniers contrôles de souveraineté des données et de conformité avant lancement"
       },
       deliverables: {
-        application: "Application optimisée en production",
+        application: "Application live optimisée",
         benchmark: "Rapports de performance et d'audit",
         documentation: "Documentation utilisateur",
         training: "Matériel de formation"
@@ -165,12 +227,12 @@ export const fr = {
     },
     support: {
       title: "Maintenance & Support",
-      description: "Mises à jour continues, surveillance et support pour les normes numériques européennes en évolution. Surveillance proactive de la sécurité et mises à jour régulières de conformité. Améliorations continues des performances et audits de durabilité. Support à distance, multilingue, pour les clients en Suisse et en Europe.",
+      description: "Mises à jour, monitoring et support continu pour les standards digitaux européens en évolution. Surveillance proactive de la sécurité et mises à jour de conformité. Améliorations continues des performances et audits de durabilité. Support à distance et multilingue pour les clients en Suisse et en Europe.",
       activities: {
-        monitoring: "Mises à jour continues, surveillance et support pour les normes numériques européennes en évolution",
-        security: "Surveillance proactive de la sécurité et mises à jour régulières de conformité",
+        monitoring: "Mises à jour, monitoring et support continu pour les standards digitaux européens",
+        security: "Surveillance proactive de la sécurité et mises à jour de conformité",
         improvements: "Améliorations continues des performances et audits de durabilité",
-        remote: "Support à distance, multilingue, pour les clients en Suisse et en Europe"
+        remote: "Support à distance et multilingue pour les clients en Suisse et en Europe"
       },
       deliverables: {
         reports: "Rapports de support et de mise à jour",
@@ -179,268 +241,133 @@ export const fr = {
         support: "Support technique continu"
       }
     },
-    readyHeading: "Ce qui me distingue",
-    readyDescription: "Focalisation suisse & européenne : compréhension approfondie des réglementations locales, des langues et de la culture d'entreprise. Confidentialité & conformité : développement privacy-first avec expertise RGPD, droit suisse et eIDAS 2.0. Durabilité : engagement pour un hébergement vert et des solutions économes en énergie. IA & innovation : intégration des dernières tendances en IA et automatisation pour des produits numériques plus intelligents. Collaboration à distance : communication transparente et gestion de projet sans frontières.",
+    readyHeading: "Garantie performance 14 jours",
+    readyDescription: "Si le système livré ne performe pas comme convenu, je rembourse ou corrige gratuitement. En moyenne, mes clients économisent 13h/semaine de travail manuel. ROI typique : 150% en 6 mois.",
     startButton: "Démarrer votre projet",
   },
-  stats: {
-    yearsExperience: "Années d'expérience",
-    completedProjects: "Projets terminés",
-    happyClients: "Clients satisfaits",
-    satisfaction: "Satisfaction client",
-  },
-  services: {
-    heading: "Solutions expertes pour vos besoins numériques",
-    subheading: "J'offre des services de développement complets adaptés pour aider les entreprises suisses et européennes à prospérer dans le paysage numérique.",
-    webDev: {
-      title: "Développement d'applications web personnalisées",
-      description: "Développement de bout en bout d'applications web évolutives et performantes adaptées à vos besoins commerciaux.",
-      features: {
-        responsive: "Design responsive",
-        api: "Intégration API",
-        collaboration: "Collaboration directe tout au long du développement",
-        reliable: "Livraison fiable avec attention à la qualité",
-      },
-    },
-    responsiveDesign: {
-      title: "Design Responsive",
-      description: "Sites web mobile-first qui offrent une expérience de visualisation optimale sur tous les appareils et tailles d'écran.",
-      features: {
-        mobile: "Optimisation mobile",
-        responsive: "Design responsive",
-        seo: "SEO",
-      },
-    },
-    ecommerce: {
-      title: "Solutions E-commerce",
-      description: "Plateformes e-commerce personnalisées avec traitement des paiements fluide, gestion des stocks et optimisation de l'expérience utilisateur.",
-      features: {
-        payment: "Intégration de passerelles de paiement",
-        recommendations: "Recommandations de produits basées sur l'IA pour un panier moyen plus élevé",
-        compliance: "Gestion des données clients conforme au RGPD",
-        optimization: "Optimisation du taux de conversion et de l'expérience utilisateur",
-      },
-    },
-    fullStackDevelopment: {
-      title: "Partenariat Technique de Bout en Bout",
-      description: "Partenariat technique dédié couvrant à la fois le développement frontend et backend. Un développeur, une vision cohérente, aucun écart de communication.",
-      features: {
-        frontend: "Frontend moderne React/Next.js avec UI/UX optimisée",
-        backend: "Systèmes backend robustes avec architecture évolutive",
-        communication: "Communication claire et sans jargon sur les questions techniques",
-        adaptation: "Adaptation flexible à l'évolution des exigences du projet",
-      },
-    },
-    europeanGoToMarketSolutions: {
-      title: "Expansion sur les Marchés Suisses et UE",
-      description: "Solutions pour les entreprises entrant et se développant sur les marchés européens. Réponse aux besoins de localisation, de conformité et d'adaptation culturelle.",
-      features: {
-        multilingual: "Systèmes de contenu multilingues avec ciblage régional",
-        accessibility: "Mise en œuvre de l'accessibilité EAA 2025",
-        dataPrivacy: "Cadres de conformité des données RGPD et Swiss FADP",
-        cultural: "Adaptation culturelle pour les audiences suisses et européennes",
-      },
-    },
-    frontendDevelopment: {
-      title: "Développement Frontend",
-      description: "Le développement frontend se concentre sur la création d'une interface conviviale qui permet aux utilisateurs d'interagir avec le site web ou l'application.",
-      features: {
-        responsive: "Design responsive",
-        animations: "Animations",
-        navigation: "Navigation",
-      },
-    },
-    backendDevelopment: {
-      title: "Développement Backend",
-      description: "Le développement backend se concentre sur la création d'une infrastructure sécurisée et évolutive qui permet au site web ou à l'application de fonctionner correctement.",
-      features: {
-        api: "Développement API",
-        database: "Architecture de base de données",
-        security: "Sécurité",
-      },
-    },
-    performanceOptimization: {
-      title: "Optimisation des performances",
-      description: "L'optimisation des performances se concentre sur l'amélioration de la vitesse et de l'efficacité du site web ou de l'application.",
-      features: {
-        coreWebVitals: "Amélioration des Core Web Vitals (LCP, INP, CLS)",
-        mobile: "Optimisation de l'expérience mobile pour les utilisateurs européens",
-        reporting: "Rapports clairs sur les améliorations de performance"
-      },
-    },
-    multilingualSolutions: {
-      title: "Solutions multilingues",
-      description: "Expériences numériques entièrement localisées qui engagent les utilisateurs en Suisse et en Europe dans leur langue maternelle.",
-      features: {
-        localization: "Localisation de contenu",
-        translation: "Gestion des traductions",
-        regional: "Adaptation aux préférences régionales",
-        seo: "Optimisation SEO multilingue",
-      },
-    },
-    europeanPayment: {
-      title: "Intégration de paiement européen",
-      description: "Intégration fluide des méthodes de paiement préférées en Suisse et en Europe, assurant une expérience de paiement optimale pour les clients locaux.",
-      features: {
-        methods: "Méthodes de paiement locales (TWINT, Byjuno, etc.)",
-        compliance: "Conformité PSD2 & SCA",
-        currencies: "Support multi-devises (CHF, EUR)",
-        security: "Sécurité de transaction renforcée",
-      },
-    },
-    dataCompliance: {
-      title: "Confidentialité des données & Conformité",
-      description: "Assurez-vous que vos solutions numériques sont conformes aux réglementations strictes de protection des données suisses et européennes tout en maintenant une expérience utilisateur optimale.",
-      features: {
-        gdpr: "Mise en œuvre de la conformité RGPD",
-        swiss: "Normes suisses de protection des données",
-        hosting: "Hébergement conforme aux normes suisses et européennes",
-        audits: "Audits de conformité en matière de confidentialité",
-      },
-    },
-    maintenanceSupport: {
-      title: "Maintenance & Support",
-      description: "La maintenance et le support se concentrent sur la garantie que le site web ou l'application est toujours à jour et fonctionne correctement.",
-      features: {
-        security: "Surveillance proactive de la sécurité et mises à jour",
-        performance: "Révisions et améliorations régulières des performances",
-        guidance: "Conseils techniques pour les futures stratégies numériques",
-        support: "Support multilingue en Suisse et en Europe",
-      },
-    },
-  },
   portfolio: {
-    heading: "Projets sélectionnés",
-    subheading: "Une sélection de mes travaux récents pour des entreprises suisses dans divers secteurs.",
+    heading: "Projets en vedette",
+    subheading: "Une sélection de mes réalisations récentes pour des entreprises suisses de divers secteurs.",
     filters: {
       all: "Tous les projets",
-      web: "Applications web",
+      web: "Apps web",
       mobile: "Mobile",
       ecommerce: "E-commerce",
     },
     bithy: {
-      title: "Plateforme E-commerce Bithy Compléments Alimentaires",
+      title: "Augmentation du chiffre d'affaires : Bithy Compléments",
       category: "E-commerce",
-      description: "Une solution e-commerce complète pour une marque suisse de compléments alimentaires, construite sur Shopify avec un design personnalisé et des optimisations étendues.",
-      challenge: "Bithy avait besoin d'une présence digitale complète pour lancer leur marque de compléments alimentaires, nécessitant un développement de bout en bout, de la conception au déploiement avec des performances exceptionnelles.",
-      solution: "J'ai fourni une solution complète incluant design personnalisé, développement frontend et backend, optimisation des performances et amélioration des Core Web Vitals sur la plateforme Shopify.",
+      description: "Comment une refonte e-commerce a généré 5 chiffres de ventes supplémentaires",
+      challenge: "L'ancien site de Bithy convertissait à 0,8%—perdant de l'argent sur chaque visiteur",
+      solution: "Design mobile-first avec checkout optimisé et recommandations produits",
       results: {
-        performance: "Obtention de scores 85+ dans les Core Web Vitals avec des temps de chargement et d'interaction optimisés",
-        conversion: "Taux de conversion e-commerce de 4,2%, dépassant la moyenne du secteur de 40%",
-        mobile: "L'optimisation de l'expérience mobile a permis de réaliser 65% du total des ventes sur les appareils mobiles",
-        engagement: "Durée moyenne de session augmentée à 3,5 minutes avec 4,2 pages par session",
+        performance: "Scores 85+ aux Core Web Vitals avec des temps de chargement et d'interaction optimisés",
+        conversion: "Taux de conversion 3,2% (x4) = 40K€ de CA supplémentaire en 8 mois",
+        mobile: "Optimisation mobile : 65% des ventes totales sur mobile",
+        engagement: "Durée moyenne de session portée à 3,5 min avec 4,2 pages/session",
       },
     },
     nahrin: {
-      title: "CMS Headless Intégré Nahrin",
-      category: "Intégration E-commerce",
-      description: "Un CMS headless personnalisé intégré à une plateforme e-commerce existante, permettant le marketing de contenu et la mise en valeur des produits.",
-      challenge: "Nahrin avait besoin d'un moyen de publier des recettes, des conseils et du matériel de marketing de contenu tout en les connectant de manière transparente à leurs produits e-shop, mais ne disposait d'aucune fonctionnalité CMS existante.",
-      solution: "J'ai développé un CMS headless sur mesure qui s'intégrait directement à leur plateforme e-commerce, leur permettant de créer un contenu riche et de lier des produits de leur inventaire.",
+      title: "Nahrin CMS Headless intégré",
+      category: "Content Management System",
+      description: "Un CMS headless sur mesure intégré à une plateforme e-commerce existante, pour le content marketing et la mise en avant produit.",
+      challenge: "Nahrin devait publier recettes, conseils et contenus liés à leurs produits e-shop, sans CMS existant.",
+      solution: "J'ai développé un CMS headless sur mesure intégré à leur plateforme e-commerce, pour créer du contenu riche et lier les produits de l'inventaire.",
       results: {
-        content: "Création de plus de 200 pages de recettes et de conseils au cours du premier trimestre après le lancement",
-        engagement: "Augmentation de la durée moyenne des sessions de 45% grâce à des pages de contenu attrayantes",
-        conversion: "Les liens directs vers les produits depuis les pages de contenu CMS ont amélioré les taux de conversion de 18%",
-        retention: "Le taux de retour des clients a augmenté de 28% grâce à des contenus régulièrement mis à jour",
+        content: "Plus de 200 pages recettes et conseils créées au 1er trimestre après lancement",
+        engagement: "Durée moyenne de session augmentée de 45% grâce à des contenus engageants",
+        conversion: "Liens directs vers produits depuis le CMS : +18% de conversion",
+        retention: "Taux de retour client +28% grâce à des contenus régulièrement mis à jour",
       },
     },
     crosare: {
       title: "Site web Ristorante Crosare",
-      category: "Site web de restaurant",
-      description: "Un site web moderne et responsive pour un excellent restaurant italien avec système de réservation en ligne et gestion de menu.",
-      challenge: "Le restaurant avait besoin d'une présence digitale complète pour mettre en valeur ses offres culinaires, faciliter les réservations et développer sa marque en ligne.",
-      solution: "J'ai fourni une solution complète incluant design, développement frontend et backend, ainsi qu'une stratégie de médias sociaux pour lancer leur présence digitale.",
+      category: "Site web restaurant",
+      description: "Site moderne et responsive pour un restaurant italien avec réservation en ligne et gestion du menu.",
+      challenge: "Le restaurant avait besoin d'une présence digitale complète pour valoriser son offre culinaire, faciliter les réservations et renforcer sa marque en ligne.",
+      solution: "J'ai livré une solution complète : design, développement frontend et backend, stratégie réseaux sociaux pour lancer leur présence digitale.",
       results: {
-        sales: "Augmentation de 30% des réservations en ligne dans les trois premiers mois",
-        efficiency: "Les mises à jour numériques du menu ont réduit les coûts d'impression de 75% par an",
-        events: "Les réservations pour événements spéciaux ont augmenté de 40% grâce au nouveau système de réservation en ligne",
+        sales: "+30% de réservations en ligne dans les 3 premiers mois",
+        efficiency: "Mises à jour digitales du menu : -75% de coûts d'impression/an",
+        events: "+40% de réservations événements spéciaux grâce au nouveau système en ligne",
       },
     },
     qualipet: {
       title: "Moteur de recommandation Qualipet",
       category: "E-commerce",
-      description: "Un moteur de recommandation sophistiqué pour le plus grand détaillant d'articles pour animaux de compagnie en Suisse, améliorant l'expérience d'achat en ligne.",
-      challenge: "Qualipet devait améliorer ses ventes en ligne en mettant en œuvre des recommandations de produits personnalisées basées sur le comportement et les préférences des clients.",
-      solution: "J'ai développé un moteur de recommandation personnalisé en PHP qui analyse l'historique d'achat, les comportements de navigation et les profils des animaux pour suggérer des produits pertinents.",
+      description: "Moteur de recommandation avancé pour le plus grand distributeur suisse d'articles pour animaux, améliore l'expérience d'achat en ligne.",
+      challenge: "Qualipet devait augmenter ses ventes en ligne avec des recommandations personnalisées basées sur le comportement et les préférences.",
+      solution: "J'ai intégré un moteur de recommandation custom en PHP qui analyse achats, navigation et profils animaux pour suggérer des produits pertinents.",
       results: {
-        sales: "Augmentation de la valeur moyenne des commandes de 23%",
-        conversion: "Amélioration du taux de conversion de 18% grâce aux recommandations personnalisées",
-        satisfaction: "Les évaluations de satisfaction client ont augmenté de 28% après l'implémentation du moteur de recommandation",
+        sales: "+23% de valeur moyenne de commande",
+        conversion: "+18% de conversion grâce aux recommandations personnalisées",
+        satisfaction: "+28% de satisfaction client après l'implémentation",
       },
     },
   },
   testimonials: {
     heading: "Ce que disent les clients",
-    subheading: "Découvrez comment des entreprises suisses ont transformé leur présence digitale grâce à mes solutions.",
+    subheading: "Découvrez comment des entreprises suisses ont transformé leur présence digitale avec mes solutions.",
     jenny: {
-      name: "Jenny Sella",
+      name: "Jenny Sella, Fondatrice",
       company: "Bithy",
-      text: "Le lancement de notre marque de compléments alimentaires en ligne semblait écrasant jusqu'à ce que nous trouvions ce développeur. La plateforme e-commerce livrée a dépassé toutes les attentes avec des performances ultra-rapides et une expérience mobile fluide. Nos taux de conversion sont 40% au-dessus de la moyenne du secteur, impactant directement notre résultat net. Un véritable partenaire digital qui comprend la croissance des entreprises.",
+      text: "Nous sommes passés de pertes sur le trafic à nos meilleurs mois de chiffre d'affaires. Le nouveau système s'autofinance tous les 12 jours.",
     },
     daniela: {
-      name: "Daniela Filipescu",
+      name: "Daniela Filipescu, Co-fondatrice",
       company: "Ristorante Crosare",
-      text: "Notre restaurant avait besoin de plus qu'un simple site web. Nous avions besoin d'une stratégie digitale qui amènerait les clients à notre porte. La solution complète livrée est non seulement belle mais a augmenté nos réservations en ligne de 30% et réduit considérablement nos coûts opérationnels. Le système de réservation en ligne pour les événements spéciaux a été un véritable changement de donne pour notre entreprise.",
+      text: "Notre restaurant avait besoin de plus qu'un site web. Il fallait une stratégie digitale qui amène les clients en salle. La solution complète n'est pas seulement belle, elle a augmenté nos réservations en ligne de 30% et réduit fortement nos coûts. Le système de réservation événements a été un vrai game-changer.",
     },
     markus: {
       name: "Markus Berger",
       company: "SwissTech Solutions",
-      text: "Nous avions besoin d'un développeur capable de gérer les défis frontend et backend pour notre système de gestion interne. L'expertise full-stack fournie était exceptionnelle – architecture propre, interfaces intuitives et systèmes backend robustes qui s'intégraient parfaitement à notre infrastructure existante. La productivité de notre équipe s'est améliorée de 35% en quelques semaines après la mise en œuvre.",
+      text: "Nous avions besoin d'un développeur capable de gérer frontend et backend pour notre gestion interne. L'expertise full-stack livrée était exceptionnelle : architecture propre, interfaces intuitives et backend robuste parfaitement intégré à notre infrastructure. La productivité de l'équipe a augmenté de 35% en quelques semaines.",
     },
     laura: {
       name: "Laura Meier",
       company: "Alpine Financial Services",
-      text: "Trouver un développeur qui comprend vraiment à la fois les exigences techniques et les objectifs commerciaux est rare. Le portail client personnalisé développé pour notre société de services financiers équilibre parfaitement sécurité, conformité et expérience utilisateur. Le design responsive fonctionne parfaitement sur tous les appareils, et le système d'authentification offre la sécurité que notre industrie exige sans compromettre la facilité d'utilisation.",
+      text: "Trouver un développeur qui comprend à la fois les exigences techniques et les objectifs business est rare. Le portail client sur mesure développé pour notre société financière équilibre parfaitement sécurité, conformité et expérience utilisateur. Le design responsive fonctionne sur tous les appareils et le système d'authentification offre la sécurité exigée par notre secteur sans sacrifier l'ergonomie.",
     },
   },
   about: {
-    imageAlt: "Dan Nistor, Ingénieur de Solutions",
+    imageAlt: "Dan Nistor, Solution Engineer",
     availableStatus: "Disponible pour consultations",
-    badge: "Ingénieur de Solutions",
-    heading: "Transformer les défis techniques en solutions d'affaires",
-    paragraph1: "Avec <span class=\"font-semibold text-foreground\">plus de 10 ans d'expérience</span> en tant qu'Ingénieur de Solutions et Développeur Full-Stack, je suis spécialisé dans la transformation des défis d'entreprise en solutions numériques évolutives et performantes.",
-    paragraph2: "Mon approche combine précision technique et compréhension des enjeux commerciaux, garantissant des solutions à la fois techniquement excellentes et alignées avec vos objectifs.",
-    approachTitle: "Approche collaborative:",
-    approach1: "Conception complète de solutions du concept initial à l'implémentation",
-    approach2: "Expertise technique qui se traduit en valeur commerciale concrète",
-    approach3: "Historique avéré de livraison de projets complexes dans les délais",
-    approach4: "Livraison fiable avec attention portée à la qualité et à la durabilité",
-    approach5: "Développement axé sur la confidentialité avec expertise en conformité européenne",
-    expertiseTitle: "Expertise Technique",
-    expertise1: "JavaScript & Écosystème React",
-    expertise2: "PHP & Frameworks Modernes",
-    expertise3: "MySQL & Architecture de Base de Données",
-    expertise4: "Infrastructure Cloud & DevOps",
-    expertise5: "Intégration IA & Automatisation Intelligente",
-    servicesTitle: "Services",
-    service1: "Architecture de Solutions",
-    service2: "Développement d'Applications Sur Mesure",
-    service3: "Modernisation de Systèmes Existants",
-    service4: "Consultation Technique",
-    service5: "Transformation Numérique Durable",
+    badge: "Solution Designer",
+    heading: "Je ne fais pas que du code. Je crée des produits digitaux qui génèrent du chiffre d'affaires",
+    paragraph1: "Je passe 2-3 jours à observer votre équipe avant d'écrire une ligne de code. Je regarde comment le travail se fait vraiment. Pas comment vous pensez qu'il se fait.",
+    paragraph2: "Là où d'autres développeurs ne pensent qu'au code, je pense aux résultats business : <ul><li>- Applications qui éliminent les goulets d'étranglement manuels</li><li>- Systèmes e-commerce optimisés pour la Suisse/l'UE</li><li>- Intégrations qui connectent vos outils métiers</li><li>- Remplacements modernes pour systèmes legacy obsolètes</li></ul>",
+    paragraph3: "Je comprends à la fois la technique et le business.",
+    approachTitle: "Mon processus :",
+    approach1: "Archéologie business : cartographier vos vrais workflows (pas la théorie de l'organigramme)",
+    approach2: "Quantification des points de friction : calcul précis du temps/coût des inefficacités",
+    approach3: "Conception de solution : ne construire que ce qui fait la différence sur le CA/l'efficacité",
+    approach4: "Implémentation : déployer des systèmes que l'équipe adopte vraiment",
+    approach5: "Privacy & Accessibilité by Design, avec expertise compliance européenne (RGPD, EAA 2025)",
+    qualityTitle: "Qualité standard suisse",
+    quality1: "Chaque système inclut documentation complète, formation utilisateur et 6 mois de support optimisation. Un logiciel inutilisé, c'est de l'argent perdu.",
     ctaConsultation: "Planifier une consultation",
-    ctaPortfolio: "Voir mon portfolio de projets",
+    ctaPortfolio: "Voir mes réalisations",
   },
   blog: {
-    heading: "Derniers aperçus & articles",
-    subheading: "Restez à jour avec les dernières tendances, conseils et aperçus en développement web et stratégie numérique.",
+    heading: "Derniers articles & insights",
+    subheading: "Restez à jour avec les tendances, conseils et insights sur le développement web et la stratégie digitale.",
     post1: {
-      title: "Quoi de neuf dans Next.js 15 : Fonctionnalités à connaître",
-      excerpt: "Explorez les dernières fonctionnalités et améliorations dans Next.js 15 et comment elles peuvent améliorer vos projets de développement web.",
+      title: "Nouveautés Next.js 15 : les fonctionnalités à connaître",
+      excerpt: "Découvrez les nouveautés et améliorations de Next.js 15 et comment elles peuvent booster vos projets web.",
     },
     post2: {
-      title: "Meilleures pratiques TypeScript pour les applications à grande échelle",
-      excerpt: "Apprenez comment structurer et optimiser votre code TypeScript pour la maintenabilité et les performances dans les applications d'entreprise.",
+      title: "Best practices TypeScript pour applications d'entreprise",
+      excerpt: "Apprenez à structurer et optimiser votre code TypeScript pour la maintenabilité et la performance en entreprise.",
     },
     post3: {
-      title: "Tailwind CSS v4 : Un guide complet",
-      excerpt: "Découvrez les nouvelles fonctionnalités et améliorations dans Tailwind CSS v4 et comment les exploiter dans vos projets.",
+      title: "Tailwind CSS v4 : guide complet",
+      excerpt: "Découvrez les nouveautés de Tailwind CSS v4 et comment les exploiter dans vos projets.",
     },
   },
   contact: {
     heading: "Audit gratuit des processus métier",
-    subheading1: "J'examine comment vous gérez actuellement vos processus métier les plus chronophages et vous montre comment une application web sur mesure pourrait les optimiser.",
-    subheading2: "La plupart des audits révèlent un gain de temps de 10 à 20 heures par semaine dès le premier entretien.",
+    subheading1: "J'analyse comment vous gérez vos processus les plus chronophages et vous montre comment une app web sur mesure peut les optimiser.",
+    subheading2: "La plupart des audits révèlent 5-10h de gain hebdo dès le premier entretien.",
     email: "E-mail",
     phone: "Téléphone",
     location: "Localisation",
@@ -449,19 +376,19 @@ export const fr = {
     formTitle: "Envoyez-moi un message",
   },
   newsletter: {
-    heading: "Restez à jour avec les derniers aperçus tech",
-    subheading: "Abonnez-vous à ma newsletter pour des conseils, tendances et aperçus sur le développement web et la stratégie numérique.",
+    heading: "Restez à jour avec les dernières tendances tech",
+    subheading: "Abonnez-vous pour des insights sur l'IA dans le web, la conformité digitale européenne (EAA, RGPD), les tendances 2025 et des solutions durables pour les entreprises en Suisse & Europe.",
     placeholder: "Votre adresse email",
     subscribe: "S'abonner",
     submitting: "Abonnement en cours...",
-    privacy: "Je respecte votre vie privée. Désabonnez-vous à tout moment.",
+    privacy: "Je respecte votre vie privée. Désabonnement à tout moment.",
     success: {
       title: "Abonnement réussi !",
-      description: "Merci de vous être abonné à ma newsletter.",
+      description: "Merci pour votre inscription à la newsletter.",
     },
   },
   clients: {
-    heading: "Approuvé par les entreprises suisses leaders",
+    heading: "Approuvé par des entreprises suisses leaders",
   },
   form: {
     name: "Nom",
@@ -470,16 +397,16 @@ export const fr = {
     emailPlaceholder: "votre.email@exemple.com",
     projectType: "Type de projet",
     projectTypePlaceholder: "Sélectionnez le type de projet",
-    budget: "Budget (CHF)",
-    budgetPlaceholder: "Sélectionnez le budget",
+    budget: "Fourchette de budget (CHF)",
+    budgetPlaceholder: "Sélectionnez la fourchette de budget",
     message: "Message",
-    messagePlaceholder: "Parlez-moi de votre projet et de vos exigences",
+    messagePlaceholder: "Parlez-moi de votre projet et de vos besoins",
     submit: "Envoyer",
     submitting: "Envoi en cours...",
     cancel: "Annuler",
     success: {
       title: "Message envoyé !",
-      description: "Merci pour votre message. Je vous répondrai dans les 24 heures.",
+      description: "Merci pour votre message. Je vous répondrai sous 24h.",
     },
     projectTypes: {
       web: "Application web",
@@ -497,11 +424,11 @@ export const fr = {
     },
     project: {
       title: "Discutons de votre projet",
-      description: "Remplissez le formulaire ci-dessous et je vous répondrai dans les 24 heures.",
+      description: "Remplissez le formulaire ci-dessous et je vous répondrai sous 24h.",
     },
     general: {
       title: "Contactez-moi",
-      description: "Vous avez une question ou souhaitez discuter d'un projet potentiel ? Faites-le moi savoir !",
+      description: "Une question ou envie de discuter d'un projet ? Écrivez-moi !",
     },
     contact: {
       title: "Envoyez-moi un message",
@@ -523,48 +450,33 @@ export const fr = {
     serviceBenefits: {
       "web-development": {
         benefit1: "Mise sur le marché plus rapide avec des solutions web personnalisées",
-        benefit2: "Agilité commerciale accrue grâce à une architecture évolutive",
-        benefit3: "Dette technique réduite avec des pratiques de développement modernes"
+        benefit2: "Agilité business accrue avec une architecture évolutive",
+        benefit3: "Dette technique réduite grâce à des pratiques modernes"
       },
       "ecommerce": {
-        benefit1: "Taux de conversion plus élevés avec des processus de paiement optimisés",
-        benefit2: "Valeur moyenne des commandes augmentée avec des fonctionnalités de vente croisée",
-        benefit3: "Réduction des abandons de panier grâce à une expérience utilisateur fluide"
-      },
-      "multilingual-solutions": {
-        benefit1: "Portée de marché élargie dans toutes les régions linguistiques suisses",
-        benefit2: "Fidélisation client améliorée avec des expériences culturellement pertinentes",
-        benefit3: "Performance SEO renforcée pour les marchés multilingues"
-      },
-      "european-payment": {
-        benefit1: "Ventes accrues avec les méthodes de paiement locales préférées",
-        benefit2: "Réduction des frictions de paiement pour les clients suisses et européens",
-        benefit3: "Coûts de transaction réduits grâce à un routage de paiement optimisé"
-      },
-      "data-compliance": {
-        benefit1: "Risques juridiques réduits avec une gestion des données conforme",
-        benefit2: "Confiance client renforcée avec des pratiques de confidentialité transparentes",
-        benefit3: "Systèmes pérennes alignés sur l'évolution des réglementations"
+        benefit1: "Taux de conversion plus élevés avec des checkouts optimisés et personnalisation IA",
+        benefit2: "Valeur moyenne de commande augmentée avec cross/upsell ciblé",
+        benefit3: "Fidélisation client grâce à une UX supérieure et des stratégies de rétention"
       },
       "full-stack-development": {
-        benefit1: "Architecture d'application cohésive et intégrée",
-        benefit2: "Cycle de développement efficace avec un point de contact unique",
-        benefit3: "Solutions polyvalentes adaptables à divers besoins de projet"
+        benefit1: "Architecture applicative cohérente et intégrée",
+        benefit2: "Cycle de développement efficace avec un interlocuteur unique",
+        benefit3: "Solutions polyvalentes adaptables à divers projets"
       },
       "european-go-to-market-solutions": {
-        benefit1: "Entrée et expansion fluides sur divers marchés européens",
-        benefit2: "Engagement utilisateur amélioré grâce à des expériences localisées et accessibles",
-        benefit3: "Conformité réglementaire complète, minimisant les risques et renforçant la confiance dans toute l'Europe"
-      },
-      "performance-optimization": {
-        benefit1: "Amélioration du classement dans les moteurs de recherche et de la visibilité",
-        benefit2: "Satisfaction utilisateur accrue et taux de rebond réduits",
-        benefit3: "Taux de conversion plus élevés et meilleur ROI sur les investissements numériques"
+        benefit1: "Entrée et expansion sans friction sur les marchés européens",
+        benefit2: "Engagement utilisateur accru grâce à des expériences localisées et accessibles",
+        benefit3: "Conformité réglementaire totale, moins de risques et plus de confiance en Europe"
       },
       "maintenance-support": {
         benefit1: "Temps d'arrêt minimisés grâce à une surveillance proactive",
-        benefit2: "Vulnérabilités de sécurité réduites avec des mises à jour régulières",
-        benefit3: "Amélioration continue basée sur l'analyse des performances"
+        benefit2: "Risques opérationnels réduits avec sécurité et conformité à jour",
+        benefit3: "Valeur continue grâce à des améliorations itératives"
+      },
+      "performance-optimization": {
+        benefit1: "Meilleur classement et visibilité sur les moteurs de recherche",
+        benefit2: "Utilisateurs plus satisfaits et moins d'abandons",
+        benefit3: "Taux de conversion plus élevés et meilleur ROI digital"
       }
     },
     close: "Fermer",
@@ -575,16 +487,17 @@ export const fr = {
     challenge: "Défi",
     solution: "Solution",
     results: "Résultats",
-    visitSite: "Visiter le site",
+    visitSite: "Voir le site en ligne",
     similarRequest: "Demande de projet similaire",
   },
   cookies: {
-    message: "Ce site web utilise des cookies pour vous garantir la meilleure expérience sur notre site.",
+    message: "Ce site utilise des cookies pour vous garantir la meilleure expérience.",
     accept: "Accepter",
     decline: "Refuser",
   },
   footer: {
-    description: "Développeur Full-Stack spécialisé dans la création de solutions numériques personnalisées pour les entreprises suisses. Basé à Zurich, Suisse.",
+    description:
+      "Développeur Full-Stack à Zurich, je crée des solutions digitales prêtes pour l'IA, accessibles (EAA 2025) et conformes pour les entreprises suisses et européennes.",
     quickLinks: "Liens rapides",
     contact: "Contact",
     rights: "Tous droits réservés.",
