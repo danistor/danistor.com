@@ -55,7 +55,7 @@ export function PackagesSection() {
   }
 
   return (
-    <section id="packages" ref={ref} className="w-full py-16 md:py-24 lg:py-32">
+    <section id="packages" ref={ref} className="w-full py-16 md:py-24">
       <div className="container px-4 md:px-6">
         <motion.div
           initial="initial"

@@ -33,9 +33,9 @@ export const en = {
   },
   hero: {
     location: "Zurich-based tech partner, shipping cross-Europe.",
-    title: "I Help Swiss & EU Companies Generate 20K+ More Revenue Through High-Converting Websites",
+    title: "I Help Swiss and EU Companies Generate 50K+ More Revenue Through Custom Web Applications That Actually Work",
     subtitle: "subtitle",
-    description: "I turn complex business ideas into powerful web applications that your team will actually use and your customers will love. My clients launch faster, operate smoother, and scale bigger with custom-built solutions that solve real problems, not create new ones.",
+    description: "I turn complex business ideas into powerful web applications that your team will actually use and your customers will love. My clients launch faster, operate smoother and scale bigger with custom-built solutions that solve real problems, not create new ones.",
     trustedBy: "Trusted by leading Swiss companies",
     features: {
       fastDelivery: "Agile Delivery",
@@ -316,7 +316,7 @@ export const en = {
     jenny: {
       name: "Jenny Sella, Founder",
       company: "Bithy",
-      text: "We went from losing money on traffic to our highest revenue months ever. The new system pays for itself every 21 days.",
+      text: "We went from losing money on traffic to our highest revenue months ever. The new system pays for itself every 12 days.",
     },
     daniela: {
       name: "Daniela Filipescu, Co-Founder",

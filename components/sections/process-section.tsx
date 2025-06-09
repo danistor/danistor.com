@@ -336,7 +336,7 @@ export function ProcessSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-center mt-12"
+          className="hidden text-center mt-12"
         >
           <div className="bg-white rounded-lg shadow-sm p-6 md:p-8 mt-12">
             <div className="flex flex-col md:flex-row items-center">
