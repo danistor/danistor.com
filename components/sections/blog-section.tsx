@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { useTranslation } from '@/hooks/use-translation'
+import Image from "next/image";
 
 export function BlogSection() {
   const { t } = useTranslation()
@@ -63,11 +64,12 @@ export function BlogSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card className="h-full flex flex-col overflow-hidden">
-                <div className="aspect-[16/9] overflow-hidden">
-                  <img
+                <div className="aspect-[16/9] overflow-hidden relative">
+                  <Image
                     src={post.image || '/placeholder.svg'}
                     alt={post.title}
-                    className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                    layout="fill"
+                    className="object-cover transition-transform hover:scale-105 duration-500"
                   />
                 </div>
                 <CardContent className="pt-6 flex-grow">

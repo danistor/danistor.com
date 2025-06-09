@@ -3,13 +3,14 @@
 import { useRef } from "react"
 import Link from "next/link"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { Code, MapPin, Shield, Zap, Globe2 } from "lucide-react"
+import { MapPin, Shield, Zap, Globe2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { ContactForm } from "@/components/forms/contact-form"
 import { useTranslation } from "@/hooks/use-translation"
 import { SkillBadge } from "@/components/ui/skill-badge"
+import Image from "next/image"
 
 export function HeroSection() {
   const { t } = useTranslation()
@@ -163,10 +164,11 @@ export function HeroSection() {
               className="w-full h-full relative"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-slate-700/20 to-slate-600/20 z-10" />
-              <img
+              <Image
                 src="/placeholder.svg?height=800&width=600"
                 alt="Professional developer working on code"
-                className="w-full h-full object-cover"
+                layout="fill"
+                className="object-cover"
               />
 
               {/* Floating skill badges - Only show on larger screens */}

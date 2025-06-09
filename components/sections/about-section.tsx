@@ -3,10 +3,11 @@
 import { useRef } from "react"
 import Link from "next/link"
 import { motion, useInView } from "framer-motion"
-import { Download, Check, ArrowRight, Shield } from "lucide-react"
+import { Check, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { useTranslation } from "@/hooks/use-translation"
+import Image from "next/image"
 
 export function AboutSection() {
   const { t } = useTranslation()
@@ -23,11 +24,12 @@ export function AboutSection() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="aspect-square bg-slate-200 rounded-lg overflow-hidden shadow-sm border border-border">
-              <img
+            <div className="aspect-square bg-slate-200 rounded-lg overflow-hidden shadow-sm border border-border relative">
+              <Image
                 src="/placeholder.svg?height=600&width=600"
                 alt={t("about.imageAlt")}
-                className="w-full h-full object-cover"
+                layout="fill"
+                className="object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-md border border-border">

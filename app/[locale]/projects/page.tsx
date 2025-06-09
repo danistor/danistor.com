@@ -30,7 +30,7 @@ export default async function ProjectsPage(props: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   // Need to await both params and searchParams in Next.js 15.3
-  const params = await props.params;
+  await props.params; // Await if necessary, but don't assign to an unused variable
   const searchParams = await props.searchParams;
 
   // Handle search params

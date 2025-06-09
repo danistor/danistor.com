@@ -34,7 +34,13 @@ export default function LoginPage() {
       } else {
         setError('Invalid password');
       }
-    } catch (err) {
+    } catch (_err) {
+      // TODO: handle error
+      if (_err instanceof Error) {
+        console.error(_err.message);
+      } else {
+        console.error('An unknown error occurred', _err);
+      }
       setError('An error occurred. Please try again.');
     } finally {
       setLoading(false);

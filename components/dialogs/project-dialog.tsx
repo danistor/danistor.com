@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { ContactForm } from "@/components/forms/contact-form"
 import { useTranslation } from "@/hooks/use-translation"
+import Image from "next/image"
 
 interface ProjectDialogProps {
   project: {
@@ -33,8 +34,8 @@ export function ProjectDialog({ project }: ProjectDialogProps) {
         <DialogDescription>{project.category}</DialogDescription>
       </DialogHeader>
       <div className="mt-4 space-y-4">
-        <div className="aspect-[16/9] bg-slate-100 overflow-hidden rounded-lg">
-          <img src={project.image || "/placeholder.svg"} alt={project.title} className="w-full h-full object-cover" />
+        <div className="aspect-[16/9] bg-slate-100 overflow-hidden rounded-lg relative">
+          <Image src={project.image || "/placeholder.svg"} alt={project.title} layout="fill" className="object-cover" />
         </div>
         <div className="flex flex-wrap gap-2 mt-2">
           {project.tags.map((tag, i) => (

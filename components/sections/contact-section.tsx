@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, MapPin } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { ContactForm } from "@/components/forms/contact-form"

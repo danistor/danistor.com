@@ -10,7 +10,7 @@ export const en = {
     newsletter: "Newsletter",
   },
   cta: {
-    getQuote: "Get a Quote",
+    getQuote: "Get a Free Quote",
     startProject: "Start a Project",
     viewWork: "View My Work",
     learnMore: "Learn More",

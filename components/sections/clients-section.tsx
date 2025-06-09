@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { useTranslation } from "@/hooks/use-translation"
+import Image from "next/image"
 
 export function ClientsSection() {
   const { t } = useTranslation()
@@ -33,7 +34,7 @@ export function ClientsSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="grayscale hover:grayscale-0 transition-all duration-300"
             >
-              <img src={client.logo || "/placeholder.svg"} alt={client.name} className="h-12 md:h-16" />
+              <Image src={(client.logo || "/placeholder.svg").split('?')[0]} alt={client.name} width={120} height={60} />
             </motion.div>
           ))}
         </div>

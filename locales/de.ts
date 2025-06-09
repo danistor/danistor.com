@@ -10,7 +10,7 @@ export const de = {
     newsletter: "Newsletter",
   },
   cta: {
-    getQuote: "Angebot anfordern",
+    getQuote: "Kostenloses Angebot anfordern",
     startProject: "Projekt starten",
     viewWork: "Arbeiten ansehen",
     learnMore: "Mehr erfahren",

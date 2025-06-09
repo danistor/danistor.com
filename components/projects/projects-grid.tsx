@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Badge } from '@/components/ui/badge'
 import { useTranslation } from '@/hooks/use-translation'
-import { projectsData, getTranslatedProjects, type ProjectType } from '@/data/projects'
+import { getTranslatedProjects, type ProjectType } from '@/data/projects'
 
 interface ProjectsGridProps {
   query?: string

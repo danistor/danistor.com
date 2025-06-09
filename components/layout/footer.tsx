@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, MapPin } from "lucide-react"
 import { useTranslation } from "@/hooks/use-translation"
 import { SocialLinks } from "@/components/ui/social-links"
 

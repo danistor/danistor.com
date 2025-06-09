@@ -10,7 +10,7 @@ export const it = {
     newsletter: "Newsletter",
   },
   cta: {
-    getQuote: "Richiedi preventivo",
+    getQuote: "Richiedi preventivo gratuito",
     startProject: "Inizia un progetto",
     viewWork: "Vedi i miei lavori",
     learnMore: "Scopri di più",
