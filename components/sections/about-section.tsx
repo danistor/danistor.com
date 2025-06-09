@@ -48,7 +48,8 @@ export function AboutSection() {
             <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20">{t("about.badge")}</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">{t("about.heading")}</h2>
             <p className="text-muted-foreground mb-4" dangerouslySetInnerHTML={{ __html: t("about.paragraph1") }} />
-            <p className="text-muted-foreground mb-8" dangerouslySetInnerHTML={{ __html: t("about.paragraph2") }} />
+            <p className="text-muted-foreground mb-4" dangerouslySetInnerHTML={{ __html: t("about.paragraph2") }} />
+            <p className="text-muted-foreground mb-4" dangerouslySetInnerHTML={{ __html: t("about.paragraph3") }} />
 
             <div className="mb-8 border-l-4 border-accent pl-4 py-2 bg-accent/5 rounded-r-md">
               <h4 className="font-medium text-foreground">{t("about.approachTitle")}</h4>
@@ -76,66 +77,15 @@ export function AboutSection() {
               </ul>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 mb-8">
+            <div className="mb-8">
               <div>
                 <h4 className="font-medium text-foreground mb-3 flex items-center">
                   <span className="bg-accent/10 p-1 rounded mr-2">
                     <ArrowRight className="h-4 w-4 text-accent" />
                   </span>
-                  {t("about.expertiseTitle")}
+                  {t("about.qualityTitle")}
                 </h4>
-                <ul className="space-y-1">
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.expertise1")}</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.expertise2")}</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.expertise3")}</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.expertise4")}</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.expertise5")}</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-medium text-foreground mb-3 flex items-center">
-                  <span className="bg-accent/10 p-1 rounded mr-2">
-                    <ArrowRight className="h-4 w-4 text-accent" />
-                  </span>
-                  {t("about.servicesTitle")}
-                </h4>
-                <ul className="space-y-1">
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.service1")}</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.service2")}</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.service3")}</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.service4")}</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-4 w-4 text-accent mr-2" />
-                    <span className="text-muted-foreground text-sm">{t("about.service5")}</span>
-                  </li>
-                </ul>
+                <p className="space-y-1" dangerouslySetInnerHTML={{ __html: t("about.quality1") }} />
               </div>
             </div>
 

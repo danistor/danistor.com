@@ -8,6 +8,7 @@ export const it = {
     blog: "Blog",
     contact: "Contatti",
     newsletter: "Newsletter",
+    packages: "Pacchetti",
   },
   cta: {
     getQuote: "Richiedi preventivo gratuito",

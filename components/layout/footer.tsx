@@ -55,6 +55,20 @@ export function Footer() {
                 {t("nav.services")}
               </Link>
               <Link
+                href="#packages"
+                className="text-slate-300 hover:text-accent transition-colors"
+                scroll={false}
+                onClick={(e) => {
+                  e.preventDefault()
+                  const targetElement = document.getElementById("packages")
+                  if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" })
+                  }
+                }}
+              >
+                {t("sections.packages")}
+              </Link>
+              <Link
                 href="#process"
                 className="text-slate-300 hover:text-accent transition-colors"
                 scroll={false}

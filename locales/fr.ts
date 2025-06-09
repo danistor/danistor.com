@@ -8,6 +8,7 @@ export const fr = {
     blog: "Blog",
     contact: "Contact",
     newsletter: "Newsletter",
+    packages: "Forfaits",
   },
   cta: {
     getQuote: "Obtenir un devis gratuit",
